@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Prime Homes Ghana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🏠</div>
+        <div class="logo-text">Prime Homes<br><span>Ghana</span></div>
+      </a>
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="property-details.html">Property Detail</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta btn">List Property</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <div class="page-banner">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you — our team is ready to help you find your perfect property</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact Us</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT MAIN ===== -->
+  <section>
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Info Column -->
+        <div class="contact-info-card">
+          <h2>Contact Information</h2>
+          <p>Reach out to us through any of the channels below or visit one of our offices across Ghana.</p>
+
+          <div class="contact-info-items">
+            <div class="ci-item">
+              <div class="ci-icon">📍</div>
+              <div>
+                <div class="ci-label">Head Office – Accra</div>
+                <div class="ci-value">14 Nii Tackie Tawiah Street<br>East Legon, Accra, Ghana</div>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">📍</div>
+              <div>
+                <div class="ci-label">Kumasi Office</div>
+                <div class="ci-value">Plot 7 Asokwa Commercial Area<br>Kumasi, Ashanti Region, Ghana</div>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">📍</div>
+              <div>
+                <div class="ci-label">Takoradi Office</div>
+                <div class="ci-value">Market Circle, Harbour Area<br>Takoradi, Western Region, Ghana</div>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">📞</div>
+              <div>
+                <div class="ci-label">Phone Numbers</div>
+                <div class="ci-value">
+                  <a href="tel:+233302123456" style="color:var(--gold);">+233 30 212 3456</a> (Accra)<br>
+                  <a href="tel:+233322456789" style="color:var(--gold);">+233 32 245 6789</a> (Kumasi)<br>
+                  <a href="tel:+233312987654" style="color:var(--gold);">+233 31 298 7654</a> (Takoradi)
+                </div>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">✉️</div>
+              <div>
+                <div class="ci-label">Email Addresses</div>
+                <div class="ci-value">
+                  <a href="mailto:info@primehomesghana.com" style="color:var(--gold);">info@primehomesghana.com</a><br>
+                  <a href="mailto:sales@primehomesghana.com" style="color:var(--gold);">sales@primehomesghana.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="ci-item">
+              <div class="ci-icon">🕐</div>
+              <div>
+                <div class="ci-label">Working Hours</div>
+                <div class="ci-value">
+                  Monday – Friday: 8:00 am – 6:00 pm<br>
+                  Saturday: 9:00 am – 3:00 pm<br>
+                  Sunday: By Appointment Only
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div style="margin-top:36px;">
+            <div style="color:#6a8aaa;font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;margin-bottom:14px;">Follow Us</div>
+            <div class="social-links">
+              <div class="social-link" title="Facebook">📘</div>
+              <div class="social-link" title="Twitter/X">🐦</div>
+              <div class="social-link" title="Instagram">📸</div>
+              <div class="social-link" title="YouTube">▶️</div>
+              <div class="social-link" title="LinkedIn">💼</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Column -->
+        <div class="contact-form-card">
+          <h2>Send Us a Message</h2>
+          <p>Fill in the form below and a member of our team will respond within 24 hours.</p>
+
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name *</label>
+                <input type="text" placeholder="e.g. Kwame" required />
+              </div>
+              <div class="form-group">
+                <label>Last Name *</label>
+                <input type="text" placeholder="e.g. Mensah" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+233 XX XXX XXXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject *</label>
+              <select required>
+                <option value="">Select a subject…</option>
+                <option>I want to buy a property</option>
+                <option>I want to sell a property</option>
+                <option>I want to list a property</option>
+                <option>Diaspora investment enquiry</option>
+                <option>Mortgage &amp; financing advice</option>
+                <option>Property management services</option>
+                <option>General enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Office Location</label>
+              <select>
+                <option value="">Any office</option>
+                <option>Accra – East Legon (Head Office)</option>
+                <option>Kumasi – Asokwa</option>
+                <option>Takoradi – Market Circle</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Your Message *</label>
+              <textarea placeholder="Tell us about your property needs, budget, preferred location, timeline, or any questions you have. The more detail you provide, the better we can assist you." required></textarea>
+            </div>
+            <div class="form-group" style="display:flex;align-items:flex-start;gap:10px;">
+              <input type="checkbox" id="consent" style="width:auto;margin-top:3px;" required />
+              <label for="consent" style="font-size:.82rem;font-weight:400;text-transform:none;letter-spacing:0;color:var(--gray);cursor:pointer;">
+                I agree to Prime Homes Ghana contacting me regarding my enquiry. I have read and accept the <a href="#" style="color:var(--teal);">Privacy Policy</a>.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="font-size:1rem;padding:14px;">Send Message →</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map Placeholder -->
+      <div class="map-placeholder" style="margin-top:50px;">
+        <span>🗺️</span>
+        <p>Our Head Office – East Legon, Accra</p>
+        <span style="font-size:.85rem;color:var(--teal);font-weight:400;">14 Nii Tackie Tawiah Street, East Legon, Greater Accra</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AGENTS SECTION ===== -->
+  <section style="background:var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Agents</span>
+        <h2>Talk Directly to a Property Expert</h2>
+        <p>Prefer to speak with a specific agent? Browse our team and reach out directly.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="properties-grid-4" style="grid-template-columns:repeat(4,1fr);">
+
+        <div style="background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow);text-align:center;">
+          <div class="agent-avatar" style="width:64px;height:64px;margin:0 auto 14px;font-size:1.6rem;">AK</div>
+          <div class="agent-name" style="font-size:1rem;color:var(--navy);font-weight:700;">Akosua Kyeremeh</div>
+          <div class="agent-title" style="font-size:.8rem;color:var(--teal);margin-bottom:8px;">Senior Consultant – Accra</div>
+          <div class="agent-phone" style="font-size:.85rem;"><a href="tel:+233249876543">+233 24 987 6543</a></div>
+          <div style="margin-top:12px;"><a href="mailto:akosua@primehomesghana.com" class="btn btn-outline" style="font-size:.8rem;padding:7px 18px;">Email Agent</a></div>
+        </div>
+
+        <div style="background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow);text-align:center;">
+          <div class="agent-avatar" style="width:64px;height:64px;margin:0 auto 14px;font-size:1.6rem;">KO</div>
+          <div class="agent-name" style="font-size:1rem;color:var(--navy);font-weight:700;">Kojo Opoku</div>
+          <div class="agent-title" style="font-size:.8rem;color:var(--teal);margin-bottom:8px;">Property Consultant – Kumasi</div>
+          <div class="agent-phone" style="font-size:.85rem;"><a href="tel:+233244123456">+233 24 412 3456</a></div>
+          <div style="margin-top:12px;"><a href="mailto:kojo@primehomesghana.com" class="btn btn-outline" style="font-size:.8rem;padding:7px 18px;">Email Agent</a></div>
+        </div>
+
+        <div style="background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow);text-align:center;">
+          <div class="agent-avatar" style="width:64px;height:64px;margin:0 auto 14px;font-size:1.6rem;">AS</div>
+          <div class="agent-name" style="font-size:1rem;color:var(--navy);font-weight:700;">Ama Serwah</div>
+          <div class="agent-title" style="font-size:.8rem;color:var(--teal);margin-bottom:8px;">Property Consultant – Takoradi</div>
+          <div class="agent-phone" style="font-size:.85rem;"><a href="tel:+233244654321">+233 24 465 4321</a></div>
+          <div style="margin-top:12px;"><a href="mailto:ama@primehomesghana.com" class="btn btn-outline" style="font-size:.8rem;padding:7px 18px;">Email Agent</a></div>
+        </div>
+
+        <div style="background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow);text-align:center;">
+          <div class="agent-avatar" style="width:64px;height:64px;margin:0 auto 14px;font-size:1.6rem;">FB</div>
+          <div class="agent-name" style="font-size:1rem;color:var(--navy);font-weight:700;">Fiifi Boateng</div>
+          <div class="agent-title" style="font-size:.8rem;color:var(--teal);margin-bottom:8px;">Diaspora Specialist – Accra</div>
+          <div class="agent-phone" style="font-size:.85rem;"><a href="tel:+233244789012">+233 24 478 9012</a></div>
+          <div style="margin-top:12px;"><a href="mailto:fiifi@primehomesghana.com" class="btn btn-outline" style="font-size:.8rem;padding:7px 18px;">Email Agent</a></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Browse our curated selection of houses, apartments, and land across Ghana.</p>
+      <div class="cta-actions">
+        <a href="properties.html" class="btn btn-primary" style="padding:14px 36px;font-size:1rem;">Browse Properties</a>
+        <a href="about.html" class="btn btn-outline" style="padding:14px 36px;font-size:1rem;">Learn About Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon">🏠</div>
+            <div class="logo-text">Prime Homes<br><span>Ghana</span></div>
+          </a>
+          <p>Ghana's most trusted real estate company. Helping individuals and families find, buy, sell, and rent properties across the country since 2012.</p>
+          <div class="social-links">
+            <div class="social-link">📘</div>
+            <div class="social-link">🐦</div>
+            <div class="social-link">📸</div>
+            <div class="social-link">▶️</div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Property Types</h4>
+          <ul>
+            <li><a href="properties.html">Houses for Sale</a></li>
+            <li><a href="properties.html">Apartments</a></li>
+            <li><a href="properties.html">Land Plots</a></li>
+            <li><a href="properties.html">Commercial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">📍 14 Nii Tackie Tawiah Street, East Legon, Accra</a></li>
+            <li><a href="tel:+233302123456">📞 +233 30 212 3456</a></li>
+            <li><a href="mailto:info@primehomesghana.com">✉️ info@primehomesghana.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Prime Homes Ghana. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('open');
+    }
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Thank you for your message! A member of our team will be in touch within 24 hours.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
