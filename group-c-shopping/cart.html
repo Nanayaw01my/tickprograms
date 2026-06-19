@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart – SmartBuy Ghana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <span>📦 Free delivery on orders above ₵500 &nbsp;|&nbsp; ☎ +233 20 123 4567</span>
+      <div style="display:flex;gap:1.2rem;">
+        <a href="#">Track Order</a>
+        <a href="#">My Account</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo"><span class="logo-icon">⚡</span>Smart<span>Buy</span> Ghana</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="product-details.html">Deals</a></li>
+          <li><a href="cart.html" class="active">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="search-bar">
+            <input type="text" placeholder="Search products…" />
+            <button>🔍</button>
+          </div>
+          <a href="cart.html" class="cart-btn">🛒 Cart <span class="cart-count">3</span></a>
+          <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>🛒 Shopping Cart</h1>
+      <p>Review your items and proceed to checkout</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="sep">›</span><span>Shopping Cart</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROGRESS STEPS -->
+  <div style="background:var(--white);border-bottom:1px solid var(--border);padding:1.1rem 0;">
+    <div class="container">
+      <div style="display:flex;align-items:center;justify-content:center;gap:0;max-width:600px;margin:0 auto;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:.3rem;flex:1;">
+          <div style="width:38px;height:38px;border-radius:50%;background:var(--primary);color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:800;">1</div>
+          <span style="font-size:.8rem;font-weight:700;color:var(--primary);">Cart</span>
+        </div>
+        <div style="flex:1;height:3px;background:var(--border);margin-bottom:1.2rem;"></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:.3rem;flex:1;">
+          <div style="width:38px;height:38px;border-radius:50%;background:var(--border);color:var(--text-light);display:flex;align-items:center;justify-content:center;font-weight:800;">2</div>
+          <span style="font-size:.8rem;color:var(--text-light);">Checkout</span>
+        </div>
+        <div style="flex:1;height:3px;background:var(--border);margin-bottom:1.2rem;"></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:.3rem;flex:1;">
+          <div style="width:38px;height:38px;border-radius:50%;background:var(--border);color:var(--text-light);display:flex;align-items:center;justify-content:center;font-weight:800;">3</div>
+          <span style="font-size:.8rem;color:var(--text-light);">Payment</span>
+        </div>
+        <div style="flex:1;height:3px;background:var(--border);margin-bottom:1.2rem;"></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:.3rem;flex:1;">
+          <div style="width:38px;height:38px;border-radius:50%;background:var(--border);color:var(--text-light);display:flex;align-items:center;justify-content:center;font-weight:800;">4</div>
+          <span style="font-size:.8rem;color:var(--text-light);">Confirmation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CART SECTION -->
+  <section class="cart-section">
+    <div class="container">
+      <div class="cart-layout">
+
+        <!-- CART ITEMS -->
+        <div>
+          <div class="cart-header">
+            <span>Product</span>
+            <span>Price</span>
+            <span>Quantity</span>
+            <span>Total</span>
+            <span></span>
+          </div>
+
+          <!-- Item 1 -->
+          <div class="cart-item">
+            <div class="cart-item-product">
+              <img src="https://placehold.co/72x72/0057b8/ffffff?text=iPhone" alt="iPhone 16 Pro Max" />
+              <div>
+                <p class="cart-item-name">Apple iPhone 16 Pro Max 256GB</p>
+                <p class="cart-item-variant">Color: Natural Titanium &nbsp;|&nbsp; Storage: 256GB</p>
+                <p style="font-size:.78rem;color:var(--success);margin-top:.2rem;">✅ In Stock</p>
+              </div>
+            </div>
+            <div class="cart-item-price">₵14,500</div>
+            <div>
+              <div class="cart-qty-control">
+                <button>−</button>
+                <input type="number" value="1" min="1" />
+                <button>+</button>
+              </div>
+            </div>
+            <div class="cart-item-total">₵14,500</div>
+            <button class="cart-item-remove">🗑</button>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="cart-item">
+            <div class="cart-item-product">
+              <img src="https://placehold.co/72x72/1a1a2e/ffffff?text=Sony" alt="Sony WH-1000XM5" />
+              <div>
+                <p class="cart-item-name">Sony WH-1000XM5 Noise Cancelling Headphones</p>
+                <p class="cart-item-variant">Color: Black &nbsp;|&nbsp; Connectivity: Wireless</p>
+                <p style="font-size:.78rem;color:var(--success);margin-top:.2rem;">✅ In Stock</p>
+              </div>
+            </div>
+            <div class="cart-item-price">₵3,200</div>
+            <div>
+              <div class="cart-qty-control">
+                <button>−</button>
+                <input type="number" value="1" min="1" />
+                <button>+</button>
+              </div>
+            </div>
+            <div class="cart-item-total">₵3,200</div>
+            <button class="cart-item-remove">🗑</button>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="cart-item">
+            <div class="cart-item-product">
+              <img src="https://placehold.co/72x72/e65c00/ffffff?text=Dress" alt="Ankara Maxi Dress" />
+              <div>
+                <p class="cart-item-name">Gorgeous Ankara Maxi Dress – Print A</p>
+                <p class="cart-item-variant">Size: M &nbsp;|&nbsp; Color: Multicolour</p>
+                <p style="font-size:.78rem;color:var(--success);margin-top:.2rem;">✅ In Stock</p>
+              </div>
+            </div>
+            <div class="cart-item-price">₵350</div>
+            <div>
+              <div class="cart-qty-control">
+                <button>−</button>
+                <input type="number" value="2" min="1" />
+                <button>+</button>
+              </div>
+            </div>
+            <div class="cart-item-total">₵700</div>
+            <button class="cart-item-remove">🗑</button>
+          </div>
+
+          <!-- Cart Actions -->
+          <div class="cart-actions">
+            <a href="products.html" class="btn-secondary">← Continue Shopping</a>
+            <button class="btn-secondary">🔄 Update Cart</button>
+          </div>
+
+          <!-- Coupon Row -->
+          <div style="margin-top:1.5rem;">
+            <p style="font-weight:700;margin-bottom:.75rem;font-size:.95rem;">🏷 Have a Coupon Code?</p>
+            <div class="coupon-row">
+              <input type="text" placeholder="Enter coupon code e.g. GHANA20" />
+              <button>Apply</button>
+            </div>
+            <p style="font-size:.82rem;color:var(--text-light);margin-top:.5rem;">Try: GHANA20 for 20% off | WELCOME10 for first order</p>
+          </div>
+
+          <!-- Saved Items -->
+          <div style="margin-top:2rem;">
+            <h3 style="font-size:1.1rem;font-weight:800;margin-bottom:1rem;color:var(--text-dark);">💾 Saved for Later</h3>
+            <div style="background:var(--white);border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:1.25rem;display:flex;align-items:center;gap:1rem;">
+              <img src="https://placehold.co/72x72/f5a623/1a1a2e?text=Nike" alt="Nike Air Max" style="width:72px;height:72px;border-radius:var(--radius);object-fit:cover;border:1.5px solid var(--border);" />
+              <div style="flex:1;">
+                <p style="font-weight:700;color:var(--text-dark);">Nike Air Max 270 React – Men's Size 42</p>
+                <p style="color:var(--primary);font-weight:800;font-size:1.05rem;">₵890</p>
+              </div>
+              <button class="btn-secondary">Move to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ORDER SUMMARY -->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+
+          <div class="summary-row">
+            <span>Subtotal (4 items)</span>
+            <span>₵18,400</span>
+          </div>
+          <div class="summary-row discount">
+            <span>🏷 Coupon Discount</span>
+            <span>− ₵0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery Fee</span>
+            <span style="color:var(--success);font-weight:700;">FREE</span>
+          </div>
+          <div class="summary-row">
+            <span>VAT (15%)</span>
+            <span>₵2,760</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span class="amount">₵21,160</span>
+          </div>
+
+          <a href="#" class="checkout-btn">🔒 Proceed to Checkout →</a>
+
+          <div class="secure-badges">
+            <span class="secure-badge">🔒 SSL Secure</span>
+            <span class="secure-badge">✅ Verified</span>
+            <span class="secure-badge">↩️ Easy Returns</span>
+          </div>
+
+          <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--border);">
+            <p style="font-size:.88rem;font-weight:700;color:var(--text-dark);margin-bottom:.75rem;">Accepted Payments:</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
+              <span class="pay-icon" style="background:var(--bg-light);color:var(--text-dark);border:1px solid var(--border);">MTN MoMo</span>
+              <span class="pay-icon" style="background:var(--bg-light);color:var(--text-dark);border:1px solid var(--border);">Vodafone Cash</span>
+              <span class="pay-icon" style="background:var(--bg-light);color:var(--text-dark);border:1px solid var(--border);">AirtelTigo</span>
+              <span class="pay-icon" style="background:var(--bg-light);color:var(--text-dark);border:1px solid var(--border);">VISA</span>
+              <span class="pay-icon" style="background:var(--bg-light);color:var(--text-dark);border:1px solid var(--border);">Mastercard</span>
+            </div>
+          </div>
+
+          <!-- Delivery Estimate -->
+          <div style="margin-top:1.25rem;background:var(--primary-light);border-radius:var(--radius);padding:.85rem 1rem;font-size:.88rem;color:var(--text-mid);">
+            <p><strong>📅 Estimated Delivery:</strong> 1–2 business days (Accra)</p>
+            <p style="margin-top:.35rem;color:var(--text-light);">Order before 12pm for same-day dispatch</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RECENTLY VIEWED -->
+      <div style="margin-top:3rem;">
+        <div class="section-header" style="text-align:left;margin-bottom:1.5rem;">
+          <h2 style="font-size:1.4rem;">🕐 Recently Viewed</h2>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <button class="wishlist-btn">♡</button>
+            <div class="product-img"><img src="https://placehold.co/200x200/003f8a/ffffff?text=Samsung+S24" alt="Samsung S24 Ultra" /></div>
+            <div class="product-info">
+              <p class="product-category">Smartphones</p>
+              <p class="product-name">Samsung Galaxy S24 Ultra 512GB</p>
+              <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(301)</span></div>
+              <div class="product-price-row"><span class="product-price">₵13,200</span></div>
+              <button class="add-to-cart">🛒 Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <button class="wishlist-btn">♡</button>
+            <div class="product-img"><img src="https://placehold.co/200x200/0057b8/ffffff?text=MacBook+Air" alt="MacBook Air M3" /></div>
+            <div class="product-info">
+              <p class="product-category">Laptops</p>
+              <p class="product-name">Apple MacBook Air M3 13" 8GB</p>
+              <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(62)</span></div>
+              <div class="product-price-row"><span class="product-price">₵11,500</span></div>
+              <button class="add-to-cart">🛒 Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <button class="wishlist-btn">♡</button>
+            <div class="product-img"><img src="https://placehold.co/200x200/28a745/ffffff?text=Adidas" alt="Adidas Ultraboost" /></div>
+            <div class="product-info">
+              <p class="product-category">Footwear</p>
+              <p class="product-name">Adidas Ultraboost 24 Running Shoes</p>
+              <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(119)</span></div>
+              <div class="product-price-row"><span class="product-price">₵1,050</span></div>
+              <button class="add-to-cart">🛒 Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <button class="wishlist-btn">♡</button>
+            <div class="product-img"><img src="https://placehold.co/200x200/003f8a/ffffff?text=PS5+Slim" alt="PS5 Slim" /></div>
+            <div class="product-info">
+              <p class="product-category">Gaming</p>
+              <p class="product-name">Sony PlayStation 5 Slim Console</p>
+              <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(207)</span></div>
+              <div class="product-price-row"><span class="product-price">₵4,500</span></div>
+              <button class="add-to-cart">🛒 Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <button class="wishlist-btn">♡</button>
+            <div class="product-img"><img src="https://placehold.co/200x200/444466/ffffff?text=LG+OLED+TV" alt="LG OLED TV" /></div>
+            <div class="product-info">
+              <p class="product-category">TVs &amp; Screens</p>
+              <p class="product-name">LG C3 55" OLED evo 4K Smart TV</p>
+              <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(143)</span></div>
+              <div class="product-price-row"><span class="product-price">₵8,500</span></div>
+              <button class="add-to-cart">🛒 Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">⚡ Smart<span>Buy</span> Ghana</a>
+          <p>Ghana's trusted online marketplace for electronics and fashion.</p>
+          <div class="social-links"><a href="#">f</a><a href="#">in</a><a href="#">t</a><a href="#">w</a></div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul>
+          <li><a href="index.html">› Home</a></li><li><a href="products.html">› Products</a></li>
+          <li><a href="cart.html">› Cart</a></li><li><a href="contact.html">› Contact</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Support</h4><ul>
+          <li><a href="#">› Track Order</a></li><li><a href="#">› Returns</a></li>
+          <li><a href="#">› Warranty</a></li><li><a href="#">› FAQ</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact</h4><ul>
+          <li><a href="tel:+233201234567">📞 +233 20 123 4567</a></li>
+          <li><a href="mailto:hello@smartbuyghana.com">✉ hello@smartbuyghana.com</a></li>
+          <li><a href="#">📍 Accra Mall, Ring Road</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SmartBuy Ghana. All rights reserved.</p>
+        <div class="payment-icons">
+          <span class="pay-icon">MTN</span><span class="pay-icon">VISA</span><span class="pay-icon">MC</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const ham = document.getElementById('hamburger');
+    const nav = document.getElementById('navLinks');
+    ham.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+
+</body>
+</html>

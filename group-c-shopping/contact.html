@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – SmartBuy Ghana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <span>📦 Free delivery on orders above ₵500 &nbsp;|&nbsp; ☎ +233 20 123 4567</span>
+      <div style="display:flex;gap:1.2rem;">
+        <a href="#">Track Order</a>
+        <a href="#">My Account</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo"><span class="logo-icon">⚡</span>Smart<span>Buy</span> Ghana</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="product-details.html">Deals</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <div class="search-bar">
+            <input type="text" placeholder="Search products…" />
+            <button>🔍</button>
+          </div>
+          <a href="cart.html" class="cart-btn">🛒 Cart <span class="cart-count">3</span></a>
+          <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <h1>📞 Contact Us</h1>
+      <p>We're here to help — reach out anytime!</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a><span class="sep">›</span><span>Contact Us</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK STATS ROW -->
+  <div style="background:var(--white);border-bottom:1px solid var(--border);padding:1.5rem 0;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center;">
+        <div style="padding:.5rem;">
+          <div style="font-size:1.8rem;margin-bottom:.3rem;">⏱</div>
+          <p style="font-weight:700;color:var(--text-dark);">Fast Response</p>
+          <p style="font-size:.85rem;color:var(--text-light);">Reply within 2 hours</p>
+        </div>
+        <div style="padding:.5rem;">
+          <div style="font-size:1.8rem;margin-bottom:.3rem;">🕐</div>
+          <p style="font-weight:700;color:var(--text-dark);">Mon – Sat</p>
+          <p style="font-size:.85rem;color:var(--text-light);">8:00am – 8:00pm</p>
+        </div>
+        <div style="padding:.5rem;">
+          <div style="font-size:1.8rem;margin-bottom:.3rem;">🌍</div>
+          <p style="font-weight:700;color:var(--text-dark);">All Regions</p>
+          <p style="font-size:.85rem;color:var(--text-light);">Ghana-wide delivery</p>
+        </div>
+        <div style="padding:.5rem;">
+          <div style="font-size:1.8rem;margin-bottom:.3rem;">⭐</div>
+          <p style="font-weight:700;color:var(--text-dark);">4.9 / 5.0 Rating</p>
+          <p style="font-size:.85rem;color:var(--text-light);">50,000+ happy customers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- CONTACT INFO CARD -->
+        <div class="contact-info-card">
+          <h3>Get In Touch</h3>
+          <p>Have a question about an order, product, or delivery? Our friendly team is ready to assist you.</p>
+
+          <div class="contact-detail">
+            <div class="icon-wrap">📍</div>
+            <div class="contact-detail-text">
+              <strong>Visit Our Store</strong>
+              <span>Accra Mall, Spintex Road, Accra<br />Ground Floor, Shop A12</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="icon-wrap">📞</div>
+            <div class="contact-detail-text">
+              <strong>Call / WhatsApp</strong>
+              <span>+233 20 123 4567<br />+233 54 987 6543</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="icon-wrap">✉</div>
+            <div class="contact-detail-text">
+              <strong>Email Us</strong>
+              <span>hello@smartbuyghana.com<br />support@smartbuyghana.com</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="icon-wrap">🕐</div>
+            <div class="contact-detail-text">
+              <strong>Business Hours</strong>
+              <span>Monday – Saturday: 8am – 8pm<br />Sunday: 10am – 4pm</span>
+            </div>
+          </div>
+
+          <div class="social-contact">
+            <p>Connect with us on social media:</p>
+            <div class="social-links">
+              <a href="#" title="Facebook">f</a>
+              <a href="#" title="Instagram">in</a>
+              <a href="#" title="Twitter/X">𝕏</a>
+              <a href="#" title="WhatsApp">w</a>
+              <a href="#" title="YouTube">▶</a>
+              <a href="#" title="TikTok">t</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM CARD -->
+        <div class="contact-form-card">
+          <h3>Send Us a Message</h3>
+          <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+          <form onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g. Kwame" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="e.g. Asante" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+233 20 000 0000" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="order">Order Enquiry / Track My Order</option>
+                <option value="return">Return / Refund Request</option>
+                <option value="product">Product Information</option>
+                <option value="delivery">Delivery Issue</option>
+                <option value="warranty">Warranty &amp; Repairs</option>
+                <option value="payment">Payment Problem</option>
+                <option value="bulk">Bulk / Wholesale Order</option>
+                <option value="seller">Become a Seller</option>
+                <option value="other">Other / General Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="orderId">Order ID (if applicable)</label>
+              <input type="text" id="orderId" name="orderId" placeholder="e.g. SBG-2025-00847" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" placeholder="Please describe your issue or question in detail. Include any relevant product names, order numbers, or other details that may help us assist you faster." required></textarea>
+            </div>
+
+            <div class="form-group" style="display:flex;align-items:flex-start;gap:.65rem;">
+              <input type="checkbox" id="newsletter" name="newsletter" style="margin-top:.2rem;accent-color:var(--primary);" />
+              <label for="newsletter" style="font-weight:400;font-size:.88rem;color:var(--text-mid);cursor:pointer;">Subscribe to our newsletter to receive exclusive deals and new product alerts</label>
+            </div>
+
+            <div class="form-group" style="display:flex;align-items:flex-start;gap:.65rem;">
+              <input type="checkbox" id="terms" name="terms" required style="margin-top:.2rem;accent-color:var(--primary);" />
+              <label for="terms" style="font-weight:400;font-size:.88rem;color:var(--text-mid);cursor:pointer;">I agree to the <a href="#" style="color:var(--primary);font-weight:600;">Terms of Service</a> and <a href="#" style="color:var(--primary);font-weight:600;">Privacy Policy</a> *</label>
+            </div>
+
+            <button type="submit" class="form-submit">📤 Send Message</button>
+
+            <div id="successMsg" style="display:none;margin-top:1rem;background:#d4edda;border:1px solid #c3e6cb;border-radius:var(--radius);padding:1rem;color:#155724;font-weight:600;text-align:center;">
+              ✅ Message sent successfully! We'll get back to you within 2 hours.
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- MAP PLACEHOLDER -->
+      <div class="map-placeholder">
+        <span class="map-icon">🗺️</span>
+        <p style="font-weight:700;color:var(--text-dark);">SmartBuy Ghana – Accra Mall Store</p>
+        <p>Spintex Road, Accra, Ghana &nbsp;|&nbsp; Ground Floor, Shop A12</p>
+        <a href="https://maps.google.com" target="_blank" style="color:var(--primary);font-weight:600;font-size:.9rem;">Open in Google Maps →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>❓ Frequently Asked Questions</h2>
+        <p>Quick answers to our most common customer enquiries</p>
+        <div class="line"></div>
+      </div>
+
+      <div style="max-width:860px;margin:0 auto;">
+        <div class="faq-item">
+          <div class="faq-question">How do I track my order? <span>+</span></div>
+          <div class="faq-answer">Once your order is dispatched, you will receive an SMS and email with a tracking number. You can use this to track your package on our website or the courier's portal. Alternatively, call our support line with your Order ID for a real-time update.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">What payment methods do you accept? <span>+</span></div>
+          <div class="faq-answer">We accept MTN Mobile Money, Vodafone Cash (Telecel Money), AirtelTigo Money, Visa, Mastercard, and bank transfers. We also offer Pay on Delivery in select Accra and Kumasi locations for orders under ₵2,000.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How long does delivery take? <span>+</span></div>
+          <div class="faq-answer">Standard delivery to Accra takes 1–2 business days. Kumasi, Tamale, and Cape Coast take 2–3 business days. Other regions may take 3–5 business days. Express same-day delivery is available in Accra for orders placed before 12pm (Monday–Saturday).</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">What is your return and refund policy? <span>+</span></div>
+          <div class="faq-answer">We offer a 14-day return window on most products. Items must be unused, in original packaging with all accessories. Electronics that develop a fault within 30 days are covered by our SmartBuy warranty. Refunds are processed within 3–5 working days via the original payment method.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Are the products on SmartBuy Ghana authentic? <span>+</span></div>
+          <div class="faq-answer">Yes, 100%. All electronics sold on SmartBuy Ghana are sourced directly from authorised distributors and come with original manufacturer warranties. Our fashion products are curated from verified Ghanaian and international brands. We have a zero-tolerance policy for counterfeit goods.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Can I become a seller on SmartBuy Ghana? <span>+</span></div>
+          <div class="faq-answer">Absolutely! We welcome individual sellers, SMEs, and established businesses. Register as a seller through the "Sell on SmartBuy" link in our footer, and our onboarding team will reach out within 48 hours. Requirements include a valid Ghana business registration, a national ID, and product photos.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Do you offer bulk or wholesale pricing? <span>+</span></div>
+          <div class="faq-answer">Yes! We offer special pricing for bulk orders (10+ units). Contact our B2B team at wholesale@smartbuyghana.com or call +233 54 987 6543 with your requirements. We serve schools, businesses, government institutions, and NGOs across Ghana.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>📧 Subscribe &amp; Save</h2>
+      <p>Get exclusive deals, new arrivals, and Ghana-only offers straight to your inbox.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email address…" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">⚡ Smart<span>Buy</span> Ghana</a>
+          <p>Ghana's trusted online marketplace for electronics and fashion. Quality products, great prices, fast delivery to all 16 regions.</p>
+          <div class="social-links">
+            <a href="#">f</a><a href="#">in</a><a href="#">t</a><a href="#">w</a><a href="#">▶</a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul>
+          <li><a href="index.html">› Home</a></li>
+          <li><a href="products.html">› All Products</a></li>
+          <li><a href="product-details.html">› Today's Deals</a></li>
+          <li><a href="cart.html">› Shopping Cart</a></li>
+          <li><a href="contact.html">› Contact Us</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Customer Service</h4><ul>
+          <li><a href="#">› Track Your Order</a></li>
+          <li><a href="#">› Return Policy</a></li>
+          <li><a href="#">› FAQs</a></li>
+          <li><a href="#">› Warranty Info</a></li>
+          <li><a href="#">› Sell on SmartBuy</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Contact Info</h4><ul>
+          <li><a href="tel:+233201234567">📞 +233 20 123 4567</a></li>
+          <li><a href="mailto:hello@smartbuyghana.com">✉ hello@smartbuyghana.com</a></li>
+          <li><a href="#">📍 Accra Mall, Spintex Road</a></li>
+          <li><a href="#">🕐 Mon–Sat: 8am – 8pm</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 SmartBuy Ghana. All rights reserved. | <a href="#" style="color:#9aaac8;">Privacy Policy</a> | <a href="#" style="color:#9aaac8;">Terms</a></p>
+        <div class="payment-icons">
+          <span>Accepted:</span>
+          <span class="pay-icon">MTN</span>
+          <span class="pay-icon">VISA</span>
+          <span class="pay-icon">MC</span>
+          <span class="pay-icon">VODAFONE</span>
+          <span class="pay-icon">AIRTEL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const ham = document.getElementById('hamburger');
+    const nav = document.getElementById('navLinks');
+    ham.addEventListener('click', () => nav.classList.toggle('open'));
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('successMsg');
+      msg.style.display = 'block';
+      e.target.reset();
+      msg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  </script>
+
+</body>
+</html>
