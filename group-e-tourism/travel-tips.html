@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Tips | Ghana Tourism Authority — Central Region</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .tips-intro-banner {
+      background: var(--green);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .tips-intro-banner p {
+      color: rgba(255,255,255,0.9);
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1rem;
+    }
+
+    .accordion {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .accordion-header {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.1rem 1.4rem;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--green);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-family: inherit;
+      transition: background var(--transition);
+    }
+    .accordion-header:hover { background: #f0faf5; }
+    .accordion-header .acc-icon {
+      font-size: 1.3rem;
+      transition: transform 0.3s;
+      flex-shrink: 0;
+    }
+    .accordion-header.open .acc-icon { transform: rotate(45deg); }
+    .accordion-body {
+      display: none;
+      padding: 0 1.4rem 1.4rem;
+      color: var(--grey);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      border-top: 1px solid #eee;
+    }
+    .accordion-body.open { display: block; }
+    .accordion-body ul { list-style: disc; padding-left: 1.2rem; }
+    .accordion-body ul li { margin-bottom: 0.4rem; }
+
+    .emergency-box {
+      background: linear-gradient(135deg, var(--red), #a00010);
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    .emergency-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--gold);
+    }
+    .emergency-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 0.75rem;
+    }
+    .emergency-item {
+      background: rgba(255,255,255,0.12);
+      border-radius: 7px;
+      padding: 0.7rem 1rem;
+      font-size: 0.88rem;
+    }
+    .emergency-item strong { display: block; color: var(--gold); margin-bottom: 0.15rem; }
+
+    .currency-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      padding: 1.5rem;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .currency-symbol {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--green);
+      min-width: 60px;
+      text-align: center;
+    }
+    .currency-info h3 { color: var(--green); margin-bottom: 0.4rem; }
+    .currency-info p { color: var(--grey); font-size: 0.9rem; }
+
+    .transport-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .transport-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      padding: 1.3rem;
+      border-left: 4px solid var(--green);
+    }
+    .transport-card.gold { border-left-color: var(--gold); }
+    .transport-card.red  { border-left-color: var(--red); }
+    .transport-card .t-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    .transport-card h4 { font-size: 0.98rem; color: var(--dark); margin-bottom: 0.4rem; }
+    .transport-card p { font-size: 0.84rem; color: var(--grey); line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <div class="flag-bar"><span></span><span></span><span></span></div>
+
+  <header>
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="star">&#9733;</span>
+        <div class="nav-brand-text">
+          <span class="authority">Ghana Tourism Authority</span>
+          <span class="region">Central Region</span>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="travel-tips.html" class="active">Travel Tips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&#8250;</span>
+        <span>Travel Tips</span>
+      </div>
+      <h1>Travel <span>Tips</span></h1>
+      <p>Everything you need to know to plan a safe, enjoyable, and memorable trip to Ghana's Central Region.</p>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <div class="tips-intro-banner">
+    <p>Whether you are a first-time visitor or returning traveller, these tips will help you make the most of your time in the Central Region. Our tourism team has compiled practical advice to ensure a smooth and enriching experience.</p>
+  </div>
+
+  <!-- Best Time to Visit -->
+  <section class="bg-white">
+    <div class="container">
+      <h2 class="section-title">Best Time to Visit</h2>
+      <div class="accent-line"></div>
+      <p class="section-subtitle">Ghana's Central Region can be visited year-round, but seasons vary significantly</p>
+
+      <table class="best-time-table">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Season</th>
+            <th>Weather</th>
+            <th>Tourism Activity</th>
+            <th>Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>November – February</strong></td>
+            <td>Dry Season (Harmattan)</td>
+            <td>Warm, dusty winds; 24–32°C</td>
+            <td><span class="badge badge-green">Peak Season</span></td>
+            <td>Sightseeing, beach, festivals</td>
+          </tr>
+          <tr>
+            <td><strong>March – May</strong></td>
+            <td>Pre-Rains / Transition</td>
+            <td>Hot &amp; humid; 27–34°C</td>
+            <td><span class="badge badge-gold">Moderate</span></td>
+            <td>Nature, birdwatching</td>
+          </tr>
+          <tr>
+            <td><strong>June – August</strong></td>
+            <td>Major Rainy Season</td>
+            <td>Wet, green; 23–29°C</td>
+            <td><span class="badge badge-gold">Off-Peak</span></td>
+            <td>Budget travel, lush scenery</td>
+          </tr>
+          <tr>
+            <td><strong>September – October</strong></td>
+            <td>Minor Dry Season</td>
+            <td>Partly dry; 25–31°C</td>
+            <td><span class="badge badge-green">Good</span></td>
+            <td>Wildlife, canopy walks</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="tip-card" style="margin-top:2rem; border-top-color: var(--gold);">
+        <div class="tip-icon">&#127775;</div>
+        <h3>Pro Tip: The Best Months</h3>
+        <ul>
+          <li><strong>December – February</strong> is the most popular period — dry, sunny, and cooler in the evenings. Perfect for castle tours, beach visits, and Kakum walks.</li>
+          <li><strong>May</strong> is ideal for the Aboakyer Festival in Winneba — one of Ghana's most spectacular annual cultural events.</li>
+          <li><strong>July – August</strong> offers great deals on accommodation and you'll find fewer crowds at the castles.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transport -->
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Getting There &amp; Getting Around</h2>
+      <div class="accent-line"></div>
+      <p class="section-subtitle">Transport options for reaching and exploring the Central Region</p>
+
+      <div class="transport-cards">
+        <div class="transport-card">
+          <div class="t-icon">&#9992;</div>
+          <h4>By Air</h4>
+          <p>Fly into Kotoka International Airport in Accra. From there, Cape Coast is approximately 3 hours by road (165km). No domestic flights serve Cape Coast directly.</p>
+        </div>
+        <div class="transport-card gold">
+          <div class="t-icon">&#128652;</div>
+          <h4>By Bus / Coach</h4>
+          <p>VIP Jeoun and STC buses run daily from Accra to Cape Coast. Comfortable, affordable, and recommended. Journey time: 2.5–3.5 hrs depending on traffic.</p>
+        </div>
+        <div class="transport-card">
+          <div class="t-icon">&#128663;</div>
+          <h4>By Shared Taxi (Trotro)</h4>
+          <p>Trotros (minibuses) connect Accra to Cape Coast very cheaply. They depart from Accra's Kaneshie station. Great for the budget-conscious but can be crowded.</p>
+        </div>
+        <div class="transport-card red">
+          <div class="t-icon">&#128662;</div>
+          <h4>By Private Car / Hire</h4>
+          <p>Renting a car or hiring a private driver is the most flexible option. Roads to Cape Coast are paved and in good condition. Drivers can arrange multi-site day tours.</p>
+        </div>
+        <div class="transport-card">
+          <div class="t-icon">&#128690;</div>
+          <h4>Within Cape Coast</h4>
+          <p>Shared taxis, motorbike taxis (okada), and tuk-tuks serve the city. For Kakum National Park, hire a taxi or join a guided tour departing from central Cape Coast.</p>
+        </div>
+        <div class="transport-card gold">
+          <div class="t-icon">&#128657;</div>
+          <h4>Tour Operators</h4>
+          <p>Local tour operators in Cape Coast offer excellent day packages covering multiple sites — castles, Kakum, Hans Botel, and beaches. Highly recommended for first-timers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tips Grid -->
+  <section class="bg-white">
+    <div class="container">
+      <h2 class="section-title">Essential Travel Tips</h2>
+      <div class="accent-line"></div>
+      <p class="section-subtitle">Practical advice to help you travel confidently and responsibly</p>
+
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">&#127968;</div>
+          <h3>Accommodation</h3>
+          <ul>
+            <li>Cape Coast has hotels ranging from budget guesthouses to mid-range resorts. Book 2–3 weeks ahead during peak season (Dec–Feb).</li>
+            <li>Elmina offers charming boutique guesthouses near the castle.</li>
+            <li>Hans Cottage Botel provides unique over-water bungalows.</li>
+            <li>Several eco-lodges operate near Kakum National Park for immersive forest stays.</li>
+            <li>Beach resorts at Brenu and Anomabo offer affordable beachfront accommodation.</li>
+          </ul>
+        </div>
+
+        <div class="tip-card gold-top">
+          <div class="tip-icon">&#128181;</div>
+          <h3>Currency &amp; Money</h3>
+          <ul>
+            <li>The official currency is the <strong>Ghanaian Cedi (GHS)</strong>. Keep some cash handy as many smaller vendors and rural sites don't accept cards.</li>
+            <li>ATMs are available in Cape Coast and Elmina. Barclays, GCB, and Ecobank are reliable.</li>
+            <li>USD, EUR, and GBP can be exchanged at forex bureaus — rates are generally competitive.</li>
+            <li>Mobile money (MTN MoMo, Vodafone Cash) is widely used for local payments.</li>
+            <li>Always carry small denomination cedis for markets and entry fees.</li>
+          </ul>
+        </div>
+
+        <div class="tip-card red-top">
+          <div class="tip-icon">&#9889;</div>
+          <h3>Safety Tips</h3>
+          <ul>
+            <li>Ghana is one of West Africa's safest countries, but remain vigilant as in any tourist area.</li>
+            <li>Keep valuables secure; use hotel safes when available.</li>
+            <li>Avoid displaying expensive jewellery or electronics in crowded areas.</li>
+            <li>Ocean swimming carries risk — observe local warnings and swim in designated areas.</li>
+            <li>At night, use pre-booked taxis rather than hailing random vehicles.</li>
+            <li>Keep a copy of your passport and travel documents in a separate bag.</li>
+          </ul>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">&#127973;</div>
+          <h3>Health &amp; Medical</h3>
+          <ul>
+            <li>Malaria is present — take prophylactic medication and use insect repellent and bed nets.</li>
+            <li>Drink bottled or purified water only. Avoid tap water and ice in questionable establishments.</li>
+            <li>Yellow fever vaccination is required for entry into Ghana.</li>
+            <li>Recommended vaccinations: Typhoid, Hepatitis A &amp; B, Tetanus.</li>
+            <li>Cape Coast Government Hospital and several private clinics can handle most medical needs.</li>
+            <li>Carry a basic first-aid kit including rehydration salts and sun protection.</li>
+          </ul>
+        </div>
+
+        <div class="tip-card gold-top">
+          <div class="tip-icon">&#128230;</div>
+          <h3>What to Pack</h3>
+          <ul>
+            <li>Lightweight, breathable cotton clothing for the tropical heat.</li>
+            <li>Comfortable walking shoes for castle tours and forest hikes.</li>
+            <li>Sturdy sandals for beach visits.</li>
+            <li>Rain jacket or poncho if visiting June–October.</li>
+            <li>High-SPF sunscreen — the equatorial sun is intense.</li>
+            <li>Insect repellent (DEET-based) for evenings and forest visits.</li>
+            <li>Power adapters — Ghana uses Type G (British) plugs, 230V.</li>
+          </ul>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">&#127760;</div>
+          <h3>Visas &amp; Entry</h3>
+          <ul>
+            <li>ECOWAS citizens (15 West African nations) can enter Ghana without a visa.</li>
+            <li>Most other nationalities require a visa — apply online via the Ghana Immigration Service e-Visa portal.</li>
+            <li>E-visas are typically processed within 5–7 business days.</li>
+            <li>Valid passport required with at least 6 months remaining.</li>
+            <li>Yellow fever vaccination certificate is mandatory at entry.</li>
+          </ul>
+        </div>
+
+        <div class="tip-card red-top">
+          <div class="tip-icon">&#128241;</div>
+          <h3>Connectivity &amp; Communication</h3>
+          <ul>
+            <li>Buy a local SIM card on arrival (MTN, Vodafone, or AirtelTigo). Data is cheap and widely available.</li>
+            <li>4G coverage is good in Cape Coast and Elmina; rural areas may have 3G or 2G only.</li>
+            <li>Wi-Fi is available at most hotels and several restaurants.</li>
+            <li>Ghana country code: +233. Cape Coast area code: 033.</li>
+            <li>WhatsApp is the dominant communication tool — locals use it extensively.</li>
+          </ul>
+        </div>
+
+        <div class="tip-card gold-top">
+          <div class="tip-icon">&#128137;</div>
+          <h3>Culture &amp; Etiquette</h3>
+          <ul>
+            <li>Ghanaians are famously warm and welcoming — greet people with "Akwaaba!" (welcome).</li>
+            <li>Always use your <strong>right hand</strong> to give or receive items — using the left hand is considered disrespectful.</li>
+            <li>Dress modestly when visiting traditional communities and chief's palaces.</li>
+            <li>Ask permission before photographing individuals — a small tip is appreciated.</li>
+            <li>At historical sites like the castles, maintain respectful silence in solemn areas.</li>
+            <li>Bargaining is acceptable at markets but do so respectfully.</li>
+          </ul>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">&#127858;</div>
+          <h3>Food &amp; Dining</h3>
+          <ul>
+            <li>Must-try local dishes: Fufu with light soup, Banku and tilapia, Kelewele (spicy plantain), Jollof rice, Kontomire stew.</li>
+            <li>Fresh seafood is excellent along the coast — grilled fish and prawns straight from local fishermen.</li>
+            <li>Chop bars (local eateries) offer cheap, authentic Ghanaian meals.</li>
+            <li>Bottled water, Coca-Cola, and Ghanaian malt drinks are widely available.</li>
+            <li>Cape Coast has several restaurants with international and fusion cuisine for varied tastes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="accent-line"></div>
+      <p class="section-subtitle">Quick answers to common questions from visitors</p>
+
+      <div class="accordion">
+        <button class="accordion-header">How do I get from Accra to Cape Coast? <span class="acc-icon">+</span></button>
+        <div class="accordion-body">
+          <p>The most comfortable option is a VIP Jeoun or STC intercity bus from Accra's Kaneshie Motor Terminal to Cape Coast. These depart frequently from early morning and cost around GHS 30–50. The journey takes approximately 2.5–3.5 hours. Alternatively, shared trotros (minibuses) are cheaper but less comfortable. Private taxi hire or a rental car gives you the most flexibility.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header">Is the Central Region safe for tourists? <span class="acc-icon">+</span></button>
+        <div class="accordion-body">
+          <p>Yes — Ghana is consistently ranked as one of the safest countries in West Africa. The Central Region, including Cape Coast and Elmina, is peaceful and well-visited by international tourists. As with any destination, exercise normal caution: keep valuables secure, avoid poorly lit areas at night, and use reputable transport. The local population is extremely welcoming to visitors.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header">What is the admission fee for Cape Coast Castle and Elmina Castle? <span class="acc-icon">+</span></button>
+        <div class="accordion-body">
+          <ul>
+            <li>Cape Coast Castle: GHS 80 for Ghanaians / USD 15 for foreign nationals (approx.)</li>
+            <li>Elmina Castle: GHS 80 for Ghanaians / USD 15 for foreign nationals (approx.)</li>
+            <li>Kakum National Park (canopy walkway): GHS 120 for Ghanaians / USD 20 for foreign nationals (approx.)</li>
+            <li>Fees are subject to change. Contact the Ghana Museums and Monuments Board (GMMB) for current pricing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header">What language do people speak in the Central Region? <span class="acc-icon">+</span></button>
+        <div class="accordion-body">
+          <p>English is the official language of Ghana and is widely spoken. The predominant local language in the Central Region is Fante (a dialect of Akan). A few basic Fante phrases go a long way: "Akwaaba" (welcome), "Medaase" (thank you), and "Wo ho te sεn?" (How are you?). Most tourism staff, hotel workers, and guides speak good English.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header">Can I drink the tap water in Cape Coast? <span class="acc-icon">+</span></button>
+        <div class="accordion-body">
+          <p>We strongly advise against drinking tap water in Cape Coast or anywhere in Ghana. Stick to bottled mineral water, which is widely available and inexpensive. Sealed sachet water ("pure water") sold by street vendors is also generally safe. When dining out, opt for bottled drinks and avoid ice unless you are certain it was made from purified water.</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-header">Are there ATMs and card payment facilities in Cape Coast? <span class="acc-icon">+</span></button>
+        <div class="accordion-body">
+          <p>Yes, several ATMs are available in Cape Coast town — GCB Bank, Barclays (Absa), Stanbic, and Ecobank all have branches with functional ATMs. Visa and Mastercard are accepted. However, smaller restaurants, market vendors, entrance fee kiosks, and rural sites often only accept cash. Always carry a sufficient supply of Ghanaian cedis for day trips outside the city.</p>
+        </div>
+      </div>
+
+      <!-- Emergency Numbers -->
+      <div class="emergency-box">
+        <h3>&#128680; Emergency Contact Numbers</h3>
+        <div class="emergency-list">
+          <div class="emergency-item"><strong>Police Emergency</strong> 191 / 18555</div>
+          <div class="emergency-item"><strong>Ambulance</strong> 193</div>
+          <div class="emergency-item"><strong>Fire Service</strong> 192</div>
+          <div class="emergency-item"><strong>Tourist Police (Accra)</strong> +233 30 277 5246</div>
+          <div class="emergency-item"><strong>Cape Coast Hospital</strong> +233 33 213 3456</div>
+          <div class="emergency-item"><strong>GTA Hotline</strong> +233 30 222 3847</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Have More Questions?</h2>
+      <p>Our tourism experts are here to help you plan the perfect Central Region experience.</p>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="star">&#9733;</span> Ghana Tourism Authority</div>
+        <p>Promoting the beauty, heritage, and culture of Ghana's Central Region to the world since 1993.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Top Attractions</h4>
+        <ul>
+          <li><a href="attractions.html">Cape Coast Castle</a></li>
+          <li><a href="attractions.html">Kakum National Park</a></li>
+          <li><a href="attractions.html">Elmina Castle</a></li>
+          <li><a href="attractions.html">Assin Manso</a></li>
+          <li><a href="attractions.html">Hans Cottage Botel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">&#128205; Tourism House, Cape Coast, Ghana</div>
+        <div class="footer-contact-item">&#128222; +233 (0) 33 213 3456</div>
+        <div class="footer-contact-item">&#128231; info@ghanatourism.gov.gh</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ghana Tourism Authority — Central Region. All rights reserved.</span>
+      <span>Made with &#10084; for Ghana</span>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('main-nav');
+    hamburger.addEventListener('click', () => nav.classList.toggle('open'));
+
+    // Accordion
+    document.querySelectorAll('.accordion-header').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const body = btn.nextElementSibling;
+        const isOpen = body.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+        document.querySelectorAll('.accordion-header').forEach(b => b.classList.remove('open'));
+        // Open clicked if it was closed
+        if (!isOpen) {
+          body.classList.add('open');
+          btn.classList.add('open');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
