@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Dept. of Computer Science</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .office-hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    .office-hours-table tr {
+      border-bottom: 1px solid var(--gray-light);
+    }
+    .office-hours-table tr:last-child { border-bottom: none; }
+    .office-hours-table td {
+      padding: 9px 6px;
+      color: var(--gray-dark);
+    }
+    .office-hours-table td:last-child {
+      font-weight: 600;
+      color: var(--navy);
+      text-align: right;
+    }
+    .office-hours-table tr.closed td { color: var(--gray); }
+    .office-hours-table tr.closed td:last-child { color: #dc2626; font-weight: 600; }
+    .success-msg {
+      display: none;
+      background: #d1fae5;
+      color: #065f46;
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin-top: 16px;
+      font-size: 0.93rem;
+      font-weight: 600;
+    }
+    .faq-item {
+      border-bottom: 1px solid var(--gray-light);
+      padding: 16px 0;
+    }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      font-weight: 700;
+      color: var(--navy);
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+    .faq-a { color: var(--gray-dark); font-size: 0.9rem; line-height: 1.7; }
+    .dept-map-placeholder {
+      background: linear-gradient(135deg, var(--gray-light), #dde3ee);
+      border-radius: var(--radius-lg);
+      height: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray);
+      margin-top: 48px;
+      border: 2px dashed var(--gray);
+      text-align: center;
+      gap: 10px;
+    }
+    .dept-map-placeholder span { font-size: 2.5rem; }
+    .dept-map-placeholder p { font-size: 1rem; font-weight: 600; }
+    .dept-map-placeholder small { font-size: 0.85rem; color: var(--gray); }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <span>&#128205; P.O. Box GD-001, Accra, Ghana &nbsp;|&nbsp; &#9742; +233 30 295 0000</span>
+      <span>
+        <a href="mailto:cs@groupd.edu.gh">cs@groupd.edu.gh</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#">Student Portal</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#">Staff Email</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="logo-icon">&#127979;</div>
+        <div class="nav-brand-text">
+          <span class="dept">Group D University</span>
+          <span class="name">Dept. of Computer Science</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-menu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="programmes.html" class="nav-link">Programmes</a></li>
+        <li><a href="staff.html" class="nav-link">Staff</a></li>
+        <li><a href="news.html" class="nav-link">News &amp; Events</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you. Reach out to us through any of the channels below.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&#8250;</span>
+        <span>Contact</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LEFT: CONTACT INFO -->
+        <div class="contact-info">
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128205;</div>
+            <div class="contact-detail">
+              <h4>Physical Address</h4>
+              <p>Department of Computer Science<br />
+                Block C, Faculty of Science &amp; Technology<br />
+                Group D University, Main Campus<br />
+                P.O. Box GD-001, Accra, Ghana</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#9742;</div>
+            <div class="contact-detail">
+              <h4>Phone Numbers</h4>
+              <p>Department Office: <a href="tel:+233302950000">+233 30 295 0000</a></p>
+              <p>HOD Office: <a href="tel:+233302950001">+233 30 295 0001</a></p>
+              <p>Admissions: <a href="tel:+233302950050">+233 30 295 0050</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128231;</div>
+            <div class="contact-detail">
+              <h4>Email Addresses</h4>
+              <p>General: <a href="mailto:cs@groupd.edu.gh">cs@groupd.edu.gh</a></p>
+              <p>Admissions: <a href="mailto:admissions.cs@groupd.edu.gh">admissions.cs@groupd.edu.gh</a></p>
+              <p>HOD: <a href="mailto:hod.cs@groupd.edu.gh">hod.cs@groupd.edu.gh</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">&#128336;</div>
+            <div class="contact-detail">
+              <h4>Office Hours</h4>
+              <table class="office-hours-table">
+                <tr><td>Monday</td><td>8:00am – 5:00pm</td></tr>
+                <tr><td>Tuesday</td><td>8:00am – 5:00pm</td></tr>
+                <tr><td>Wednesday</td><td>8:00am – 5:00pm</td></tr>
+                <tr><td>Thursday</td><td>8:00am – 5:00pm</td></tr>
+                <tr><td>Friday</td><td>8:00am – 4:00pm</td></tr>
+                <tr class="closed"><td>Saturday</td><td>Closed</td></tr>
+                <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- FAQ BOX -->
+          <div class="sidebar-widget" style="background:var(--white); border-radius:var(--radius-lg); padding:24px; box-shadow:var(--shadow);">
+            <div class="widget-title" style="font-size:1rem; font-weight:700; color:var(--navy); margin-bottom:16px; padding-bottom:10px; border-bottom:2px solid var(--gold);">Frequently Asked Questions</div>
+            <div class="faq-item">
+              <div class="faq-q">How do I apply for admission?</div>
+              <div class="faq-a">Visit our online admissions portal at admissions.groupd.edu.gh or contact our admissions office directly.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">When does the academic year start?</div>
+              <div class="faq-a">Semester One typically begins in early September. Registration usually opens two weeks prior.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Are there scholarships available?</div>
+              <div class="faq-a">Yes. We offer merit-based and need-based scholarships. Contact the financial aid office for details.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Can I transfer from another institution?</div>
+              <div class="faq-a">Transfer applications are considered on a case-by-case basis. Contact the Admissions Office for guidance.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: CONTACT FORM -->
+        <div class="contact-form-wrap">
+          <h3>&#128140; Send Us a Message</h3>
+          <p style="color:var(--gray); font-size:0.9rem; margin-bottom:28px;">
+            Fill out the form below and a member of our team will respond within 2 working days.
+          </p>
+
+          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span style="color:#dc2626;">*</span></label>
+                <input type="text" id="firstName" name="firstName" placeholder="e.g. Kwame" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span style="color:#dc2626;">*</span></label>
+                <input type="text" id="lastName" name="lastName" placeholder="e.g. Asante" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address <span style="color:#dc2626;">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+233 XX XXX XXXX" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="category">Enquiry Category <span style="color:#dc2626;">*</span></label>
+              <select id="category" name="category" required>
+                <option value="">-- Select a category --</option>
+                <option value="admissions">Admissions &amp; Applications</option>
+                <option value="programmes">Programme Information</option>
+                <option value="research">Research Collaborations</option>
+                <option value="staff">Staff &amp; Faculty</option>
+                <option value="industry">Industry Partnerships</option>
+                <option value="alumni">Alumni Matters</option>
+                <option value="general">General Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span style="color:#dc2626;">*</span></label>
+              <input type="text" id="subject" name="subject" placeholder="Brief subject of your enquiry" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span style="color:#dc2626;">*</span></label>
+              <textarea id="message" name="message" placeholder="Please provide as much detail as possible..." required></textarea>
+            </div>
+
+            <div class="form-group" style="display:flex; align-items:center; gap:10px; margin-bottom:24px;">
+              <input type="checkbox" id="newsletter" name="newsletter" style="width:auto; margin:0;" />
+              <label for="newsletter" style="margin:0; font-size:0.88rem; font-weight:400; cursor:pointer;">
+                I would like to receive news and updates from the Department of Computer Science.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem; padding:14px;">
+              &#128140; Send Message
+            </button>
+
+            <div class="success-msg" id="successMsg">
+              &#10003; Thank you! Your message has been received. We will get back to you within 2 working days.
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+      <!-- MAP PLACEHOLDER -->
+      <div class="dept-map-placeholder">
+        <span>&#128205;</span>
+        <p>Campus Map — Department of Computer Science, Block C</p>
+        <small>Group D University Main Campus, Accra, Ghana &nbsp;|&nbsp; GPS: GD-001-0001</small>
+        <a href="#" class="btn btn-primary" style="margin-top:12px;">Get Directions via Google Maps</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONNECT WITH US STRIP -->
+  <section style="background: var(--navy); padding: 48px 0; text-align:center; color:var(--white);">
+    <div class="container">
+      <h3 style="font-size:1.5rem; margin-bottom:10px;">Follow Us on Social Media</h3>
+      <p style="color:rgba(255,255,255,0.75); margin-bottom:24px; font-size:0.95rem;">
+        Stay connected for the latest news, events, and student achievements.
+      </p>
+      <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+        <a href="#" class="btn btn-outline" style="min-width:130px;">&#128197; Facebook</a>
+        <a href="#" class="btn btn-outline" style="min-width:130px;">&#128140; Twitter / X</a>
+        <a href="#" class="btn btn-outline" style="min-width:130px;">&#127760; LinkedIn</a>
+        <a href="#" class="btn btn-outline" style="min-width:130px;">&#127909; YouTube</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-row">
+            <div class="footer-logo-icon">&#127979;</div>
+            <div>
+              <div class="name">Dept. of Computer Science</div>
+              <div class="sub">Group D University, Accra</div>
+            </div>
+          </div>
+          <p>Nurturing the next generation of technology innovators and leaders since 1994.</p>
+          <div class="social-links">
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="Twitter">t</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="YouTube">&#9654;</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programmes.html">Programmes</a></li>
+            <li><a href="staff.html">Our Staff</a></li>
+            <li><a href="news.html">News &amp; Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programmes</h4>
+          <ul>
+            <li><a href="programmes.html">BSc Computer Science</a></li>
+            <li><a href="programmes.html">HND Computer Science</a></li>
+            <li><a href="programmes.html">MSc Computer Science</a></li>
+            <li><a href="programmes.html">BSc Software Eng.</a></li>
+            <li><a href="programmes.html">PhD Computer Science</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><span>&#128205;</span><span>Block C, Main Campus, P.O. Box GD-001, Accra, Ghana</span></li>
+            <li><span>&#9742;</span><span>+233 30 295 0000</span></li>
+            <li><span>&#128231;</span><span>cs@groupd.edu.gh</span></li>
+            <li><span>&#128336;</span><span>Mon – Fri: 8:00am – 5:00pm</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; 2026 Department of Computer Science, Group D University. All rights reserved.
+        &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('contactForm');
+      const btn = form.querySelector('button[type="submit"]');
+      const msg = document.getElementById('successMsg');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      setTimeout(() => {
+        form.reset();
+        btn.textContent = '✉️ Send Message';
+        btn.disabled = false;
+        msg.style.display = 'block';
+        msg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        setTimeout(() => { msg.style.display = 'none'; }, 6000);
+      }, 1200);
+    }
+  </script>
+
+</body>
+</html>
