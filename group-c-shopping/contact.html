@@ -328,19 +328,6 @@
     </div>
   </footer>
 
-  <script>
-    const ham = document.getElementById('hamburger');
-    const nav = document.getElementById('navLinks');
-    ham.addEventListener('click', () => nav.classList.toggle('open'));
-
-    function handleSubmit(e) {
-      e.preventDefault();
-      const msg = document.getElementById('successMsg');
-      msg.style.display = 'block';
-      e.target.reset();
-      msg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
-  </script>
-
+  <script src="smartbuy.js"></script>
 </body>
 </html>
