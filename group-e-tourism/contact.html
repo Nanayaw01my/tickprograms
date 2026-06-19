@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Ghana Tourism Authority — Central Region</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .success-msg {
+      display: none;
+      background: rgba(0,107,63,0.12);
+      border: 2px solid var(--green);
+      color: var(--green);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .office-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .office-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      padding: 1.5rem;
+      border-top: 4px solid var(--green);
+    }
+
+    .office-card.gold { border-top-color: var(--gold); }
+    .office-card.red  { border-top-color: var(--red); }
+
+    .office-card h3 {
+      font-size: 1rem;
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+
+    .office-card .detail {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 0.87rem;
+      color: var(--grey);
+      margin-bottom: 0.5rem;
+      align-items: flex-start;
+    }
+
+    .office-card .detail .di { flex-shrink: 0; }
+
+    .opening-hours {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      margin-top: 2rem;
+    }
+
+    .opening-hours h3 {
+      background: var(--green);
+      color: var(--white);
+      padding: 1rem 1.3rem;
+      font-size: 1rem;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.65rem 1.3rem;
+      font-size: 0.88rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .hours-row:last-child { border-bottom: none; }
+    .hours-row:nth-child(even) { background: #f9fdf9; }
+    .hours-row .day { color: var(--dark); font-weight: 500; }
+    .hours-row .time { color: var(--green); font-weight: 600; }
+    .hours-row .time.closed { color: var(--red); }
+  </style>
+</head>
+<body>
+
+  <div class="flag-bar"><span></span><span></span><span></span></div>
+
+  <header>
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="star">&#9733;</span>
+        <div class="nav-brand-text">
+          <span class="authority">Ghana Tourism Authority</span>
+          <span class="region">Central Region</span>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&#8250;</span>
+        <span>Contact</span>
+      </div>
+      <h1>Get in <span>Touch</span></h1>
+      <p>We are here to help you plan your perfect Central Region adventure. Reach out and our team will respond promptly.</p>
+    </div>
+  </div>
+
+  <!-- Contact Main -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="contact-wrapper">
+
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <h2>Ghana Tourism Authority</h2>
+          <p style="font-size:0.88rem;color:var(--green);font-weight:600;margin-top:-0.3rem;margin-bottom:1rem;">Central Region Office — Cape Coast</p>
+          <p>Our dedicated tourism team is available to assist with travel enquiries, tour bookings, heritage site information, and any questions about visiting the Central Region of Ghana.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="ci-icon">&#128205;</div>
+              <div class="ci-text">
+                <strong>Address</strong>
+                <span>Tourism House, Victoria Road,<br>Cape Coast, Central Region, Ghana</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">&#128222;</div>
+              <div class="ci-text">
+                <strong>Phone (Main Office)</strong>
+                <span>+233 (0) 33 213 3456</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">&#128222;</div>
+              <div class="ci-text">
+                <strong>Tourist Hotline (24hr)</strong>
+                <span>+233 (0) 33 213 3999</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">&#128231;</div>
+              <div class="ci-text">
+                <strong>General Enquiries</strong>
+                <span>info@ghanatourism.gov.gh</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">&#128231;</div>
+              <div class="ci-text">
+                <strong>Tour Bookings</strong>
+                <span>bookings@ghanatourism.gov.gh</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon">&#128240;</div>
+              <div class="ci-text">
+                <strong>Press &amp; Media</strong>
+                <span>media@ghanatourism.gov.gh</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media -->
+          <div style="margin-top:1.5rem;">
+            <p style="font-size:0.85rem;font-weight:700;color:var(--dark);margin-bottom:0.5rem;">Follow Us</p>
+            <div class="social-links">
+              <a href="#" class="social-btn" title="Facebook">f</a>
+              <a href="#" class="social-btn" title="Twitter/X">X</a>
+              <a href="#" class="social-btn" title="Instagram">In</a>
+              <a href="#" class="social-btn" title="YouTube">YT</a>
+              <a href="#" class="social-btn" title="TripAdvisor">TA</a>
+            </div>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="opening-hours">
+            <h3>&#128336; Office Hours</h3>
+            <div class="hours-row"><span class="day">Monday</span><span class="time">8:00 AM – 5:00 PM</span></div>
+            <div class="hours-row"><span class="day">Tuesday</span><span class="time">8:00 AM – 5:00 PM</span></div>
+            <div class="hours-row"><span class="day">Wednesday</span><span class="time">8:00 AM – 5:00 PM</span></div>
+            <div class="hours-row"><span class="day">Thursday</span><span class="time">8:00 AM – 5:00 PM</span></div>
+            <div class="hours-row"><span class="day">Friday</span><span class="time">8:00 AM – 4:30 PM</span></div>
+            <div class="hours-row"><span class="day">Saturday</span><span class="time">9:00 AM – 2:00 PM</span></div>
+            <div class="hours-row"><span class="day">Sunday</span><span class="time closed">Closed</span></div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-card">
+          <h3>&#9993; Send Us a Message</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first_name" placeholder="e.g. Kofi" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last_name" placeholder="e.g. Mensah" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900" />
+            </div>
+
+            <div class="form-group">
+              <label for="country">Country of Residence *</label>
+              <select id="country" name="country" required>
+                <option value="" disabled selected>-- Select your country --</option>
+                <option>Ghana</option>
+                <option>United Kingdom</option>
+                <option>United States</option>
+                <option>Canada</option>
+                <option>Nigeria</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Netherlands</option>
+                <option>South Africa</option>
+                <option>Australia</option>
+                <option>China</option>
+                <option>India</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="enquiry-type">Type of Enquiry *</label>
+              <select id="enquiry-type" name="enquiry_type" required>
+                <option value="" disabled selected>-- Select enquiry type --</option>
+                <option>General Tourism Information</option>
+                <option>Tour Booking Request</option>
+                <option>Heritage Site Information</option>
+                <option>Accommodation Assistance</option>
+                <option>Transport &amp; Logistics</option>
+                <option>School / Educational Group Tour</option>
+                <option>Press &amp; Media Request</option>
+                <option>Partnership &amp; Business</option>
+                <option>Feedback / Complaint</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="visit-date">Planned Visit Date</label>
+              <input type="date" id="visit-date" name="visit_date" />
+            </div>
+
+            <div class="form-group">
+              <label for="group-size">Group Size</label>
+              <select id="group-size" name="group_size">
+                <option value="" disabled selected>-- Select group size --</option>
+                <option>Solo Traveller</option>
+                <option>2 People</option>
+                <option>3–5 People</option>
+                <option>6–10 People</option>
+                <option>11–20 People</option>
+                <option>21–50 People (Group Tour)</option>
+                <option>50+ People (Large Group)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" placeholder="Please describe your query or the type of assistance you need. Include any specific attractions or activities you are interested in..." required></textarea>
+            </div>
+
+            <div class="form-group" style="flex-direction:row;align-items:center;gap:0.6rem;">
+              <input type="checkbox" id="subscribe" name="subscribe" style="width:16px;height:16px;flex-shrink:0;" />
+              <label for="subscribe" style="font-size:0.84rem;font-weight:400;color:var(--grey);">Subscribe to our newsletter for travel updates, events, and special offers from the Ghana Tourism Authority.</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message &#8594;</button>
+            <div class="success-msg" id="success-msg">
+              &#10003; Thank you! Your message has been received. We will get back to you within 2 business days.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Regional Offices -->
+  <section class="bg-white">
+    <div class="container">
+      <h2 class="section-title">Regional Offices &amp; Visitor Centres</h2>
+      <div class="accent-line"></div>
+      <p class="section-subtitle">Find us at these key locations across the Central Region</p>
+
+      <div class="office-cards">
+        <div class="office-card">
+          <h3>&#127963; Cape Coast Main Office</h3>
+          <div class="detail"><span class="di">&#128205;</span><span>Tourism House, Victoria Road, Cape Coast</span></div>
+          <div class="detail"><span class="di">&#128222;</span><span>+233 (0) 33 213 3456</span></div>
+          <div class="detail"><span class="di">&#128231;</span><span>capecoast@ghanatourism.gov.gh</span></div>
+          <div class="detail"><span class="di">&#128336;</span><span>Mon–Fri: 8AM–5PM | Sat: 9AM–2PM</span></div>
+        </div>
+
+        <div class="office-card gold">
+          <h3>&#127963; Elmina Visitor Centre</h3>
+          <div class="detail"><span class="di">&#128205;</span><span>Near Elmina Castle, Elmina Town</span></div>
+          <div class="detail"><span class="di">&#128222;</span><span>+233 (0) 33 214 2100</span></div>
+          <div class="detail"><span class="di">&#128231;</span><span>elmina@ghanatourism.gov.gh</span></div>
+          <div class="detail"><span class="di">&#128336;</span><span>Mon–Sun: 8AM–6PM</span></div>
+        </div>
+
+        <div class="office-card red">
+          <h3>&#127795; Kakum Park Information Centre</h3>
+          <div class="detail"><span class="di">&#128205;</span><span>Kakum National Park Entrance, Abrafo</span></div>
+          <div class="detail"><span class="di">&#128222;</span><span>+233 (0) 33 209 3310</span></div>
+          <div class="detail"><span class="di">&#128231;</span><span>kakum@ghanatourism.gov.gh</span></div>
+          <div class="detail"><span class="di">&#128336;</span><span>Daily: 7AM–5PM (last entry 4PM)</span></div>
+        </div>
+
+        <div class="office-card">
+          <h3>&#9992; Accra Head Office</h3>
+          <div class="detail"><span class="di">&#128205;</span><span>Ghana Tourism Authority, Accra, Ghana</span></div>
+          <div class="detail"><span class="di">&#128222;</span><span>+233 (0) 30 222 3847</span></div>
+          <div class="detail"><span class="di">&#128231;</span><span>info@ghanatourism.gov.gh</span></div>
+          <div class="detail"><span class="di">&#128336;</span><span>Mon–Fri: 8AM–5PM</span></div>
+        </div>
+      </div>
+
+      <!-- Map Placeholder -->
+      <div class="map-placeholder">
+        <div class="map-icon">&#128506;</div>
+        <p>Interactive Map — Cape Coast &amp; Central Region, Ghana</p>
+        <p style="font-size:0.8rem;color:var(--grey);margin-top:0.3rem;">(Map integration available with Google Maps API)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Akwaaba — You Are Welcome!</h2>
+      <p>We look forward to welcoming you to the beautiful Central Region of Ghana. Start exploring today.</p>
+      <a href="attractions.html" class="btn btn-primary">Explore Attractions</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="star">&#9733;</span> Ghana Tourism Authority</div>
+        <p>Promoting the beauty, heritage, and culture of Ghana's Central Region to the world since 1993.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Top Attractions</h4>
+        <ul>
+          <li><a href="attractions.html">Cape Coast Castle</a></li>
+          <li><a href="attractions.html">Kakum National Park</a></li>
+          <li><a href="attractions.html">Elmina Castle</a></li>
+          <li><a href="attractions.html">Assin Manso</a></li>
+          <li><a href="attractions.html">Hans Cottage Botel</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">&#128205; Tourism House, Cape Coast, Ghana</div>
+        <div class="footer-contact-item">&#128222; +233 (0) 33 213 3456</div>
+        <div class="footer-contact-item">&#128231; info@ghanatourism.gov.gh</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ghana Tourism Authority — Central Region. All rights reserved.</span>
+      <span>Made with &#10084; for Ghana</span>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('main-nav');
+    hamburger.addEventListener('click', () => nav.classList.toggle('open'));
+
+    // Form submit (demo)
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const required = this.querySelectorAll('[required]');
+      let valid = true;
+      required.forEach(field => {
+        if (!field.value.trim()) {
+          field.style.borderColor = 'var(--red)';
+          valid = false;
+        } else {
+          field.style.borderColor = '';
+        }
+      });
+      if (valid) {
+        document.getElementById('success-msg').style.display = 'block';
+        this.reset();
+        this.querySelectorAll('input, select, textarea').forEach(f => f.style.borderColor = '');
+        setTimeout(() => document.getElementById('success-msg').style.display = 'none', 6000);
+      }
+    });
+  </script>
+</body>
+</html>
