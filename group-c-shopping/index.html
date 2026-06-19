@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartBuy Ghana – Electronics &amp; Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <span>📦 Free delivery on orders above ₵500 &nbsp;|&nbsp; ☎ +233 20 123 4567</span>
+      <div style="display:flex;gap:1.2rem;">
+        <a href="#">Track Order</a>
+        <a href="#">My Account</a>
+        <a href="#">Help</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">
+          <span class="logo-icon">⚡</span>
+          Smart<span>Buy</span> Ghana
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="product-details.html">Deals</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="search-bar">
+            <input type="text" placeholder="Search products…" />
+            <button>🔍</button>
+          </div>
+          <a href="cart.html" class="cart-btn">
+            🛒 Cart <span class="cart-count">3</span>
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-badges">
+            <span class="badge">🔥 Hot Deals</span>
+            <span class="badge">✅ Verified Sellers</span>
+            <span class="badge">🚚 Fast Delivery</span>
+          </div>
+          <h1>Ghana's #1 Online Store for <em>Electronics &amp; Fashion</em></h1>
+          <p>Shop thousands of products from trusted sellers across Ghana. Enjoy fast delivery, easy returns, and secure payments.</p>
+          <div class="hero-btns">
+            <a href="products.html" class="btn-primary">🛍️ Shop Now</a>
+            <a href="product-details.html" class="btn-outline">🌟 Today's Deals</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="hero-image-card">
+            <img src="https://placehold.co/200x120/0057b8/ffffff?text=iPhone+16" alt="iPhone 16" />
+            <p>iPhone 16 Pro</p>
+            <p class="price">₵14,500</p>
+          </div>
+          <div class="hero-image-card">
+            <img src="https://placehold.co/200x120/f5a623/ffffff?text=Sneakers" alt="Sneakers" />
+            <p>Nike Air Max</p>
+            <p class="price">₵890</p>
+          </div>
+          <div class="hero-image-card">
+            <img src="https://placehold.co/200x120/003f8a/ffffff?text=Laptop" alt="Laptop" />
+            <p>Dell XPS 15</p>
+            <p class="price">₵8,200</p>
+          </div>
+          <div class="hero-image-card">
+            <img src="https://placehold.co/200x120/28a745/ffffff?text=Dress" alt="Dress" />
+            <p>Ankara Dress</p>
+            <p class="price">₵350</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item"><strong>50,000+</strong><span>Happy Customers</span></div>
+        <div class="stat-item"><strong>5,000+</strong><span>Products Listed</span></div>
+        <div class="stat-item"><strong>200+</strong><span>Verified Sellers</span></div>
+        <div class="stat-item"><strong>16</strong><span>Regions Covered</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <section class="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shop by Category</h2>
+        <p>Explore our wide range of product categories</p>
+        <div class="line"></div>
+      </div>
+      <div class="category-grid">
+        <a href="products.html" class="category-card">
+          <div class="icon">📱</div>
+          <p>Smartphones</p>
+          <span>240 items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">💻</div>
+          <p>Laptops</p>
+          <span>180 items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">🎧</div>
+          <p>Audio</p>
+          <span>320 items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">📺</div>
+          <p>TVs &amp; Screens</p>
+          <span>95 items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">👗</div>
+          <p>Women's Fashion</p>
+          <span>500+ items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">👔</div>
+          <p>Men's Fashion</p>
+          <span>450+ items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">👟</div>
+          <p>Footwear</p>
+          <span>380 items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">⌚</div>
+          <p>Watches</p>
+          <span>210 items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">🎮</div>
+          <p>Gaming</p>
+          <span>145 items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">📷</div>
+          <p>Cameras</p>
+          <span>88 items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">👜</div>
+          <p>Bags &amp; Purses</p>
+          <span>290 items</span>
+        </a>
+        <a href="products.html" class="category-card">
+          <div class="icon">💡</div>
+          <p>Smart Home</p>
+          <span>160 items</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>🔥 Featured Products</h2>
+        <p>Hand-picked deals just for you</p>
+        <div class="line"></div>
+      </div>
+      <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+          <span class="badge-label">SALE</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/0057b8/ffffff?text=iPhone+16" alt="iPhone 16 Pro Max" /></div>
+          <div class="product-info">
+            <p class="product-category">Smartphones</p>
+            <p class="product-name">Apple iPhone 16 Pro Max 256GB</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(214)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵14,500</span>
+              <span class="product-price-old">₵16,000</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <span class="badge-label new">NEW</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/003f8a/ffffff?text=Dell+XPS+15" alt="Dell XPS 15" /></div>
+          <div class="product-info">
+            <p class="product-category">Laptops</p>
+            <p class="product-name">Dell XPS 15 Core i7 16GB RAM 512GB SSD</p>
+            <div class="product-rating"><span class="stars">★★★★☆</span><span class="review-count">(89)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵8,200</span>
+              <span class="product-price-old">₵9,500</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <span class="badge-label hot">HOT</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/f5a623/1a1a2e?text=Nike+Air+Max" alt="Nike Air Max" /></div>
+          <div class="product-info">
+            <p class="product-category">Footwear</p>
+            <p class="product-name">Nike Air Max 270 React – Men's</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(342)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵890</span>
+              <span class="product-price-old">₵1,100</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/444466/ffffff?text=Samsung+65+TV" alt="Samsung Smart TV" /></div>
+          <div class="product-info">
+            <p class="product-category">TVs &amp; Screens</p>
+            <p class="product-name">Samsung 65" QLED 4K Smart TV 2024</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(57)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵6,800</span>
+              <span class="product-price-old">₵7,500</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <span class="badge-label">SALE</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/e65c00/ffffff?text=Ankara+Dress" alt="Ankara Dress" /></div>
+          <div class="product-info">
+            <p class="product-category">Women's Fashion</p>
+            <p class="product-name">Gorgeous Ankara Maxi Dress – Print A</p>
+            <div class="product-rating"><span class="stars">★★★★☆</span><span class="review-count">(128)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵350</span>
+              <span class="product-price-old">₵480</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <span class="badge-label new">NEW</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/1a1a2e/ffffff?text=Sony+WH-1000XM5" alt="Sony Headphones" /></div>
+          <div class="product-info">
+            <p class="product-category">Audio</p>
+            <p class="product-name">Sony WH-1000XM5 Noise Cancelling Headphones</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(496)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵3,200</span>
+              <span class="product-price-old">₵3,800</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/28a745/ffffff?text=Polo+Shirt" alt="Polo Shirt" /></div>
+          <div class="product-info">
+            <p class="product-category">Men's Fashion</p>
+            <p class="product-name">Premium Slim-Fit Polo Shirt – Navy Blue</p>
+            <div class="product-rating"><span class="stars">★★★★☆</span><span class="review-count">(73)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵180</span>
+              <span class="product-price-old">₵220</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <span class="badge-label hot">HOT</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/0057b8/ffffff?text=iPad+Pro" alt="iPad Pro" /></div>
+          <div class="product-info">
+            <p class="product-category">Tablets</p>
+            <p class="product-name">Apple iPad Pro 12.9" M4 Chip 256GB</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(188)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵10,800</span>
+              <span class="product-price-old">₵12,000</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/777799/ffffff?text=Handbag" alt="Leather Handbag" /></div>
+          <div class="product-info">
+            <p class="product-category">Bags &amp; Purses</p>
+            <p class="product-name">Genuine Leather Tote Handbag – Brown</p>
+            <div class="product-rating"><span class="stars">★★★★☆</span><span class="review-count">(95)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵620</span>
+              <span class="product-price-old">₵750</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+          <span class="badge-label">SALE</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/003f8a/ffffff?text=Samsung+S24" alt="Samsung Galaxy S24" /></div>
+          <div class="product-info">
+            <p class="product-category">Smartphones</p>
+            <p class="product-name">Samsung Galaxy S24 Ultra 512GB Titanium</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(301)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵13,200</span>
+              <span class="product-price-old">₵15,000</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:2.5rem;">
+        <a href="products.html" class="btn-primary">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO BANNERS -->
+  <section class="products-section alt">
+    <div class="container">
+      <div class="promo-grid">
+        <div class="promo-card blue">
+          <span class="tag">⚡ Flash Sale</span>
+          <h3>Up to 40% Off Electronics</h3>
+          <p>Limited time offers on smartphones, laptops, and accessories. Don't miss out!</p>
+          <a href="products.html" class="btn-white">Shop Electronics →</a>
+        </div>
+        <div class="promo-card orange">
+          <span class="tag">👗 New Collection</span>
+          <h3>Fresh Fashion Arrivals</h3>
+          <p>Discover the latest Ankara prints, African prints, and contemporary styles.</p>
+          <a href="products.html" class="btn-white">Explore Fashion →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW ARRIVALS -->
+  <section class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>🆕 New Arrivals</h2>
+        <p>The latest additions to our store</p>
+        <div class="line"></div>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <span class="badge-label new">NEW</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/0057b8/ffffff?text=MacBook+Air+M3" alt="MacBook Air M3" /></div>
+          <div class="product-info">
+            <p class="product-category">Laptops</p>
+            <p class="product-name">Apple MacBook Air M3 13" 8GB 256GB</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(62)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵11,500</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge-label new">NEW</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/e65c00/ffffff?text=Kente+Skirt" alt="Kente Skirt" /></div>
+          <div class="product-info">
+            <p class="product-category">Women's Fashion</p>
+            <p class="product-name">Kente Print A-Line Midi Skirt</p>
+            <div class="product-rating"><span class="stars">★★★★☆</span><span class="review-count">(41)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵280</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge-label new">NEW</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/1a1a2e/f5a623?text=Galaxy+Watch+7" alt="Galaxy Watch 7" /></div>
+          <div class="product-info">
+            <p class="product-category">Watches</p>
+            <p class="product-name">Samsung Galaxy Watch 7 44mm</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(38)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵2,900</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge-label new">NEW</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/28a745/ffffff?text=Adidas+Ultraboost" alt="Adidas Ultraboost" /></div>
+          <div class="product-info">
+            <p class="product-category">Footwear</p>
+            <p class="product-name">Adidas Ultraboost 24 Running Shoes</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(119)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵1,050</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge-label new">NEW</span>
+          <button class="wishlist-btn">♡</button>
+          <div class="product-img"><img src="https://placehold.co/200x200/003f8a/ffffff?text=PS5+Console" alt="PS5 Console" /></div>
+          <div class="product-info">
+            <p class="product-category">Gaming</p>
+            <p class="product-name">Sony PlayStation 5 Slim Console</p>
+            <div class="product-rating"><span class="stars">★★★★★</span><span class="review-count">(207)</span></div>
+            <div class="product-price-row">
+              <span class="product-price">₵4,500</span>
+            </div>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>📧 Subscribe &amp; Save</h2>
+      <p>Get exclusive deals, new arrivals, and Ghana-only offers straight to your inbox.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email address…" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">⚡ Smart<span>Buy</span> Ghana</a>
+          <p>Ghana's trusted online marketplace for electronics and fashion. Quality products, great prices, fast delivery to all 16 regions.</p>
+          <div class="social-links">
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="Instagram">in</a>
+            <a href="#" title="Twitter">t</a>
+            <a href="#" title="WhatsApp">w</a>
+            <a href="#" title="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">› Home</a></li>
+            <li><a href="products.html">› All Products</a></li>
+            <li><a href="product-details.html">› Today's Deals</a></li>
+            <li><a href="cart.html">› Shopping Cart</a></li>
+            <li><a href="contact.html">› Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">› Track Your Order</a></li>
+            <li><a href="#">› Return Policy</a></li>
+            <li><a href="#">› FAQs</a></li>
+            <li><a href="#">› Warranty Info</a></li>
+            <li><a href="#">› Size Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul>
+            <li><a href="tel:+233201234567">📞 +233 20 123 4567</a></li>
+            <li><a href="mailto:hello@smartbuyghana.com">✉ hello@smartbuyghana.com</a></li>
+            <li><a href="#">📍 Accra Mall, Ring Road, Accra</a></li>
+            <li><a href="#">🕐 Mon–Sat: 8am – 8pm</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 SmartBuy Ghana. All rights reserved. | <a href="#" style="color:#9aaac8;">Privacy Policy</a> | <a href="#" style="color:#9aaac8;">Terms</a></p>
+        <div class="payment-icons">
+          <span>Accepted Payments:</span>
+          <span class="pay-icon">MTN</span>
+          <span class="pay-icon">VISA</span>
+          <span class="pay-icon">MC</span>
+          <span class="pay-icon">VODAFONE</span>
+          <span class="pay-icon">AIRTEL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const ham = document.getElementById('hamburger');
+    const nav = document.getElementById('navLinks');
+    ham.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+
+</body>
+</html>

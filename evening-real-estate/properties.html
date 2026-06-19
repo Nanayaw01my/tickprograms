@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properties – Prime Homes Ghana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🏠</div>
+        <div class="logo-text">Prime Homes<br><span>Ghana</span></div>
+      </a>
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="properties.html" class="active">Properties</a></li>
+        <li><a href="property-details.html">Property Detail</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta btn">List Property</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE BANNER ===== -->
+  <div class="page-banner">
+    <div class="container">
+      <h1>All Properties</h1>
+      <p>Browse our complete portfolio of houses, apartments, and land across Ghana</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Properties</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <section style="padding:50px 0 80px;">
+    <div class="container">
+
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label>Property Type</label>
+          <select>
+            <option value="">All Types</option>
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Land</option>
+            <option>Commercial</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Location</label>
+          <select>
+            <option value="">All Locations</option>
+            <option>Accra</option>
+            <option>Kumasi</option>
+            <option>Takoradi</option>
+            <option>Tema</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Bedrooms</label>
+          <select>
+            <option value="">Any</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4+</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Min Price (₵)</label>
+          <input type="text" placeholder="e.g. 100,000" />
+        </div>
+        <div class="filter-group">
+          <label>Max Price (₵)</label>
+          <input type="text" placeholder="e.g. 2,000,000" />
+        </div>
+        <button class="btn btn-primary" onclick="return false;">Apply Filters</button>
+        <button class="btn btn-outline" onclick="return false;">Reset</button>
+      </div>
+
+      <!-- Results Info -->
+      <div class="results-info">
+        <p>Showing <strong>10 properties</strong> out of 1,067 results</p>
+        <select class="sort-select">
+          <option>Sort: Newest First</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+          <option>Most Popular</option>
+        </select>
+      </div>
+
+      <!-- Properties Grid (10 cards) -->
+      <div class="properties-grid">
+
+        <!-- Property 1 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/1a7f8e/ffffff?text=Luxury+Villa" alt="Luxury 5-Bedroom Villa" loading="lazy" />
+            <span class="card-badge badge-house">House</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Luxury 5-Bedroom Villa</div>
+            <div class="card-location">East Legon, Accra</div>
+            <div class="card-features">
+              <span>🛏 5 Beds</span>
+              <span>🚿 4 Baths</span>
+              <span>📐 450 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 3,200,000</div>
+              <div class="price-usd">≈ $215,000 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/0d1f3c/c9a84c?text=Modern+Apartment" alt="3-Bed Apartment" loading="lazy" />
+            <span class="card-badge badge-apartment">Apartment</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Modern 3-Bed Apartment</div>
+            <div class="card-location">Cantonments, Accra</div>
+            <div class="card-features">
+              <span>🛏 3 Beds</span>
+              <span>🚿 2 Baths</span>
+              <span>📐 180 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 1,450,000</div>
+              <div class="price-usd">≈ $97,500 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/6e9c3b/ffffff?text=Prime+Land" alt="Prime Land Kumasi" loading="lazy" />
+            <span class="card-badge badge-land">Land</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Prime Residential Land (2 Plots)</div>
+            <div class="card-location">Nhyiaeso, Kumasi</div>
+            <div class="card-features">
+              <span>📐 1,000 m²</span>
+              <span>🏷 Residential</span>
+              <span>📄 Freehold</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 480,000</div>
+              <div class="price-usd">≈ $32,200 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 4 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/2d5f7a/ffffff?text=Executive+House" alt="Executive 4-Bed House" loading="lazy" />
+            <span class="card-badge badge-house">House</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Executive 4-Bedroom House</div>
+            <div class="card-location">Airport Residential, Accra</div>
+            <div class="card-features">
+              <span>🛏 4 Beds</span>
+              <span>🚿 3 Baths</span>
+              <span>📐 320 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 2,100,000</div>
+              <div class="price-usd">≈ $141,000 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 5 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/4a3f7e/c9a84c?text=Studio+Apartment" alt="Studio Apartment Tema" loading="lazy" />
+            <span class="card-badge badge-apartment">Apartment</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Contemporary Studio Apartment</div>
+            <div class="card-location">Community 5, Tema</div>
+            <div class="card-features">
+              <span>🛏 1 Bed</span>
+              <span>🚿 1 Bath</span>
+              <span>📐 55 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 290,000</div>
+              <div class="price-usd">≈ $19,500 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 6 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/5d4a1a/c9a84c?text=Commercial+Land" alt="Commercial Land Takoradi" loading="lazy" />
+            <span class="card-badge badge-land">Land</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Commercial Land Plot</div>
+            <div class="card-location">Effiakuma, Takoradi</div>
+            <div class="card-features">
+              <span>📐 2,400 m²</span>
+              <span>🏷 Commercial</span>
+              <span>📄 Leasehold</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 850,000</div>
+              <div class="price-usd">≈ $57,100 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 7 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/1a5c7e/ffffff?text=Semi-Detached+House" alt="Semi-Detached House Kumasi" loading="lazy" />
+            <span class="card-badge badge-house">House</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Semi-Detached 3-Bedroom House</div>
+            <div class="card-location">Ahodwo, Kumasi</div>
+            <div class="card-features">
+              <span>🛏 3 Beds</span>
+              <span>🚿 2 Baths</span>
+              <span>📐 200 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 680,000</div>
+              <div class="price-usd">≈ $45,700 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 8 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/3a1f5c/e8c96b?text=Penthouse+Suite" alt="Penthouse Accra" loading="lazy" />
+            <span class="card-badge badge-apartment">Apartment</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Premium 4-Bed Penthouse Suite</div>
+            <div class="card-location">Ridge, Accra</div>
+            <div class="card-features">
+              <span>🛏 4 Beds</span>
+              <span>🚿 3 Baths</span>
+              <span>📐 280 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 4,500,000</div>
+              <div class="price-usd">≈ $302,400 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 9 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/3d7a1a/ffffff?text=Agricultural+Land" alt="Agricultural Land" loading="lazy" />
+            <span class="card-badge badge-land">Land</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Agricultural Land (5 Acres)</div>
+            <div class="card-location">Ejisu, Kumasi</div>
+            <div class="card-features">
+              <span>📐 20,234 m²</span>
+              <span>🏷 Agricultural</span>
+              <span>📄 Freehold</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 950,000</div>
+              <div class="price-usd">≈ $63,800 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 10 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/0d3f5c/ffffff?text=Townhouse" alt="Townhouse Takoradi" loading="lazy" />
+            <span class="card-badge badge-house">House</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Elegant 4-Bedroom Townhouse</div>
+            <div class="card-location">Sekondi Estate, Takoradi</div>
+            <div class="card-features">
+              <span>🛏 4 Beds</span>
+              <span>🚿 3 Baths</span>
+              <span>📐 260 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 1,780,000</div>
+              <div class="price-usd">≈ $119,600 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 11 (bonus) -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/1a7f5e/ffffff?text=2-Bed+Flat" alt="2-Bed Flat Spintex" loading="lazy" />
+            <span class="card-badge badge-apartment">Apartment</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Cosy 2-Bed Flat with Balcony</div>
+            <div class="card-location">Spintex Road, Accra</div>
+            <div class="card-features">
+              <span>🛏 2 Beds</span>
+              <span>🚿 2 Baths</span>
+              <span>📐 110 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 620,000</div>
+              <div class="price-usd">≈ $41,700 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+        <!-- Property 12 (bonus) -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/5c1a1a/e8c96b?text=Gated+Estate+Home" alt="Gated Estate Home" loading="lazy" />
+            <span class="card-badge badge-house">House</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Gated Estate 6-Bed Mansion</div>
+            <div class="card-location">Trasacco Valley, Accra</div>
+            <div class="card-features">
+              <span>🛏 6 Beds</span>
+              <span>🚿 5 Baths</span>
+              <span>📐 680 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 6,900,000</div>
+              <div class="price-usd">≈ $463,400 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Enquire</a>
+          </div>
+        </div>
+
+      </div><!-- end .properties-grid -->
+
+      <!-- Pagination -->
+      <div style="display:flex;justify-content:center;gap:8px;margin-top:50px;flex-wrap:wrap;">
+        <button class="btn" style="padding:10px 16px;background:var(--navy);color:#fff;font-size:.9rem;">← Prev</button>
+        <button class="btn" style="padding:10px 16px;background:var(--gold);color:var(--navy);font-size:.9rem;font-weight:700;">1</button>
+        <button class="btn btn-outline" style="padding:10px 16px;font-size:.9rem;">2</button>
+        <button class="btn btn-outline" style="padding:10px 16px;font-size:.9rem;">3</button>
+        <button class="btn btn-outline" style="padding:10px 16px;font-size:.9rem;">...</button>
+        <button class="btn btn-outline" style="padding:10px 16px;font-size:.9rem;">12</button>
+        <button class="btn" style="padding:10px 16px;background:var(--navy);color:#fff;font-size:.9rem;">Next →</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon">🏠</div>
+            <div class="logo-text">Prime Homes<br><span>Ghana</span></div>
+          </a>
+          <p>Ghana's most trusted real estate company. Helping individuals and families find, buy, sell, and rent properties across the country since 2012.</p>
+          <div class="social-links">
+            <div class="social-link">📘</div>
+            <div class="social-link">🐦</div>
+            <div class="social-link">📸</div>
+            <div class="social-link">▶️</div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Property Types</h4>
+          <ul>
+            <li><a href="properties.html">Houses for Sale</a></li>
+            <li><a href="properties.html">Apartments</a></li>
+            <li><a href="properties.html">Land Plots</a></li>
+            <li><a href="properties.html">Commercial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">📍 14 Nii Tackie Tawiah Street, East Legon, Accra</a></li>
+            <li><a href="tel:+233302123456">📞 +233 30 212 3456</a></li>
+            <li><a href="mailto:info@primehomesghana.com">✉️ info@primehomesghana.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Prime Homes Ghana. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

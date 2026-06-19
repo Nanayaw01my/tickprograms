@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Homes Ghana – Your Dream Property Awaits</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">🏠</div>
+        <div class="logo-text">Prime Homes<br><span>Ghana</span></div>
+      </a>
+      <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="property-details.html">Property Detail</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta btn">List Property</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Find Your <span>Perfect Home</span> in Ghana</h1>
+        <p>Discover premium houses, modern apartments, and prime land across Accra, Kumasi, Takoradi, and beyond. Trusted by thousands of Ghanaians.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <a href="properties.html" class="btn btn-primary" style="font-size:1rem;padding:14px 32px;">Browse Properties</a>
+          <a href="about.html" class="btn btn-outline" style="font-size:1rem;padding:14px 32px;">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">1,200+</div>
+            <div class="stat-label">Properties Listed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">850+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search Box -->
+      <div class="hero-search">
+        <h3>🔍 Search Properties</h3>
+        <div class="search-tabs">
+          <div class="search-tab active">Buy</div>
+          <div class="search-tab">Rent</div>
+          <div class="search-tab">Land</div>
+        </div>
+        <form class="search-form" onsubmit="return false;">
+          <select>
+            <option value="">Property Type</option>
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Land</option>
+            <option>Commercial</option>
+          </select>
+          <select>
+            <option value="">Location</option>
+            <option>Accra – East Legon</option>
+            <option>Accra – Cantonments</option>
+            <option>Accra – Tema</option>
+            <option>Kumasi – Nhyiaeso</option>
+            <option>Takoradi – Effiakuma</option>
+            <option>Kumasi – Ahodwo</option>
+          </select>
+          <select>
+            <option value="">Bedrooms</option>
+            <option>1 Bedroom</option>
+            <option>2 Bedrooms</option>
+            <option>3 Bedrooms</option>
+            <option>4+ Bedrooms</option>
+          </select>
+          <input type="text" placeholder="Max Budget (e.g. ₵500,000)" />
+          <button type="submit" class="btn btn-primary">Search Properties</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED PROPERTIES ===== -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hand-Picked</span>
+        <h2>Featured Properties</h2>
+        <p>Our agents have curated the finest residential and investment properties available right now.</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="properties-grid">
+
+        <!-- Card 1 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/1a7f8e/ffffff?text=Luxury+Villa" alt="Luxury 5-Bedroom Villa" loading="lazy" />
+            <span class="card-badge badge-house">House</span>
+            <span class="card-badge badge-featured" style="left:auto;right:50px;">Featured</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Luxury 5-Bedroom Villa</div>
+            <div class="card-location">East Legon, Accra</div>
+            <div class="card-features">
+              <span>🛏 5 Beds</span>
+              <span>🚿 4 Baths</span>
+              <span>📐 450 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 3,200,000</div>
+              <div class="price-usd">≈ $215,000 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Contact Agent</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/0d1f3c/c9a84c?text=Modern+Apartment" alt="Modern 3-Bed Apartment" loading="lazy" />
+            <span class="card-badge badge-apartment">Apartment</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Modern 3-Bed Apartment</div>
+            <div class="card-location">Cantonments, Accra</div>
+            <div class="card-features">
+              <span>🛏 3 Beds</span>
+              <span>🚿 2 Baths</span>
+              <span>📐 180 m²</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 1,450,000</div>
+              <div class="price-usd">≈ $97,500 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Contact Agent</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="property-card">
+          <div class="card-image">
+            <img src="https://placehold.co/400x280/6e9c3b/ffffff?text=Prime+Land" alt="Prime Residential Land" loading="lazy" />
+            <span class="card-badge badge-land">Land</span>
+            <div class="card-wishlist">♡</div>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Prime Residential Land (2 Plots)</div>
+            <div class="card-location">Nhyiaeso, Kumasi</div>
+            <div class="card-features">
+              <span>📐 1,000 m²</span>
+              <span>🏷 Residential</span>
+            </div>
+            <div class="card-price">
+              <div class="price-ghs">₵ 480,000</div>
+              <div class="price-usd">≈ $32,200 USD</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="property-details.html" class="btn btn-primary">View Details</a>
+            <a href="contact.html" class="btn btn-outline">Contact Agent</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:44px;">
+        <a href="properties.html" class="btn btn-teal" style="padding:14px 40px;font-size:1rem;">View All Properties →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Why Prime Homes Ghana</span>
+        <h2>The Smart Way to Buy Property</h2>
+        <p>We combine local expertise with modern tools so your property journey is smooth, secure, and stress-free.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔑</div>
+          <h3>Verified Listings</h3>
+          <p>Every property is inspected and legally verified before listing so you buy with absolute confidence.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💼</div>
+          <h3>Expert Agents</h3>
+          <p>Our licensed agents have deep knowledge of the Ghanaian real estate market to guide you at every step.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3>Title Deed Assistance</h3>
+          <p>We handle all land title verification, legal documentation, and Lands Commission registrations for you.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🏦</div>
+          <h3>Mortgage Partners</h3>
+          <p>We partner with leading Ghanaian banks to help you access the best mortgage rates available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROPERTY TYPES ===== -->
+  <section style="background:var(--off-white);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Browse By Type</span>
+        <h2>Explore Property Categories</h2>
+        <div class="divider"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+        <a href="properties.html" style="display:block;border-radius:var(--radius-lg);overflow:hidden;position:relative;box-shadow:var(--shadow);cursor:pointer;text-decoration:none;">
+          <img src="https://placehold.co/400x240/1a7f8e/ffffff?text=Houses" alt="Houses" style="width:100%;height:200px;object-fit:cover;" />
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,31,60,.85),transparent);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;">
+            <span style="color:var(--gold);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;">Residential</span>
+            <h3 style="color:#fff;font-size:1.4rem;font-weight:800;margin:4px 0 6px;">Houses</h3>
+            <span style="color:#a0bcd4;font-size:.85rem;">345 Listings Available</span>
+          </div>
+        </a>
+        <a href="properties.html" style="display:block;border-radius:var(--radius-lg);overflow:hidden;position:relative;box-shadow:var(--shadow);cursor:pointer;text-decoration:none;">
+          <img src="https://placehold.co/400x240/0d1f3c/c9a84c?text=Apartments" alt="Apartments" style="width:100%;height:200px;object-fit:cover;" />
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,31,60,.85),transparent);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;">
+            <span style="color:var(--gold);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;">Urban Living</span>
+            <h3 style="color:#fff;font-size:1.4rem;font-weight:800;margin:4px 0 6px;">Apartments</h3>
+            <span style="color:#a0bcd4;font-size:.85rem;">512 Listings Available</span>
+          </div>
+        </a>
+        <a href="properties.html" style="display:block;border-radius:var(--radius-lg);overflow:hidden;position:relative;box-shadow:var(--shadow);cursor:pointer;text-decoration:none;">
+          <img src="https://placehold.co/400x240/6e9c3b/ffffff?text=Land" alt="Land" style="width:100%;height:200px;object-fit:cover;" />
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,31,60,.85),transparent);display:flex;flex-direction:column;justify-content:flex-end;padding:24px;">
+            <span style="color:var(--gold);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;">Investment</span>
+            <h3 style="color:#fff;font-size:1.4rem;font-weight:800;margin:4px 0 6px;">Land Plots</h3>
+            <span style="color:#a0bcd4;font-size:.85rem;">210 Listings Available</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Stories</span>
+        <h2>What Our Clients Say</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">Prime Homes Ghana made the entire process of buying our first home seamless. Their agents were knowledgeable, patient, and truly had our best interests at heart.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">KA</div>
+            <div>
+              <div class="author-name">Kwame Asante</div>
+              <div class="author-title">Homeowner, East Legon</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">I was in the UK looking to invest in Ghana. Prime Homes Ghana handled everything remotely and I received my title deed within 3 months. Absolutely outstanding service!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">AB</div>
+            <div>
+              <div class="author-name">Abena Boateng</div>
+              <div class="author-title">Diaspora Investor, UK</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">We sold our Kumasi property in just 6 weeks. Their marketing reach is incredible. The team was professional from valuation to signing. Highly recommended!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">EO</div>
+            <div>
+              <div class="author-name">Emmanuel Ofori</div>
+              <div class="author-title">Property Seller, Kumasi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2>Ready to Find Your Dream Home?</h2>
+      <p>Speak to one of our expert property consultants today — no obligation, just great advice.</p>
+      <div class="cta-actions">
+        <a href="properties.html" class="btn btn-primary" style="padding:14px 36px;font-size:1rem;">Browse Properties</a>
+        <a href="contact.html" class="btn btn-outline" style="padding:14px 36px;font-size:1rem;">Talk to an Agent</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:0;">
+            <div class="logo-icon">🏠</div>
+            <div class="logo-text">Prime Homes<br><span>Ghana</span></div>
+          </a>
+          <p>Ghana's most trusted real estate company. Helping individuals and families find, buy, sell, and rent properties across the country since 2012.</p>
+          <div class="social-links">
+            <div class="social-link">📘</div>
+            <div class="social-link">🐦</div>
+            <div class="social-link">📸</div>
+            <div class="social-link">▶️</div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog & News</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Property Types</h4>
+          <ul>
+            <li><a href="properties.html">Houses for Sale</a></li>
+            <li><a href="properties.html">Apartments</a></li>
+            <li><a href="properties.html">Land Plots</a></li>
+            <li><a href="properties.html">Commercial</a></li>
+            <li><a href="properties.html">Short Stay Rentals</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">📍 14 Nii Tackie Tawiah Street, East Legon, Accra</a></li>
+            <li><a href="tel:+233302123456">📞 +233 30 212 3456</a></li>
+            <li><a href="mailto:info@primehomesghana.com">✉️ info@primehomesghana.com</a></li>
+            <li><a href="#">🕐 Mon–Fri: 8am – 6pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Prime Homes Ghana. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('open');
+    }
+    // Search tabs interactivity
+    document.querySelectorAll('.search-tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        this.closest('.hero-search').querySelectorAll('.search-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

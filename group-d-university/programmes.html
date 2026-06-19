@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Programmes | Dept. of Computer Science</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="container">
+      <span>&#128205; P.O. Box GD-001, Accra, Ghana &nbsp;|&nbsp; &#9742; +233 30 295 0000</span>
+      <span>
+        <a href="mailto:cs@groupd.edu.gh">cs@groupd.edu.gh</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#">Student Portal</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#">Staff Email</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <div class="logo-icon">&#127979;</div>
+        <div class="nav-brand-text">
+          <span class="dept">Group D University</span>
+          <span class="name">Dept. of Computer Science</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-menu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="programmes.html" class="nav-link active">Programmes</a></li>
+        <li><a href="staff.html" class="nav-link">Staff</a></li>
+        <li><a href="news.html" class="nav-link">News &amp; Events</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner">
+    <div class="container">
+      <h1>Academic Programmes</h1>
+      <p>Discover our diverse range of undergraduate, postgraduate, and doctoral programmes designed to launch your tech career.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span>&#8250;</span>
+        <span>Programmes</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- PROGRAMMES INTRO -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Our Programmes</h2>
+      <p class="section-subtitle">
+        We offer accredited, internationally recognised programmes at multiple levels —
+        from HND through to PhD — all designed with industry relevance at their core.
+      </p>
+
+      <!-- UNDERGRADUATE -->
+      <div style="margin-bottom: 56px;">
+        <h3 style="font-size:1.3rem; color:var(--navy); margin-bottom:8px; border-left:4px solid var(--gold); padding-left:14px;">
+          Undergraduate Programmes
+        </h3>
+        <p style="color:var(--gray); margin-bottom:0; padding-left:18px; font-size:0.93rem;">4-year degree programmes leading to a Bachelor of Science award</p>
+      </div>
+
+      <div class="programmes-grid" style="margin-top:0;">
+
+        <!-- BSc CS -->
+        <div class="programme-card">
+          <div class="programme-header">
+            <span class="badge badge-gold">BSc</span>
+            <h3>Computer Science</h3>
+            <div class="duration">&#128336; 4 Years &nbsp;|&nbsp; Full-time</div>
+          </div>
+          <div class="programme-body">
+            <p>
+              Our flagship programme equips students with a rigorous foundation in computer science theory,
+              algorithms, and systems programming alongside practical software development skills.
+            </p>
+            <ul class="module-list">
+              <li>Introduction to Programming (Python/C++)</li>
+              <li>Data Structures &amp; Algorithms</li>
+              <li>Operating Systems</li>
+              <li>Database Systems</li>
+              <li>Computer Networks</li>
+              <li>Artificial Intelligence</li>
+              <li>Software Engineering</li>
+              <li>Final Year Research Project</li>
+            </ul>
+            <p class="entry-req">&#128196; Entry: WASSCE with minimum of C6 in Mathematics &amp; Core English, plus 3 electives</p>
+          </div>
+          <div class="programme-footer">
+            <span>Intake: September</span>
+            <span class="badge badge-green">Accredited</span>
+          </div>
+        </div>
+
+        <!-- BSc Software Eng -->
+        <div class="programme-card">
+          <div class="programme-header">
+            <span class="badge badge-gold">BSc</span>
+            <h3>Software Engineering</h3>
+            <div class="duration">&#128336; 4 Years &nbsp;|&nbsp; Full-time</div>
+          </div>
+          <div class="programme-body">
+            <p>
+              Focuses on the systematic design, development, testing, and maintenance of large-scale
+              software systems. Combines software process models with hands-on project work.
+            </p>
+            <ul class="module-list">
+              <li>Software Requirements Engineering</li>
+              <li>Object-Oriented Design &amp; UML</li>
+              <li>Agile &amp; DevOps Practices</li>
+              <li>Mobile Application Development</li>
+              <li>Web Technologies (Full Stack)</li>
+              <li>Software Testing &amp; QA</li>
+              <li>Cloud Computing &amp; Microservices</li>
+              <li>Capstone Industry Project</li>
+            </ul>
+            <p class="entry-req">&#128196; Entry: WASSCE with minimum of C6 in Mathematics &amp; Core English, plus 3 electives</p>
+          </div>
+          <div class="programme-footer">
+            <span>Intake: September</span>
+            <span class="badge badge-green">Accredited</span>
+          </div>
+        </div>
+
+        <!-- BSc Cybersecurity -->
+        <div class="programme-card">
+          <div class="programme-header">
+            <span class="badge badge-gold">BSc</span>
+            <h3>Cybersecurity &amp; Digital Forensics</h3>
+            <div class="duration">&#128336; 4 Years &nbsp;|&nbsp; Full-time</div>
+          </div>
+          <div class="programme-body">
+            <p>
+              Addresses the growing global demand for cybersecurity professionals. Students learn to
+              design secure systems, conduct threat analysis, and investigate digital crimes.
+            </p>
+            <ul class="module-list">
+              <li>Network Security Fundamentals</li>
+              <li>Ethical Hacking &amp; Penetration Testing</li>
+              <li>Digital Forensics Investigation</li>
+              <li>Cryptography &amp; Public Key Infrastructure</li>
+              <li>Security Policy &amp; Governance</li>
+              <li>Incident Response &amp; Recovery</li>
+              <li>Malware Analysis</li>
+              <li>Industry Internship (6 months)</li>
+            </ul>
+            <p class="entry-req">&#128196; Entry: WASSCE with minimum of C6 in Mathematics &amp; Core English, plus 3 electives</p>
+          </div>
+          <div class="programme-footer">
+            <span>Intake: September</span>
+            <span class="badge badge-green">Accredited</span>
+          </div>
+        </div>
+
+      </div><!-- /programmes-grid undergraduate -->
+
+      <!-- HND -->
+      <div style="margin-bottom: 32px; margin-top: 64px;">
+        <h3 style="font-size:1.3rem; color:var(--navy); margin-bottom:8px; border-left:4px solid var(--gold); padding-left:14px;">
+          Higher National Diploma (HND) Programmes
+        </h3>
+        <p style="color:var(--gray); margin-bottom:0; padding-left:18px; font-size:0.93rem;">2-year programmes leading to the award of Higher National Diploma</p>
+      </div>
+
+      <div class="programmes-grid" style="margin-top:0;">
+
+        <!-- HND CS -->
+        <div class="programme-card">
+          <div class="programme-header" style="background: linear-gradient(135deg, #1a3580, #2c4fa8);">
+            <span class="badge badge-gold">HND</span>
+            <h3>Computer Science</h3>
+            <div class="duration">&#128336; 2 Years &nbsp;|&nbsp; Full-time</div>
+          </div>
+          <div class="programme-body">
+            <p>
+              A practical, skills-based programme covering core computing concepts, programming,
+              and information systems. Ideal for students seeking a rapid pathway into industry.
+            </p>
+            <ul class="module-list">
+              <li>Computer Fundamentals &amp; Architecture</li>
+              <li>Programming Essentials (Python)</li>
+              <li>Database Design &amp; SQL</li>
+              <li>Web Design &amp; Development</li>
+              <li>Networking Basics</li>
+              <li>IT Project Management</li>
+            </ul>
+            <p class="entry-req">&#128196; Entry: WASSCE with minimum of D7 in Mathematics &amp; passes in 3 electives</p>
+          </div>
+          <div class="programme-footer">
+            <span>Intake: September / January</span>
+            <span class="badge badge-green">Accredited</span>
+          </div>
+        </div>
+
+        <!-- HND IT -->
+        <div class="programme-card">
+          <div class="programme-header" style="background: linear-gradient(135deg, #1a3580, #2c4fa8);">
+            <span class="badge badge-gold">HND</span>
+            <h3>Information Technology</h3>
+            <div class="duration">&#128336; 2 Years &nbsp;|&nbsp; Full-time</div>
+          </div>
+          <div class="programme-body">
+            <p>
+              Focuses on the application of IT in business environments. Covers systems analysis,
+              enterprise software, IT support, and digital communication.
+            </p>
+            <ul class="module-list">
+              <li>Systems Analysis &amp; Design</li>
+              <li>Enterprise Resource Planning</li>
+              <li>IT Infrastructure &amp; Support</li>
+              <li>E-Commerce &amp; Digital Marketing</li>
+              <li>Spreadsheet &amp; Database Applications</li>
+              <li>Professional IT Practice</li>
+            </ul>
+            <p class="entry-req">&#128196; Entry: WASSCE with minimum of D7 in Mathematics &amp; passes in 3 electives</p>
+          </div>
+          <div class="programme-footer">
+            <span>Intake: September / January</span>
+            <span class="badge badge-green">Accredited</span>
+          </div>
+        </div>
+
+      </div><!-- /HND grid -->
+
+      <!-- POSTGRADUATE -->
+      <div style="margin-bottom: 32px; margin-top: 64px;">
+        <h3 style="font-size:1.3rem; color:var(--navy); margin-bottom:8px; border-left:4px solid var(--gold); padding-left:14px;">
+          Postgraduate Programmes
+        </h3>
+        <p style="color:var(--gray); margin-bottom:0; padding-left:18px; font-size:0.93rem;">Advanced academic and research degrees</p>
+      </div>
+
+      <div class="programmes-grid" style="margin-top:0;">
+
+        <!-- MSc CS -->
+        <div class="programme-card">
+          <div class="programme-header" style="background: linear-gradient(135deg, #060f30, #0a1f5c);">
+            <span class="badge badge-gold">MSc</span>
+            <h3>Computer Science</h3>
+            <div class="duration">&#128336; 2 Years &nbsp;|&nbsp; Full-time / Part-time</div>
+          </div>
+          <div class="programme-body">
+            <p>
+              A research-intensive Master's programme allowing students to specialise in
+              Artificial Intelligence, Data Science, Networks, or Information Security.
+            </p>
+            <ul class="module-list">
+              <li>Advanced Algorithms &amp; Complexity</li>
+              <li>Machine Learning &amp; Deep Learning</li>
+              <li>Big Data Analytics</li>
+              <li>Research Methodology</li>
+              <li>Specialisation Electives</li>
+              <li>Master's Thesis / Dissertation</li>
+            </ul>
+            <p class="entry-req">&#128196; Entry: BSc Computer Science (2nd Class Lower or above) or equivalent</p>
+          </div>
+          <div class="programme-footer">
+            <span>Intake: September</span>
+            <span class="badge badge-green">Accredited</span>
+          </div>
+        </div>
+
+        <!-- PhD -->
+        <div class="programme-card">
+          <div class="programme-header" style="background: linear-gradient(135deg, #060f30, #0a1f5c);">
+            <span class="badge badge-gold">PhD</span>
+            <h3>Computer Science</h3>
+            <div class="duration">&#128336; 3–5 Years &nbsp;|&nbsp; Full-time</div>
+          </div>
+          <div class="programme-body">
+            <p>
+              Our doctoral programme offers candidates the opportunity to conduct original research
+              that advances the frontiers of computer science under the supervision of world-class
+              faculty.
+            </p>
+            <ul class="module-list">
+              <li>Doctoral Research Seminars</li>
+              <li>Advanced Topics in Computing</li>
+              <li>Peer-Reviewed Publication (minimum 2)</li>
+              <li>International Conference Presentations</li>
+              <li>PhD Thesis &amp; Oral Defence</li>
+            </ul>
+            <p class="entry-req">&#128196; Entry: MSc in Computer Science or closely related field</p>
+          </div>
+          <div class="programme-footer">
+            <span>Rolling Intake</span>
+            <span class="badge badge-green">Accredited</span>
+          </div>
+        </div>
+
+      </div><!-- /PG grid -->
+
+    </div>
+  </section>
+
+  <!-- ADMISSION CTA -->
+  <section class="section" style="text-align:center; background: linear-gradient(135deg, var(--navy-dark), var(--navy-light)); color: var(--white);">
+    <div class="container">
+      <h2 style="font-size:2rem; margin-bottom:14px;">Ready to Join Us?</h2>
+      <p style="color:rgba(255,255,255,0.8); max-width:520px; margin:0 auto 32px; font-size:1.05rem;">
+        Applications are open for the 2026/2027 academic year. Take the first step toward your future in technology.
+      </p>
+      <a href="contact.html" class="btn btn-primary" style="margin-right:14px;">Apply Now</a>
+      <a href="contact.html" class="btn btn-outline">Enquire</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-row">
+            <div class="footer-logo-icon">&#127979;</div>
+            <div>
+              <div class="name">Dept. of Computer Science</div>
+              <div class="sub">Group D University, Accra</div>
+            </div>
+          </div>
+          <p>Nurturing the next generation of technology innovators and leaders since 1994.</p>
+          <div class="social-links">
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="Twitter">t</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="YouTube">&#9654;</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programmes.html">Programmes</a></li>
+            <li><a href="staff.html">Our Staff</a></li>
+            <li><a href="news.html">News &amp; Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programmes</h4>
+          <ul>
+            <li><a href="programmes.html">BSc Computer Science</a></li>
+            <li><a href="programmes.html">HND Computer Science</a></li>
+            <li><a href="programmes.html">MSc Computer Science</a></li>
+            <li><a href="programmes.html">BSc Software Eng.</a></li>
+            <li><a href="programmes.html">PhD Computer Science</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><span>&#128205;</span><span>Block C, Main Campus, P.O. Box GD-001, Accra, Ghana</span></li>
+            <li><span>&#9742;</span><span>+233 30 295 0000</span></li>
+            <li><span>&#128231;</span><span>cs@groupd.edu.gh</span></li>
+            <li><span>&#128336;</span><span>Mon – Fri: 8:00am – 5:00pm</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; 2026 Department of Computer Science, Group D University. All rights reserved.
+        &nbsp;|&nbsp; <a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
