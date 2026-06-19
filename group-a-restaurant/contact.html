@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Flight Delight Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-name">✈ Flight Delight</span>
+        <span class="logo-tagline">Fine Dining · Sunyani</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <div class="page-hero">
+    <h1>Get in Touch</h1>
+    <p>We'd love to hear from you — for reservations, events, or just a hello.</p>
+  </div>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" style="background: var(--cream);">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <!-- INFO COLUMN -->
+        <div class="contact-info">
+          <h2>Visit Us in Sunyani</h2>
+          <p>Drop by our restaurant on Asuah Road or reach out through any of the channels below. Our team is happy to assist with bookings, special dietary needs, and private event enquiries.</p>
+
+          <div class="contact-detail">
+            <div class="contact-icon">📍</div>
+            <div class="contact-detail-text">
+              <h4>Location</h4>
+              <p>Asuah Road, Sunyani<br />Bono Region, Ghana</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">📞</div>
+            <div class="contact-detail-text">
+              <h4>Phone</h4>
+              <p>+233 24 000 0000<br />+233 50 000 0000</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-detail-text">
+              <h4>Email</h4>
+              <p>hello@flightdelight.gh<br />events@flightdelight.gh</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-detail-text">
+              <h4>Opening Hours</h4>
+              <p>
+                Mon – Fri: 7:00am – 10:00pm<br />
+                Saturday: 8:00am – 11:00pm<br />
+                Sunday: 9:00am – 9:00pm<br />
+                Public Holidays: 10:00am – 8:00pm
+              </p>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="map-placeholder">
+            <img src="https://placehold.co/480x240/e8d5c0/8b5e3c?text=Map+%E2%80%93+Asuah+Road%2C+Sunyani" alt="Map of Flight Delight location on Asuah Road, Sunyani" style="width:100%; display:block;" />
+          </div>
+        </div>
+
+        <!-- FORM COLUMN -->
+        <div class="contact-form-box">
+          <h2>Send Us a Message</h2>
+
+          <form action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Ama" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Kyei" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+233 24 000 0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="" disabled selected>Select a subject...</option>
+                <option value="reservation">Table Reservation</option>
+                <option value="private-event">Private Event Booking</option>
+                <option value="catering">Catering Enquiry</option>
+                <option value="feedback">Feedback / Compliment</option>
+                <option value="complaint">Complaint</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Number of Guests (if booking)</label>
+              <input type="number" id="guests" name="guests" min="1" max="200" placeholder="e.g. 4" />
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help you..."></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem; padding:1rem;">
+                Send Message ✈
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUICK INFO STRIP ===== -->
+  <section class="section features" style="padding: 0; border-top: none;">
+    <div class="section-inner">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🪑</div>
+          <h3>Walk-Ins Welcome</h3>
+          <p>No booking needed for tables of 1–4, subject to availability</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🎂</div>
+          <h3>Special Occasions</h3>
+          <p>Let us make birthdays and anniversaries unforgettable</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🚗</div>
+          <h3>Free Parking</h3>
+          <p>Spacious car park available for all our guests</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">♿</div>
+          <h3>Fully Accessible</h3>
+          <p>Our premises are wheelchair accessible throughout</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-name">✈ Flight Delight</span>
+            <span class="logo-tagline">Fine Dining · Sunyani</span>
+          </div>
+          <p>Bringing joy, warmth and world-class flavours to the heart of Sunyani since 2010. Every dish is a journey.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li><a>Mon – Fri: 7am – 10pm</a></li>
+            <li><a>Saturday: 8am – 11pm</a></li>
+            <li><a>Sunday: 9am – 9pm</a></li>
+            <li><a>Public Holidays: 10am – 8pm</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            Asuah Road, Sunyani<br />
+            Bono Region, Ghana<br /><br />
+            📞 +233 24 000 0000<br />
+            ✉ hello@flightdelight.gh
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Flight Delight Restaurant, Sunyani. All rights reserved. | Designed with ❤️ in Ghana</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

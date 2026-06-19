@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Flight Delight Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Extra gallery layout rules */
+    .gallery-masonry {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 220px;
+      gap: 1.25rem;
+    }
+
+    .gallery-masonry .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-masonry .tall {
+      grid-row: span 2;
+    }
+
+    .gallery-masonry .wide {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-masonry {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 180px;
+      }
+      .gallery-masonry .wide {
+        grid-column: span 1;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-masonry {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+      }
+      .gallery-masonry .tall {
+        grid-row: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-name">✈ Flight Delight</span>
+        <span class="logo-tagline">Fine Dining · Sunyani</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== GALLERY HERO ===== -->
+  <div class="gallery-hero">
+    <h1>Food Gallery</h1>
+    <p>A visual journey through our kitchen — beautiful food, warm spaces and happy faces.</p>
+  </div>
+
+  <!-- ===== GALLERY GRID ===== -->
+  <section class="section" style="background: var(--cream);">
+    <div class="section-inner">
+
+      <div class="section-header">
+        <span class="section-label">Our Food &amp; Ambiance</span>
+        <h2>Captured Moments</h2>
+        <div class="divider"></div>
+        <p>Every image tells the story of a meal made with love and served with pride.</p>
+      </div>
+
+      <div class="gallery-masonry">
+
+        <!-- Row 1 -->
+        <div class="gallery-item tall">
+          <img src="https://placehold.co/400x500/c0392b/ffffff?text=Jollof+Rice+Special" alt="Jollof Rice Special" />
+          <div class="gallery-overlay"><span>Party Jollof Rice</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/e67e22/ffffff?text=Grilled+Tilapia" alt="Grilled Tilapia" />
+          <div class="gallery-overlay"><span>Grilled Tilapia</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/d35400/ffffff?text=Kelewele+Platter" alt="Kelewele Platter" />
+          <div class="gallery-overlay"><span>Kelewele Platter</span></div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="gallery-item wide">
+          <img src="https://placehold.co/820x220/8b2500/ffffff?text=Restaurant+Interior" alt="Restaurant Interior" />
+          <div class="gallery-overlay"><span>Our Dining Room</span></div>
+        </div>
+
+        <div class="gallery-item tall">
+          <img src="https://placehold.co/400x500/922b21/ffffff?text=Fufu+%26+Soup" alt="Fufu and Light Soup" />
+          <div class="gallery-overlay"><span>Fufu &amp; Light Soup</span></div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/f39c12/2c1810?text=Waakye+Bowl" alt="Waakye Bowl" />
+          <div class="gallery-overlay"><span>Premium Waakye</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/7b241c/ffffff?text=Kontomire+Stew" alt="Kontomire Stew" />
+          <div class="gallery-overlay"><span>Kontomire Stew</span></div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/e74c3c/ffffff?text=Chicken+Pasta" alt="Chicken Pasta" />
+          <div class="gallery-overlay"><span>Creamy Chicken Pasta</span></div>
+        </div>
+
+        <div class="gallery-item wide">
+          <img src="https://placehold.co/820x220/a04000/ffffff?text=Event+Dining+Setup" alt="Event Dining Setup" />
+          <div class="gallery-overlay"><span>Private Event Setup</span></div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="gallery-item tall">
+          <img src="https://placehold.co/400x500/c0392b/ffffff?text=Chef+at+Work" alt="Chef at Work" />
+          <div class="gallery-overlay"><span>Our Chef at Work</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/d35400/ffffff?text=Chocolate+Cake" alt="Chocolate Lava Cake" />
+          <div class="gallery-overlay"><span>Chocolate Lava Cake</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/f0a500/2c1810?text=Sobolo+Drink" alt="Sobolo Drink" />
+          <div class="gallery-overlay"><span>Chilled Sobolo</span></div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/8b2500/ffffff?text=Pepper+Soup" alt="Pepper Soup" />
+          <div class="gallery-overlay"><span>Goat Pepper Soup</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/e67e22/ffffff?text=Pineapple+Dessert" alt="Grilled Pineapple" />
+          <div class="gallery-overlay"><span>Grilled Pineapple</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/2c1810/e67e22?text=Outdoor+Seating" alt="Outdoor Seating" />
+          <div class="gallery-overlay"><span>Outdoor Terrace</span></div>
+        </div>
+
+        <!-- Row 7 -->
+        <div class="gallery-item wide">
+          <img src="https://placehold.co/820x220/c0392b/ffffff?text=Birthday+Celebration" alt="Birthday Celebration" />
+          <div class="gallery-overlay"><span>Celebrations &amp; Events</span></div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://placehold.co/400x220/784212/ffffff?text=Coffee+%26+Snacks" alt="Coffee and Snacks" />
+          <div class="gallery-overlay"><span>Morning Coffee</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-banner">
+    <h2>Taste What You See</h2>
+    <p>Every photo is an invitation. Come in and experience it all first-hand in Sunyani.</p>
+    <a href="menu.html" class="btn btn-white">Browse Our Menu</a>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-name">✈ Flight Delight</span>
+            <span class="logo-tagline">Fine Dining · Sunyani</span>
+          </div>
+          <p>Bringing joy, warmth and world-class flavours to the heart of Sunyani since 2010. Every dish is a journey.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul>
+            <li><a>Mon – Fri: 7am – 10pm</a></li>
+            <li><a>Saturday: 8am – 11pm</a></li>
+            <li><a>Sunday: 9am – 9pm</a></li>
+            <li><a>Public Holidays: 10am – 8pm</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            Asuah Road, Sunyani<br />
+            Bono Region, Ghana<br /><br />
+            📞 +233 24 000 0000<br />
+            ✉ hello@flightdelight.gh
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Flight Delight Restaurant, Sunyani. All rights reserved. | Designed with ❤️ in Ghana</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
