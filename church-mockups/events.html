@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — Truth Faith Rainbow Ministry</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="tel:+1234567890"><i class="fas fa-phone"></i> +1 (234) 567-890</a>
+        <a href="mailto:info@tfrministry.org"><i class="fas fa-envelope"></i> info@tfrministry.org</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> 12 Rainbow Avenue, Faith City</a>
+      </div>
+      <div class="top-bar-right">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fas fa-cross"></i></div>
+        <div class="nav-logo-text">
+          <strong>Truth Faith Rainbow</strong>
+          <span>Ministry</span>
+        </div>
+      </a>
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Sermons</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="#">Ministries</a>
+        <a href="#">Contact</a>
+        <a href="#" class="btn-give"><i class="fas fa-heart"></i> Give</a>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-label">Stay Connected</span>
+      <h1>Upcoming Events</h1>
+      <p>Never miss a moment — join us for worship, fellowship, and community impact.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Events</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Page Content -->
+  <section class="events-page-section">
+    <div class="container">
+
+      <!-- Featured Event -->
+      <div class="featured-event">
+        <div class="featured-event-img">
+          <i class="fas fa-star" style="font-size:4rem; color:rgba(255,255,255,0.3);"></i>
+          <span>Featured Event Image</span>
+        </div>
+        <div class="featured-event-body">
+          <div class="featured-tag"><i class="fas fa-fire"></i> Featured Event</div>
+          <h2>Annual Convention 2026 — "Rising in Glory"</h2>
+          <div class="featured-event-meta">
+            <div class="featured-event-meta-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>July 14 – 18, 2026 (5 Days)</span>
+            </div>
+            <div class="featured-event-meta-item">
+              <i class="fas fa-clock"></i>
+              <span>9:00 AM – 10:00 PM Daily</span>
+            </div>
+            <div class="featured-event-meta-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Main Auditorium, 12 Rainbow Avenue, Faith City</span>
+            </div>
+            <div class="featured-event-meta-item">
+              <i class="fas fa-user-tie"></i>
+              <span>Guest Ministers from Ghana, Nigeria, USA &amp; UK</span>
+            </div>
+          </div>
+          <p>
+            Our much-anticipated Annual Convention is back! This year's theme — "Rising in Glory" — is a prophetic declaration over every attendee. Expect power-packed sessions, supernatural healings, divine encounters, and soul-stirring worship every day. This is the event of the year — bring your family, friends, and neighbours.
+          </p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="#" class="btn btn-primary"><i class="fas fa-ticket-alt"></i> Register Now</a>
+            <a href="#" class="btn btn-purple"><i class="fas fa-share-alt"></i> Share Event</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Events List -->
+      <div class="section-head" style="text-align:left; margin-bottom:28px;">
+        <span class="section-label">All Upcoming Events</span>
+        <h2 class="section-title">What's Coming Up</h2>
+      </div>
+
+      <div class="events-list">
+
+        <!-- Event 1 -->
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="day">28</span>
+            <span class="month">Jun</span>
+          </div>
+          <div class="event-list-info">
+            <h3>Water Baptism Service</h3>
+            <div class="event-list-meta">
+              <span><i class="fas fa-clock"></i> 11:00 AM – 1:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Baptismal Pool, Church Premises</span>
+              <span><i class="fas fa-tag"></i> Baptism</span>
+            </div>
+            <p>Join us as members publicly declare their faith through the sacred ordinance of water baptism. A joyful and powerful service open to all. Contact the church office if you wish to be baptised.</p>
+          </div>
+          <a href="#" class="btn btn-purple">Learn More</a>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="day">05</span>
+            <span class="month">Jul</span>
+          </div>
+          <div class="event-list-info">
+            <h3>Community Outreach Day</h3>
+            <div class="event-list-meta">
+              <span><i class="fas fa-clock"></i> 8:00 AM – 3:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Community Grounds, East Faith City</span>
+              <span><i class="fas fa-tag"></i> Outreach</span>
+            </div>
+            <p>A day of love in action — serving our community with free food parcels, healthcare screenings, children's activities, and heartfelt prayer. Volunteers welcome, sign up today!</p>
+          </div>
+          <a href="#" class="btn btn-purple">Learn More</a>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="day">14</span>
+            <span class="month">Jul</span>
+          </div>
+          <div class="event-list-info">
+            <h3>Annual Convention 2026 — Rising in Glory (Day 1)</h3>
+            <div class="event-list-meta">
+              <span><i class="fas fa-clock"></i> 9:00 AM – 10:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Main Auditorium</span>
+              <span><i class="fas fa-tag"></i> Convention</span>
+            </div>
+            <p>Opening night of our 5-day annual convention with prophetic declarations, powerful worship, and a kingdom-shifting message. Doors open at 8:30 AM.</p>
+          </div>
+          <a href="#" class="btn btn-purple">Learn More</a>
+        </div>
+
+        <!-- Event 4 -->
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="day">19</span>
+            <span class="month">Jul</span>
+          </div>
+          <div class="event-list-info">
+            <h3>Youth Leadership Summit 2026</h3>
+            <div class="event-list-meta">
+              <span><i class="fas fa-clock"></i> 10:00 AM – 5:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Youth Hall, Church Premises</span>
+              <span><i class="fas fa-tag"></i> Youth</span>
+            </div>
+            <p>Equipping the next generation of leaders with tools, mentorship, and spiritual empowerment. Open to all young people aged 13–35. Guest speakers from across the region.</p>
+          </div>
+          <a href="#" class="btn btn-purple">Learn More</a>
+        </div>
+
+        <!-- Event 5 -->
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="day">02</span>
+            <span class="month">Aug</span>
+          </div>
+          <div class="event-list-info">
+            <h3>Women's Ministry Breakfast — "She Is Clothed in Strength"</h3>
+            <div class="event-list-meta">
+              <span><i class="fas fa-clock"></i> 9:00 AM – 12:00 PM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Fellowship Hall</span>
+              <span><i class="fas fa-tag"></i> Women's Ministry</span>
+            </div>
+            <p>A beautiful morning of inspiration, empowerment, and sisterhood. Featuring a keynote address, worship, and a lovely breakfast. Ladies of all ages warmly invited.</p>
+          </div>
+          <a href="#" class="btn btn-purple">Learn More</a>
+        </div>
+
+        <!-- Event 6 -->
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="day">16</span>
+            <span class="month">Aug</span>
+          </div>
+          <div class="event-list-info">
+            <h3>Men's Breakfast &amp; Prayer Summit</h3>
+            <div class="event-list-meta">
+              <span><i class="fas fa-clock"></i> 7:00 AM – 11:00 AM</span>
+              <span><i class="fas fa-map-marker-alt"></i> Main Hall</span>
+              <span><i class="fas fa-tag"></i> Men's Ministry</span>
+            </div>
+            <p>Men coming together to pray, share, and be equipped. A morning of fellowship, teaching, and intercession over families, businesses, and the nation.</p>
+          </div>
+          <a href="#" class="btn btn-purple">Learn More</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="footer-logo-icon"><i class="fas fa-cross"></i></div>
+            <div class="footer-logo-text">
+              <strong>Truth Faith Rainbow Ministry</strong>
+              <span>Where Faith Meets Purpose</span>
+            </div>
+          </div>
+          <p class="footer-about">A Spirit-filled, Bible-believing church committed to proclaiming the Gospel and transforming lives through the love of Christ.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Sermons</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service Times</h4>
+          <div class="footer-time-item"><span>Sunday Morning</span><span>7:00 AM</span></div>
+          <div class="footer-time-item"><span>Sunday Main</span><span>10:00 AM</span></div>
+          <div class="footer-time-item"><span>Wednesday Bible Study</span><span>6:00 PM</span></div>
+          <div class="footer-time-item"><span>Friday Prayer</span><span>7:00 PM</span></div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>12 Rainbow Avenue, Faith City, FC 00000</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+1 (234) 567-890</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@tfrministry.org</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Truth Faith Rainbow Ministry. All Rights Reserved.</span>
+        <span>Designed with <i class="fas fa-heart" style="color:var(--gold)"></i> for God's glory</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

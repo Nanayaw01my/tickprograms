@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery Manager — TFRM Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<div class="admin-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <div class="sidebar-logo-icon"><i class="fas fa-cross"></i></div>
+        <div class="sidebar-logo-text">
+          <strong>TFRM Admin</strong>
+          <span>Truth Faith Rainbow Ministry</span>
+        </div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section-label">Main</div>
+      <a class="sidebar-item" href="admin-dashboard.html">
+        <i class="fas fa-th-large"></i> Dashboard
+      </a>
+      <a class="sidebar-item active" href="admin-gallery.html">
+        <i class="fas fa-images"></i> Gallery
+        <span class="sidebar-badge">24</span>
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-headphones"></i> Sermons
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-calendar-alt"></i> Events
+      </a>
+
+      <div class="nav-section-label">Content</div>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-bullhorn"></i> Announcements
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-clock"></i> Service Times
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-users"></i> Ministries
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-envelope"></i> Messages
+        <span class="sidebar-badge">5</span>
+      </a>
+
+      <div class="nav-section-label">System</div>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-cog"></i> Settings
+      </a>
+      <a class="sidebar-item logout" href="admin-login.html">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <!-- Top Bar -->
+    <header class="admin-topbar">
+      <div class="topbar-title">Gallery Manager</div>
+      <div class="topbar-search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search photos..." />
+      </div>
+      <div class="topbar-actions">
+        <button class="topbar-icon-btn" title="Notifications">
+          <i class="fas fa-bell"></i>
+          <div class="notif-dot"></div>
+        </button>
+        <div class="admin-user">
+          <div class="admin-avatar">SA</div>
+          <div class="admin-user-info">
+            <strong>Rev. Samuel A.</strong>
+            <span>Super Admin</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content">
+
+      <!-- Page Header -->
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:24px;">
+        <div>
+          <h2 style="font-size:1.3rem; color:var(--purple-deep); margin-bottom:4px;">Photo Gallery</h2>
+          <p style="font-size:0.85rem; color:var(--text-light);">247 photos across 6 categories</p>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <a href="gallery.html" target="_blank" class="admin-btn" style="background:var(--bg); border:1.5px solid var(--border); color:var(--text-mid);">
+            <i class="fas fa-external-link-alt"></i> View Public Gallery
+          </a>
+          <button class="admin-btn admin-btn-primary" onclick="document.getElementById('uploadSection').scrollIntoView({behavior:'smooth'})">
+            <i class="fas fa-cloud-upload-alt"></i> Upload Photos
+          </button>
+        </div>
+      </div>
+
+      <!-- Upload Section -->
+      <div class="admin-card" id="uploadSection" style="margin-bottom:28px;">
+        <div class="admin-card-header">
+          <h3><i class="fas fa-cloud-upload-alt"></i> Upload New Photos</h3>
+        </div>
+        <div class="admin-card-body">
+
+          <!-- Drag & Drop Area -->
+          <div class="upload-area" id="uploadArea"
+            ondragover="handleDragOver(event)"
+            ondragleave="handleDragLeave(event)"
+            ondrop="handleDrop(event)"
+            onclick="document.getElementById('fileInput').click()">
+            <div class="upload-icon">
+              <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+            <h3>Click to upload or drag photos here</h3>
+            <p>Drag &amp; drop your photos, or click to browse your files</p>
+            <small>Supported: JPG, PNG, WEBP · Max file size: 10 MB per photo · Up to 20 photos at once</small>
+            <input type="file" id="fileInput" accept="image/*" multiple style="display:none;" onchange="handleFileSelect(event)" />
+          </div>
+
+          <!-- Upload Form Fields -->
+          <div class="upload-form-row">
+            <div class="form-group">
+              <label for="photoCaption">Caption</label>
+              <input type="text" id="photoCaption" class="form-control" placeholder="e.g. Sunday Praise &amp; Worship" />
+            </div>
+            <div class="form-group">
+              <label for="photoDate">Date</label>
+              <input type="date" id="photoDate" class="form-control" value="2026-06-20" />
+            </div>
+            <div class="form-group">
+              <label for="photoCategory">Category</label>
+              <select id="photoCategory" class="form-select">
+                <option value="">Select category...</option>
+                <option value="sunday">Sunday Service</option>
+                <option value="events">Events</option>
+                <option value="baptism">Baptism</option>
+                <option value="youth">Youth</option>
+                <option value="outreach">Outreach</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block; font-size:0.8rem; color:transparent; margin-bottom:8px;">.</label>
+              <button class="admin-btn admin-btn-gold" style="width:100%; justify-content:center;">
+                <i class="fas fa-upload"></i> Upload
+              </button>
+            </div>
+          </div>
+
+          <!-- Upload Progress (hidden, shown on upload) -->
+          <div id="uploadProgress" style="display:none; margin-top:16px; padding:16px; background:rgba(45,27,105,0.04); border-radius:var(--radius-sm); border:1px solid var(--border);">
+            <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:8px;">
+              <span style="color:var(--text-mid);">Uploading 3 photos...</span>
+              <span style="font-weight:700; color:var(--purple-deep);">68%</span>
+            </div>
+            <div style="height:8px; background:var(--border); border-radius:10px; overflow:hidden;">
+              <div style="height:100%; width:68%; background:linear-gradient(90deg, var(--purple-deep), var(--gold)); border-radius:10px; transition:width 0.3s;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Filter & Existing Photos -->
+      <div class="admin-card">
+        <div class="admin-card-header">
+          <h3><i class="fas fa-images"></i> All Photos (247)</h3>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <select class="form-select" style="width:auto; padding:7px 32px 7px 12px; font-size:0.82rem;">
+              <option>All Categories</option>
+              <option>Sunday Service</option>
+              <option>Events</option>
+              <option>Baptism</option>
+              <option>Youth</option>
+              <option>Outreach</option>
+            </select>
+            <select class="form-select" style="width:auto; padding:7px 32px 7px 12px; font-size:0.82rem;">
+              <option>Newest First</option>
+              <option>Oldest First</option>
+              <option>A-Z Caption</option>
+            </select>
+          </div>
+        </div>
+        <div class="admin-card-body">
+          <div class="admin-photos-grid">
+
+            <!-- Photo 1 -->
+            <div class="admin-photo-card">
+              <div class="admin-photo-thumb">
+                <i class="fas fa-image"></i>
+                <div style="position:absolute; top:8px; right:8px;">
+                  <span class="badge badge-purple" style="font-size:0.62rem;">Sunday</span>
+                </div>
+              </div>
+              <div class="admin-photo-info">
+                <strong>Sunday Praise &amp; Worship</strong>
+                <span>Jun 15, 2026</span>
+              </div>
+              <div class="admin-photo-actions">
+                <button class="tbl-btn tbl-btn-edit" style="flex:1; justify-content:center;"><i class="fas fa-edit"></i> Edit</button>
+                <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="admin-photo-card">
+              <div class="admin-photo-thumb">
+                <i class="fas fa-image"></i>
+                <div style="position:absolute; top:8px; right:8px;">
+                  <span class="badge badge-gold" style="font-size:0.62rem;">Events</span>
+                </div>
+              </div>
+              <div class="admin-photo-info">
+                <strong>Prayer &amp; Fasting Opening</strong>
+                <span>Jun 10, 2026</span>
+              </div>
+              <div class="admin-photo-actions">
+                <button class="tbl-btn tbl-btn-edit" style="flex:1; justify-content:center;"><i class="fas fa-edit"></i> Edit</button>
+                <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="admin-photo-card">
+              <div class="admin-photo-thumb">
+                <i class="fas fa-image"></i>
+                <div style="position:absolute; top:8px; right:8px;">
+                  <span class="badge badge-green" style="font-size:0.62rem;">Outreach</span>
+                </div>
+              </div>
+              <div class="admin-photo-info">
+                <strong>Community Food Drive</strong>
+                <span>Jun 5, 2026</span>
+              </div>
+              <div class="admin-photo-actions">
+                <button class="tbl-btn tbl-btn-edit" style="flex:1; justify-content:center;"><i class="fas fa-edit"></i> Edit</button>
+                <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="admin-photo-card">
+              <div class="admin-photo-thumb">
+                <i class="fas fa-image"></i>
+                <div style="position:absolute; top:8px; right:8px;">
+                  <span class="badge badge-blue" style="font-size:0.62rem;">Baptism</span>
+                </div>
+              </div>
+              <div class="admin-photo-info">
+                <strong>Water Baptism Service</strong>
+                <span>May 28, 2026</span>
+              </div>
+              <div class="admin-photo-actions">
+                <button class="tbl-btn tbl-btn-edit" style="flex:1; justify-content:center;"><i class="fas fa-edit"></i> Edit</button>
+                <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="admin-photo-card">
+              <div class="admin-photo-thumb">
+                <i class="fas fa-image"></i>
+                <div style="position:absolute; top:8px; right:8px;">
+                  <span class="badge badge-red" style="font-size:0.62rem;">Youth</span>
+                </div>
+              </div>
+              <div class="admin-photo-info">
+                <strong>Youth Night Worship</strong>
+                <span>May 20, 2026</span>
+              </div>
+              <div class="admin-photo-actions">
+                <button class="tbl-btn tbl-btn-edit" style="flex:1; justify-content:center;"><i class="fas fa-edit"></i> Edit</button>
+                <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="admin-photo-card">
+              <div class="admin-photo-thumb">
+                <i class="fas fa-image"></i>
+                <div style="position:absolute; top:8px; right:8px;">
+                  <span class="badge badge-gold" style="font-size:0.62rem;">Events</span>
+                </div>
+              </div>
+              <div class="admin-photo-info">
+                <strong>Gospel Concert Night</strong>
+                <span>May 18, 2026</span>
+              </div>
+              <div class="admin-photo-actions">
+                <button class="tbl-btn tbl-btn-edit" style="flex:1; justify-content:center;"><i class="fas fa-edit"></i> Edit</button>
+                <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+
+            <!-- Photo 7 -->
+            <div class="admin-photo-card">
+              <div class="admin-photo-thumb">
+                <i class="fas fa-image"></i>
+                <div style="position:absolute; top:8px; right:8px;">
+                  <span class="badge badge-purple" style="font-size:0.62rem;">Sunday</span>
+                </div>
+              </div>
+              <div class="admin-photo-info">
+                <strong>Sunday Morning Sermon</strong>
+                <span>May 11, 2026</span>
+              </div>
+              <div class="admin-photo-actions">
+                <button class="tbl-btn tbl-btn-edit" style="flex:1; justify-content:center;"><i class="fas fa-edit"></i> Edit</button>
+                <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+
+            <!-- Photo 8 -->
+            <div class="admin-photo-card">
+              <div class="admin-photo-thumb">
+                <i class="fas fa-image"></i>
+                <div style="position:absolute; top:8px; right:8px;">
+                  <span class="badge badge-green" style="font-size:0.62rem;">Outreach</span>
+                </div>
+              </div>
+              <div class="admin-photo-info">
+                <strong>Hospital Visitation</strong>
+                <span>May 4, 2026</span>
+              </div>
+              <div class="admin-photo-actions">
+                <button class="tbl-btn tbl-btn-edit" style="flex:1; justify-content:center;"><i class="fas fa-edit"></i> Edit</button>
+                <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pagination -->
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-top:24px; padding-top:20px; border-top:1px solid var(--border);">
+            <p style="font-size:0.82rem; color:var(--text-light);">Showing 8 of 247 photos</p>
+            <div style="display:flex; gap:6px;">
+              <button class="tbl-btn tbl-btn-view" style="padding:8px 14px;"><i class="fas fa-chevron-left"></i></button>
+              <button class="tbl-btn" style="padding:8px 14px; background:var(--purple-deep); color:var(--white); border-color:var(--purple-deep);">1</button>
+              <button class="tbl-btn tbl-btn-view" style="padding:8px 14px;">2</button>
+              <button class="tbl-btn tbl-btn-view" style="padding:8px 14px;">3</button>
+              <button class="tbl-btn tbl-btn-view" style="padding:8px 14px;">...</button>
+              <button class="tbl-btn tbl-btn-view" style="padding:8px 14px;">31</button>
+              <button class="tbl-btn tbl-btn-view" style="padding:8px 14px;"><i class="fas fa-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</div>
+
+<script>
+  function handleDragOver(e) {
+    e.preventDefault();
+    e.currentTarget.style.borderColor = 'var(--purple-light)';
+    e.currentTarget.style.background = 'rgba(90,62,160,0.06)';
+  }
+
+  function handleDragLeave(e) {
+    e.currentTarget.style.borderColor = '';
+    e.currentTarget.style.background = '';
+  }
+
+  function handleDrop(e) {
+    e.preventDefault();
+    e.currentTarget.style.borderColor = '';
+    e.currentTarget.style.background = '';
+    const files = e.dataTransfer.files;
+    if (files.length) showUploadFeedback(files.length);
+  }
+
+  function handleFileSelect(e) {
+    const files = e.target.files;
+    if (files.length) showUploadFeedback(files.length);
+  }
+
+  function showUploadFeedback(count) {
+    const area = document.getElementById('uploadArea');
+    area.querySelector('h3').textContent = count + ' photo(s) selected — fill in details below and click Upload';
+    area.style.borderColor = 'var(--purple-light)';
+    area.style.background = 'rgba(90,62,160,0.04)';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — TFRM Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+<div class="admin-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <div class="sidebar-logo-icon"><i class="fas fa-cross"></i></div>
+        <div class="sidebar-logo-text">
+          <strong>TFRM Admin</strong>
+          <span>Truth Faith Rainbow Ministry</span>
+        </div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-section-label">Main</div>
+      <a class="sidebar-item active" href="admin-dashboard.html">
+        <i class="fas fa-th-large"></i> Dashboard
+      </a>
+      <a class="sidebar-item" href="admin-gallery.html">
+        <i class="fas fa-images"></i> Gallery
+        <span class="sidebar-badge">24</span>
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-headphones"></i> Sermons
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-calendar-alt"></i> Events
+      </a>
+
+      <div class="nav-section-label">Content</div>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-bullhorn"></i> Announcements
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-clock"></i> Service Times
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-users"></i> Ministries
+      </a>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-envelope"></i> Messages
+        <span class="sidebar-badge">5</span>
+      </a>
+
+      <div class="nav-section-label">System</div>
+      <a class="sidebar-item" href="#">
+        <i class="fas fa-cog"></i> Settings
+      </a>
+      <a class="sidebar-item logout" href="admin-login.html">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <!-- Top Bar -->
+    <header class="admin-topbar">
+      <div class="topbar-title">Dashboard</div>
+      <div class="topbar-search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search anything..." />
+      </div>
+      <div class="topbar-actions">
+        <button class="topbar-icon-btn" title="Notifications">
+          <i class="fas fa-bell"></i>
+          <div class="notif-dot"></div>
+        </button>
+        <button class="topbar-icon-btn" title="Help">
+          <i class="fas fa-question-circle"></i>
+        </button>
+        <div class="admin-user">
+          <div class="admin-avatar">SA</div>
+          <div class="admin-user-info">
+            <strong>Rev. Samuel A.</strong>
+            <span>Super Admin</span>
+          </div>
+          <i class="fas fa-chevron-down" style="font-size:0.7rem; color:var(--text-light); margin-left:4px;"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content">
+
+      <!-- Welcome Banner -->
+      <div style="background:linear-gradient(135deg,var(--purple-deep),var(--purple-mid)); border-radius:var(--radius-md); padding:24px 28px; margin-bottom:28px; display:flex; align-items:center; justify-content:space-between; color:var(--white);">
+        <div>
+          <h2 style="font-size:1.3rem; margin-bottom:4px; color:var(--white);">Good morning, Rev. Samuel! <span style="font-size:1.4rem;">&#9757;</span></h2>
+          <p style="font-size:0.85rem; color:rgba(255,255,255,0.7);">Here's what's happening at Truth Faith Rainbow Ministry today — Friday, June 20, 2026.</p>
+        </div>
+        <div style="display:flex; gap:10px;">
+          <a href="index.html" target="_blank" class="admin-btn admin-btn-gold"><i class="fas fa-external-link-alt"></i> View Site</a>
+        </div>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon purple"><i class="fas fa-images"></i></div>
+          <div class="stat-info">
+            <p>Total Photos</p>
+            <h3>247</h3>
+            <div class="stat-change up"><i class="fas fa-arrow-up"></i> +12 this month</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon gold"><i class="fas fa-headphones"></i></div>
+          <div class="stat-info">
+            <p>Total Sermons</p>
+            <h3>89</h3>
+            <div class="stat-change up"><i class="fas fa-arrow-up"></i> +3 this month</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon green"><i class="fas fa-calendar-check"></i></div>
+          <div class="stat-info">
+            <p>Upcoming Events</p>
+            <h3>6</h3>
+            <div class="stat-change up"><i class="fas fa-arrow-up"></i> 2 this week</div>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon blue"><i class="fas fa-envelope-open-text"></i></div>
+          <div class="stat-info">
+            <p>New Messages</p>
+            <h3>5</h3>
+            <div class="stat-change down"><i class="fas fa-arrow-down"></i> 2 unread</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Grid -->
+      <div class="dashboard-grid">
+        <!-- Left Column -->
+        <div class="dashboard-col">
+
+          <!-- Quick Actions -->
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
+            </div>
+            <div class="admin-card-body">
+              <div class="quick-actions-grid">
+                <a href="admin-gallery.html" class="quick-action-btn">
+                  <div class="qa-icon purple"><i class="fas fa-cloud-upload-alt"></i></div>
+                  <strong>Upload Photo</strong>
+                  <span>Add to gallery</span>
+                </a>
+                <div class="quick-action-btn">
+                  <div class="qa-icon gold"><i class="fas fa-calendar-plus"></i></div>
+                  <strong>Add Event</strong>
+                  <span>Schedule new event</span>
+                </div>
+                <div class="quick-action-btn">
+                  <div class="qa-icon blue"><i class="fas fa-microphone"></i></div>
+                  <strong>Post Sermon</strong>
+                  <span>Upload sermon audio</span>
+                </div>
+                <div class="quick-action-btn">
+                  <div class="qa-icon green"><i class="fas fa-bullhorn"></i></div>
+                  <strong>Announcement</strong>
+                  <span>Post new notice</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Uploads Table -->
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h3><i class="fas fa-images"></i> Recent Photo Uploads</h3>
+              <a href="admin-gallery.html">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="admin-card-body" style="padding:0;">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Photo</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="table-thumb-row">
+                        <div class="table-thumb"><i class="fas fa-image"></i></div>
+                        <div class="table-thumb-info">
+                          <strong>Sunday Praise &amp; Worship</strong>
+                          <span>1.2 MB · JPG</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span class="badge badge-purple">Sunday Service</span></td>
+                    <td>Jun 15, 2026</td>
+                    <td>
+                      <div class="table-actions">
+                        <button class="tbl-btn tbl-btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="table-thumb-row">
+                        <div class="table-thumb" style="background:linear-gradient(135deg,#1a4a6e,#2e7db5)"><i class="fas fa-image"></i></div>
+                        <div class="table-thumb-info">
+                          <strong>Prayer &amp; Fasting Opening</strong>
+                          <span>0.9 MB · JPG</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span class="badge badge-gold">Events</span></td>
+                    <td>Jun 10, 2026</td>
+                    <td>
+                      <div class="table-actions">
+                        <button class="tbl-btn tbl-btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="table-thumb-row">
+                        <div class="table-thumb" style="background:linear-gradient(135deg,#1e5e3a,#2e9d5e)"><i class="fas fa-image"></i></div>
+                        <div class="table-thumb-info">
+                          <strong>Community Food Drive</strong>
+                          <span>1.5 MB · JPG</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span class="badge badge-green">Outreach</span></td>
+                    <td>Jun 5, 2026</td>
+                    <td>
+                      <div class="table-actions">
+                        <button class="tbl-btn tbl-btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="table-thumb-row">
+                        <div class="table-thumb" style="background:linear-gradient(135deg,#6e1a1a,#b52e2e)"><i class="fas fa-image"></i></div>
+                        <div class="table-thumb-info">
+                          <strong>Water Baptism Service</strong>
+                          <span>2.1 MB · PNG</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span class="badge badge-blue">Baptism</span></td>
+                    <td>May 28, 2026</td>
+                    <td>
+                      <div class="table-actions">
+                        <button class="tbl-btn tbl-btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="table-thumb-row">
+                        <div class="table-thumb" style="background:linear-gradient(135deg,#4a3a1a,#9d7e2e)"><i class="fas fa-image"></i></div>
+                        <div class="table-thumb-info">
+                          <strong>Youth Night Worship</strong>
+                          <span>1.0 MB · JPG</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span class="badge badge-red">Youth</span></td>
+                    <td>May 20, 2026</td>
+                    <td>
+                      <div class="table-actions">
+                        <button class="tbl-btn tbl-btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                        <button class="tbl-btn tbl-btn-delete"><i class="fas fa-trash"></i></button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Recent Messages -->
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h3><i class="fas fa-envelope"></i> Recent Messages</h3>
+              <a href="#">View All <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="admin-card-body" style="padding:0;">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>Sender</th>
+                    <th>Subject</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong style="color:var(--text-dark); font-family:'Open Sans',sans-serif;">Abena Mensah</strong><br><span style="font-size:0.75rem; color:var(--text-light);">abena@email.com</span></td>
+                    <td>Inquiry about Water Baptism</td>
+                    <td>Jun 19, 2026</td>
+                    <td><span class="badge badge-blue">New</span></td>
+                    <td><button class="tbl-btn tbl-btn-view"><i class="fas fa-eye"></i> Read</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong style="color:var(--text-dark); font-family:'Open Sans',sans-serif;">Kofi Agyeman</strong><br><span style="font-size:0.75rem; color:var(--text-light);">kofi.a@mail.com</span></td>
+                    <td>Convention Registration Question</td>
+                    <td>Jun 18, 2026</td>
+                    <td><span class="badge badge-blue">New</span></td>
+                    <td><button class="tbl-btn tbl-btn-view"><i class="fas fa-eye"></i> Read</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong style="color:var(--text-dark); font-family:'Open Sans',sans-serif;">Grace Owusu</strong><br><span style="font-size:0.75rem; color:var(--text-light);">graceo@gmail.com</span></td>
+                    <td>Volunteering for Outreach Day</td>
+                    <td>Jun 17, 2026</td>
+                    <td><span class="badge badge-green">Read</span></td>
+                    <td><button class="tbl-btn tbl-btn-view"><i class="fas fa-eye"></i> Read</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong style="color:var(--text-dark); font-family:'Open Sans',sans-serif;">Emmanuel Asante</strong><br><span style="font-size:0.75rem; color:var(--text-light);">e.asante@church.com</span></td>
+                    <td>Youth Ministry Meeting Request</td>
+                    <td>Jun 16, 2026</td>
+                    <td><span class="badge badge-green">Read</span></td>
+                    <td><button class="tbl-btn tbl-btn-view"><i class="fas fa-eye"></i> Read</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong style="color:var(--text-dark); font-family:'Open Sans',sans-serif;">Maame Boateng</strong><br><span style="font-size:0.75rem; color:var(--text-light);">mboateng@web.net</span></td>
+                    <td>Prayer Request — Family Healing</td>
+                    <td>Jun 15, 2026</td>
+                    <td><span class="badge badge-green">Read</span></td>
+                    <td><button class="tbl-btn tbl-btn-view"><i class="fas fa-eye"></i> Read</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="dashboard-col">
+
+          <!-- Upcoming Events Mini -->
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h3><i class="fas fa-calendar-alt"></i> Upcoming Events</h3>
+              <a href="#">Manage <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="admin-card-body">
+              <div class="mini-event">
+                <div class="mini-event-date">
+                  <span class="day">28</span>
+                  <span class="month">Jun</span>
+                </div>
+                <div class="mini-event-info">
+                  <strong>Water Baptism Service</strong>
+                  <span><i class="fas fa-clock"></i> 11:00 AM · Baptismal Pool</span>
+                </div>
+              </div>
+              <div class="mini-event">
+                <div class="mini-event-date">
+                  <span class="day">05</span>
+                  <span class="month">Jul</span>
+                </div>
+                <div class="mini-event-info">
+                  <strong>Community Outreach Day</strong>
+                  <span><i class="fas fa-clock"></i> 8:00 AM · Community Grounds</span>
+                </div>
+              </div>
+              <div class="mini-event">
+                <div class="mini-event-date">
+                  <span class="day">14</span>
+                  <span class="month">Jul</span>
+                </div>
+                <div class="mini-event-info">
+                  <strong>Annual Convention 2026</strong>
+                  <span><i class="fas fa-clock"></i> 9:00 AM · Main Auditorium</span>
+                </div>
+              </div>
+              <div class="mini-event">
+                <div class="mini-event-date">
+                  <span class="day">19</span>
+                  <span class="month">Jul</span>
+                </div>
+                <div class="mini-event-info">
+                  <strong>Youth Leadership Summit</strong>
+                  <span><i class="fas fa-clock"></i> 10:00 AM · Youth Hall</span>
+                </div>
+              </div>
+              <div class="mini-event">
+                <div class="mini-event-date">
+                  <span class="day">02</span>
+                  <span class="month">Aug</span>
+                </div>
+                <div class="mini-event-info">
+                  <strong>Women's Ministry Breakfast</strong>
+                  <span><i class="fas fa-clock"></i> 9:00 AM · Fellowship Hall</span>
+                </div>
+              </div>
+              <div style="margin-top:16px;">
+                <button class="admin-btn admin-btn-primary" style="width:100%; justify-content:center;">
+                  <i class="fas fa-plus"></i> Add New Event
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Stats Card -->
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h3><i class="fas fa-chart-pie"></i> Gallery Breakdown</h3>
+            </div>
+            <div class="admin-card-body">
+              <div style="display:flex; flex-direction:column; gap:12px;">
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:5px;">
+                    <span style="color:var(--text-mid);">Sunday Service</span>
+                    <span style="font-weight:700; color:var(--purple-deep);">98 photos</span>
+                  </div>
+                  <div style="height:6px; background:var(--border); border-radius:10px; overflow:hidden;">
+                    <div style="height:100%; width:40%; background:var(--purple-deep); border-radius:10px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:5px;">
+                    <span style="color:var(--text-mid);">Events</span>
+                    <span style="font-weight:700; color:var(--gold-dark);">62 photos</span>
+                  </div>
+                  <div style="height:6px; background:var(--border); border-radius:10px; overflow:hidden;">
+                    <div style="height:100%; width:25%; background:var(--gold); border-radius:10px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:5px;">
+                    <span style="color:var(--text-mid);">Outreach</span>
+                    <span style="font-weight:700; color:var(--success);">44 photos</span>
+                  </div>
+                  <div style="height:6px; background:var(--border); border-radius:10px; overflow:hidden;">
+                    <div style="height:100%; width:18%; background:var(--success); border-radius:10px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:5px;">
+                    <span style="color:var(--text-mid);">Youth</span>
+                    <span style="font-weight:700; color:var(--info);">28 photos</span>
+                  </div>
+                  <div style="height:6px; background:var(--border); border-radius:10px; overflow:hidden;">
+                    <div style="height:100%; width:11%; background:var(--info); border-radius:10px;"></div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display:flex; justify-content:space-between; font-size:0.82rem; margin-bottom:5px;">
+                    <span style="color:var(--text-mid);">Baptism</span>
+                    <span style="font-weight:700; color:var(--danger);">15 photos</span>
+                  </div>
+                  <div style="height:6px; background:var(--border); border-radius:10px; overflow:hidden;">
+                    <div style="height:100%; width:6%; background:var(--danger); border-radius:10px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</div>
+<script>
+  // Sidebar toggle for mobile
+  function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('open');
+  }
+</script>
+</body>
+</html>

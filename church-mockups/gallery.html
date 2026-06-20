@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Truth Faith Rainbow Ministry</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="tel:+1234567890"><i class="fas fa-phone"></i> +1 (234) 567-890</a>
+        <a href="mailto:info@tfrministry.org"><i class="fas fa-envelope"></i> info@tfrministry.org</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> 12 Rainbow Avenue, Faith City</a>
+      </div>
+      <div class="top-bar-right">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon"><i class="fas fa-cross"></i></div>
+        <div class="nav-logo-text">
+          <strong>Truth Faith Rainbow</strong>
+          <span>Ministry</span>
+        </div>
+      </a>
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Sermons</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="events.html">Events</a>
+        <a href="#">Ministries</a>
+        <a href="#">Contact</a>
+        <a href="#" class="btn-give"><i class="fas fa-heart"></i> Give</a>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <span class="section-label">Moments of Grace</span>
+      <h1>Our Gallery</h1>
+      <p>Capturing God's presence in our worship, fellowship, and service to the community.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-tab active" onclick="filterGallery(this, 'all')">All Photos</button>
+        <button class="filter-tab" onclick="filterGallery(this, 'sunday')">Sunday Service</button>
+        <button class="filter-tab" onclick="filterGallery(this, 'events')">Events</button>
+        <button class="filter-tab" onclick="filterGallery(this, 'baptism')">Baptism</button>
+        <button class="filter-tab" onclick="filterGallery(this, 'youth')">Youth</button>
+        <button class="filter-tab" onclick="filterGallery(this, 'outreach')">Outreach</button>
+      </div>
+
+      <!-- Masonry-style Photo Grid -->
+      <div class="photo-grid">
+
+        <div class="photo-item tall" data-cat="sunday">
+          <div class="photo-placeholder"><i class="fas fa-church"></i></div>
+          <div class="photo-date-badge">June 15</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Sunday Praise &amp; Worship</div>
+            <div class="photo-caption-sub">Sunday Service · June 15, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="events">
+          <div class="photo-placeholder"><i class="fas fa-star"></i></div>
+          <div class="photo-date-badge">June 10</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Prayer &amp; Fasting Opening</div>
+            <div class="photo-caption-sub">Events · June 10, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="outreach">
+          <div class="photo-placeholder"><i class="fas fa-hands-helping"></i></div>
+          <div class="photo-date-badge">June 5</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Community Food Drive</div>
+            <div class="photo-caption-sub">Outreach · June 5, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item wide" data-cat="baptism">
+          <div class="photo-placeholder"><i class="fas fa-water"></i></div>
+          <div class="photo-date-badge">May 28</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Water Baptism Service — 12 Souls Baptised</div>
+            <div class="photo-caption-sub">Baptism · May 28, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="youth">
+          <div class="photo-placeholder"><i class="fas fa-bolt"></i></div>
+          <div class="photo-date-badge">May 20</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Youth Night Worship Session</div>
+            <div class="photo-caption-sub">Youth · May 20, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item tall" data-cat="events">
+          <div class="photo-placeholder"><i class="fas fa-music"></i></div>
+          <div class="photo-date-badge">May 18</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Gospel Concert Night</div>
+            <div class="photo-caption-sub">Events · May 18, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="sunday">
+          <div class="photo-placeholder"><i class="fas fa-bible"></i></div>
+          <div class="photo-date-badge">May 11</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Sunday Morning Sermon</div>
+            <div class="photo-caption-sub">Sunday Service · May 11, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="outreach">
+          <div class="photo-placeholder"><i class="fas fa-heart"></i></div>
+          <div class="photo-date-badge">May 4</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Hospital Visitation</div>
+            <div class="photo-caption-sub">Outreach · May 4, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item wide" data-cat="sunday">
+          <div class="photo-placeholder"><i class="fas fa-users"></i></div>
+          <div class="photo-date-badge">Apr 27</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Full Congregation — Easter Sunday Celebration</div>
+            <div class="photo-caption-sub">Sunday Service · April 27, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="youth">
+          <div class="photo-placeholder"><i class="fas fa-graduation-cap"></i></div>
+          <div class="photo-date-badge">Apr 20</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Youth Leadership Summit</div>
+            <div class="photo-caption-sub">Youth · April 20, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item" data-cat="baptism">
+          <div class="photo-placeholder"><i class="fas fa-dove"></i></div>
+          <div class="photo-date-badge">Apr 13</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Holy Spirit Dedication</div>
+            <div class="photo-caption-sub">Baptism · April 13, 2026</div>
+          </div>
+        </div>
+
+        <div class="photo-item tall" data-cat="outreach">
+          <div class="photo-placeholder"><i class="fas fa-hand-holding-heart"></i></div>
+          <div class="photo-date-badge">Apr 6</div>
+          <div class="photo-overlay">
+            <div class="photo-caption">Children's Home Outreach</div>
+            <div class="photo-caption-sub">Outreach · April 6, 2026</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Load More -->
+      <div style="text-align:center; margin-top:48px;">
+        <button class="btn btn-primary"><i class="fas fa-images"></i> Load More Photos</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="footer-logo-icon"><i class="fas fa-cross"></i></div>
+            <div class="footer-logo-text">
+              <strong>Truth Faith Rainbow Ministry</strong>
+              <span>Where Faith Meets Purpose</span>
+            </div>
+          </div>
+          <p class="footer-about">A Spirit-filled, Bible-believing church committed to proclaiming the Gospel and transforming lives through the love of Christ.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i> Sermons</a></li>
+            <li><a href="gallery.html"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="events.html"><i class="fas fa-chevron-right"></i> Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service Times</h4>
+          <div class="footer-time-item"><span>Sunday Morning</span><span>7:00 AM</span></div>
+          <div class="footer-time-item"><span>Sunday Main</span><span>10:00 AM</span></div>
+          <div class="footer-time-item"><span>Wednesday Bible Study</span><span>6:00 PM</span></div>
+          <div class="footer-time-item"><span>Friday Prayer</span><span>7:00 PM</span></div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>12 Rainbow Avenue, Faith City, FC 00000</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+1 (234) 567-890</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@tfrministry.org</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Truth Faith Rainbow Ministry. All Rights Reserved.</span>
+        <span>Designed with <i class="fas fa-heart" style="color:var(--gold)"></i> for God's glory</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    function filterGallery(btn, cat) {
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.photo-item').forEach(item => {
+        if (cat === 'all' || item.dataset.cat === cat) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
