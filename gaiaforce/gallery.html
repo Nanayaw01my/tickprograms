@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GaiaForce Foundation Gallery — photos and videos of our reforestation, solar, water, education, and waste management activities across West Africa." />
+  <title>Gallery | GaiaForce Foundation</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-scrolled" role="navigation" aria-label="Main navigation">
+      <div class="container navbar-inner">
+        <a href="index.html" class="brand"><div class="brand-mark">⚡</div><div class="brand-text"><span class="brand-name">GaiaForce</span><span class="brand-tagline">Foundation</span></div></a>
+        <button class="hamburger" aria-label="Open navigation" aria-expanded="false" onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true');document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+        <ul class="nav-links"><li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li><li><a href="projects.html" class="nav-link">Projects</a></li><li><a href="gallery.html" class="nav-link active">Gallery</a></li><li><a href="volunteer.html" class="nav-link">Volunteer</a></li><li><a href="contact.html" class="nav-link">Contact</a></li><li><a href="donate.html" class="btn btn-teal btn-sm">Donate</a></li></ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="page-hero-bg" aria-hidden="true"></div>
+      <div class="page-hero-lines" aria-hidden="true"></div>
+      <div class="page-hero-accent" aria-hidden="true"></div>
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>Gallery</span></nav>
+        <div class="eyebrow eyebrow-light">Visual Stories</div>
+        <h1>Impact in Every Frame.</h1>
+        <p>A documentary of change — capturing the faces, landscapes, and moments behind our environmental work across communities in West Africa.</p>
+      </div>
+    </section>
+
+    <!-- BENTO GRID — HERO GALLERY -->
+    <section class="section bg-white" aria-labelledby="gallery-main-title">
+      <div class="container">
+        <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:2rem; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <div class="eyebrow">Photo Gallery</div>
+            <h2 id="gallery-main-title">Behind the Scenes</h2>
+          </div>
+          <div style="display:flex; gap:.5rem; flex-wrap:wrap;" role="group" aria-label="Gallery filters">
+            <button class="btn btn-teal btn-sm" type="button">All</button>
+            <button class="btn btn-outline-teal btn-sm" type="button">Reforestation</button>
+            <button class="btn btn-outline-teal btn-sm" type="button">Solar</button>
+            <button class="btn btn-outline-teal btn-sm" type="button">Water</button>
+            <button class="btn btn-outline-teal btn-sm" type="button">Education</button>
+            <button class="btn btn-outline-teal btn-sm" type="button">Community</button>
+          </div>
+        </div>
+
+        <!-- BENTO GRID -->
+        <div class="gallery-bento" role="list" aria-label="Gallery bento grid">
+
+          <figure class="gallery-bento-item gb-1" role="listitem">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80"
+                 alt="Lush restored forest canopy from ForestBack reforestation programme" loading="lazy" />
+            <div class="bento-overlay">
+              <figcaption style="color:var(--white);">
+                <div style="font-size:.7rem; color:var(--teal-300); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.25rem;">Reforestation</div>
+                <div style="font-weight:700; font-size:1rem;">ForestBack — 1,600 Hectares Restored</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-bento-item gb-2" role="listitem">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80"
+                 alt="Solar panels installed on school rooftop in Tamale" loading="lazy" />
+            <div class="bento-overlay">
+              <figcaption style="color:var(--white);">
+                <div style="font-size:.7rem; color:var(--teal-300); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.2rem;">Solar</div>
+                <div style="font-weight:700; font-size:.9rem;">SunForce School Install, Tamale</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-bento-item gb-3" role="listitem">
+            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&q=80"
+                 alt="Students raising hands during an EduClimate lesson" loading="lazy" />
+            <div class="bento-overlay">
+              <figcaption style="color:var(--white);">
+                <div style="font-size:.7rem; color:var(--teal-300); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.2rem;">Education</div>
+                <div style="font-weight:700; font-size:.9rem;">EduClimate, Kumasi</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-bento-item gb-4" role="listitem">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=80"
+                 alt="Community members at AquaGaia borehole inauguration" loading="lazy" />
+            <div class="bento-overlay">
+              <figcaption style="color:var(--white);">
+                <div style="font-size:.7rem; color:var(--teal-300); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.2rem;">Clean Water</div>
+                <div style="font-weight:700; font-size:.9rem;">AquaGaia Launch, Volta</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-bento-item gb-5" role="listitem">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+                 alt="ZeroWaste collectors sorting plastic at the Tema facility" loading="lazy" />
+            <div class="bento-overlay">
+              <figcaption style="color:var(--white);">
+                <div style="font-size:.7rem; color:var(--teal-300); text-transform:uppercase; letter-spacing:.1em; margin-bottom:.2rem;">Waste</div>
+                <div style="font-weight:700; font-size:.9rem;">ZeroWaste Hub, Tema</div>
+              </figcaption>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- MASONRY / CSS COLUMNS GALLERY -->
+    <section class="section bg-soft" aria-labelledby="masonry-title">
+      <div class="container">
+        <div class="eyebrow">More From the Field</div>
+        <h2 id="masonry-title" style="margin-bottom:2rem;">Field Photography</h2>
+
+        <div class="gallery-masonry" role="list" aria-label="Field photography gallery">
+
+          <figure class="gallery-tile" role="listitem">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=700&q=80"
+                 alt="Aerial view of young trees planted in rows across a hillside" loading="lazy" />
+            <div class="gallery-tile-overlay">
+              <figcaption><div class="gallery-cat-label">Reforestation</div><div class="gallery-caption">Hillside restoration, Sunyani</div></figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-tile" role="listitem">
+            <img src="https://images.unsplash.com/photo-1552799446-159ba9523315?w=700&q=80"
+                 alt="Community members and GaiaForce volunteers at a tree planting ceremony" loading="lazy" />
+            <div class="gallery-tile-overlay">
+              <figcaption><div class="gallery-cat-label">Community</div><div class="gallery-caption">Community planting day, Kumasi</div></figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-tile" role="listitem">
+            <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=700&q=80"
+                 alt="Dense green forest canopy of a restored ForestBack site" loading="lazy" />
+            <div class="gallery-tile-overlay">
+              <figcaption><div class="gallery-cat-label">Reforestation</div><div class="gallery-caption">Restored canopy, Western Region</div></figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-tile" role="listitem">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=700&q=80"
+                 alt="Clear river flowing through a restored forest watershed" loading="lazy" />
+            <div class="gallery-tile-overlay">
+              <figcaption><div class="gallery-cat-label">Environment</div><div class="gallery-caption">Restored watershed, Brong-Ahafo</div></figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-tile" role="listitem">
+            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=700&q=80"
+                 alt="Wind turbines on green rolling hills representing renewable energy" loading="lazy" />
+            <div class="gallery-tile-overlay">
+              <figcaption><div class="gallery-cat-label">Renewable Energy</div><div class="gallery-caption">GaiaForce advocacy site visit</div></figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-tile" role="listitem">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=700&q=80"
+                 alt="Farmer being trained on drip irrigation by a GaiaForce agronomist" loading="lazy" />
+            <div class="gallery-tile-overlay">
+              <figcaption><div class="gallery-cat-label">AgriClimate</div><div class="gallery-caption">Smart irrigation demo, Tamale</div></figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-tile" role="listitem">
+            <img src="https://images.unsplash.com/photo-1519461518688-6f4e58d90c08?w=700&q=80"
+                 alt="Children creating recycling-themed art at an EduClimate school event" loading="lazy" />
+            <div class="gallery-tile-overlay">
+              <figcaption><div class="gallery-cat-label">Education</div><div class="gallery-caption">EduClimate Art Day, Takoradi</div></figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-tile" role="listitem">
+            <img src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?w=700&q=80"
+                 alt="Dramatic mountain landscape with cleared and forested sections" loading="lazy" />
+            <div class="gallery-tile-overlay">
+              <figcaption><div class="gallery-cat-label">Environment</div><div class="gallery-caption">Target reforestation zone, assessment</div></figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-tile" role="listitem">
+            <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=700&q=80"
+                 alt="Solar home system being installed on a rural mud-brick house" loading="lazy" />
+            <div class="gallery-tile-overlay">
+              <figcaption><div class="gallery-cat-label">Solar Energy</div><div class="gallery-caption">SunForce home install, Bawku</div></figcaption>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVITY LOG TABLE -->
+    <section class="section bg-white" aria-labelledby="activity-title">
+      <div class="container">
+        <div style="margin-bottom:2.5rem;">
+          <div class="eyebrow">Activity Log</div>
+          <h2 id="activity-title">2024 Field Activities</h2>
+          <p style="color:var(--neutral-500); max-width:560px;">A record of on-the-ground activities at our programme sites across Ghana and West Africa throughout 2024.</p>
+        </div>
+        <div class="table-wrap">
+          <table aria-label="GaiaForce 2024 field activity log">
+            <thead>
+              <tr><th>Date</th><th>Activity</th><th>Program</th><th>Location</th><th>Participants</th><th>Outcome</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Feb 14 2024</td><td>Mass Planting Day</td><td>ForestBack</td><td>Sunyani, B-A</td><td>440 volunteers</td><td>10,200 trees planted</td></tr>
+              <tr><td>Mar 4 2024</td><td>Solar Handover Ceremony</td><td>SunForce</td><td>Bawku, U-E</td><td>120 households</td><td>120 homes electrified</td></tr>
+              <tr><td>Mar 22 2024</td><td>Teacher Training</td><td>EduClimate</td><td>Kumasi, Ashanti</td><td>160 teachers</td><td>Certified &amp; equipped</td></tr>
+              <tr><td>Apr 22 2024</td><td>Earth Day Festival</td><td>All Programs</td><td>Accra, Labadi</td><td>3,200 attendees</td><td>Community pledges &amp; sign-ups</td></tr>
+              <tr><td>May 6 2024</td><td>Borehole Inauguration</td><td>AquaGaia</td><td>Nkoranza, B-A</td><td>640 beneficiaries</td><td>Community water system live</td></tr>
+              <tr><td>May 20 2024</td><td>Coastal Plastic Drive</td><td>ZeroWaste</td><td>Tema Harbour</td><td>80 collectors</td><td>18 tonnes plastic recovered</td></tr>
+              <tr><td>Jun 5 2024</td><td>World Environment Day</td><td>Advocacy</td><td>Accra CBD</td><td>1,800 marchers</td><td>National media, policy petition</td></tr>
+              <tr><td>Jul 12 2024</td><td>AgriClimate Scoping Visit</td><td>AgriClimate</td><td>Tamale, Northern</td><td>90 farmers</td><td>Pilot sites selected</td></tr>
+              <tr><td>Sep 8 2024</td><td>Inter-School Eco-Challenge</td><td>EduClimate</td><td>Accra (Regional Final)</td><td>28 schools</td><td>Champions crowned, media coverage</td></tr>
+              <tr><td>Oct 17 2024</td><td>Custodian Recognition Day</td><td>ForestBack</td><td>Techiman, B-A</td><td>420 custodians</td><td>Certificates &amp; bonuses awarded</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO FEATURE -->
+    <section class="section bg-navy" aria-labelledby="video-title">
+      <div class="container text-center">
+        <div class="eyebrow eyebrow-light" style="justify-content:center;">Featured Media</div>
+        <h2 id="video-title" style="color:var(--white); margin-bottom:.75rem;">Watch Our Story</h2>
+        <p style="color:rgba(255,255,255,.6); max-width:480px; margin:0 auto 2.5rem;">A short documentary following three community members whose lives were changed by GaiaForce programmes over two years.</p>
+
+        <div style="max-width:820px; margin:0 auto; border-radius:var(--r-xl); overflow:hidden; box-shadow:var(--shadow-xl); background:var(--navy-80); border:1px solid rgba(255,255,255,.06);">
+          <div style="padding-bottom:56.25%; position:relative; background:linear-gradient(135deg,var(--navy-80),var(--teal-900));">
+            <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+              <div style="width:80px; height:80px; border-radius:50%; background:rgba(0,169,154,.2); border:2px solid rgba(0,169,154,.4); display:flex; align-items:center; justify-content:center; font-size:2rem; margin-bottom:1.25rem;">▶</div>
+              <h3 style="color:var(--white); font-size:1.3rem; margin-bottom:.4rem;">GaiaForce: Powering Recovery</h3>
+              <p style="color:rgba(255,255,255,.55); font-size:.88rem;">14 min · Documentary · 2024 · GreenScreen Media</p>
+              <p style="color:rgba(255,255,255,.3); font-size:.76rem; margin-top:1rem;">[Embed your YouTube or Vimeo video URL here]</p>
+            </div>
+          </div>
+        </div>
+
+        <aside style="background:rgba(0,169,154,.08); border:1px solid rgba(0,169,154,.2); border-radius:var(--r-lg); padding:1.25rem 1.5rem; max-width:620px; margin:2rem auto 0; text-align:left;">
+          <h4 style="color:var(--teal-300); font-size:.9rem; margin-bottom:.4rem;">🎬 About This Film</h4>
+          <p style="color:rgba(255,255,255,.55); font-size:.82rem; margin:0;">Produced with GreenScreen Media, this documentary follows Kweku (ForestBack), Adisa (SunForce), and Abena (AquaGaia) as their communities are transformed by GaiaForce's programmes over a 24-month period.</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="index.html" class="brand" style="margin-bottom:.75rem;display:inline-flex;"><div class="brand-mark">⚡</div><div class="brand-text" style="margin-left:1rem;"><span class="brand-name">GaiaForce</span><span class="brand-tagline">Foundation</span></div></a><p>Powering the planet's recovery through renewable energy, reforestation, clean water, and environmental education across West Africa.</p><div class="social-row"><a href="#" class="social-btn">f</a><a href="#" class="social-btn">𝕏</a><a href="#" class="social-btn">ig</a><a href="#" class="social-btn">in</a><a href="#" class="social-btn">▶</a></div></div>
+        <div><h3 class="footer-col-title">Navigate</h3><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="volunteer.html">Volunteer</a></li><li><a href="donate.html">Donate</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h3 class="footer-col-title">Programs</h3><ul class="footer-links"><li><a href="projects.html">SunForce Solar</a></li><li><a href="projects.html">ForestBack</a></li><li><a href="projects.html">AquaGaia</a></li><li><a href="projects.html">EduClimate</a></li><li><a href="projects.html">ZeroWaste</a></li><li><a href="projects.html">AgriClimate</a></li></ul></div>
+        <div><h3 class="footer-col-title">Head Office</h3><p class="footer-contact-line"><span class="footer-contact-icon">📍</span>7 Ridge Road, Airport Residential, Accra</p><p class="footer-contact-line"><span class="footer-contact-icon">📞</span>+233 302 880 500</p><p class="footer-contact-line"><span class="footer-contact-icon">📧</span><a href="mailto:hello@gaiaforce.org" style="color:var(--teal-400);">hello@gaiaforce.org</a></p><p class="footer-contact-line"><span class="footer-contact-icon">🕐</span>Mon–Fri · 8 AM – 5 PM</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2024 GaiaForce Foundation. All Rights Reserved.</p><p>Ghana NGO Reg. No. G-NGO-2012-0891</p></div>
+    </div>
+  </footer>
+
+</body>
+</html>

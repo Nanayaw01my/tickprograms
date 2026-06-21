@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GaiaForce Foundation — Powering the Planet's Recovery. West Africa's leading environmental NGO driving climate action, clean energy, reforestation, and community resilience." />
+  <title>GaiaForce Foundation | Powering the Planet's Recovery</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container navbar-inner">
+        <a href="index.html" class="brand" aria-label="GaiaForce Foundation Home">
+          <div class="brand-mark" aria-hidden="true">⚡</div>
+          <div class="brand-text">
+            <span class="brand-name">GaiaForce</span>
+            <span class="brand-tagline">Foundation</span>
+          </div>
+        </a>
+
+        <button class="hamburger" aria-label="Open navigation" aria-expanded="false"
+          onclick="this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true');document.querySelector('.nav-links').classList.toggle('open')">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html"    class="nav-link active">Home</a></li>
+          <li><a href="about.html"    class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="gallery.html"  class="nav-link">Gallery</a></li>
+          <li><a href="volunteer.html"class="nav-link">Volunteer</a></li>
+          <li><a href="contact.html"  class="nav-link">Contact</a></li>
+          <li><a href="donate.html"   class="btn btn-teal btn-sm" style="border-radius:999px;">Donate</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script>
+      window.addEventListener('scroll', () => {
+        document.getElementById('navbar').classList.toggle('navbar-scrolled', window.scrollY > 40);
+      });
+    </script>
+  </header>
+
+  <main>
+
+    <!-- ======================================================
+         HERO — Full-screen split with floating glass cards
+         ====================================================== -->
+    <section class="hero" aria-label="Hero section">
+      <div class="hero-gradient" aria-hidden="true"></div>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-badge fade-up">
+              <span class="hero-badge-dot" aria-hidden="true"></span>
+              Est. 2012 · Accra, Ghana · Pan-African NGO
+            </div>
+
+            <h1 class="fade-up delay-1">
+              Powering the <em>Planet's</em>
+              <span>Recovery.</span>
+            </h1>
+
+            <p class="hero-desc fade-up delay-2">
+              GaiaForce Foundation mobilises science, communities, and innovation to tackle the climate crisis — one solar farm, forest, classroom, and water system at a time.
+            </p>
+
+            <div class="hero-actions fade-up delay-3">
+              <a href="projects.html" class="btn btn-teal btn-lg">Explore Our Work</a>
+              <a href="donate.html"   class="btn btn-ghost-dark btn-lg">Make a Donation</a>
+            </div>
+
+            <div style="display:flex; gap:2.5rem; margin-top:3rem;" class="fade-up delay-4">
+              <div>
+                <div style="font-size:1.75rem; font-weight:800; color:var(--white); font-family:var(--font-display);">120K<span style="color:var(--teal-400);">+</span></div>
+                <div style="font-size:.75rem; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.1em;">Trees Planted</div>
+              </div>
+              <div>
+                <div style="font-size:1.75rem; font-weight:800; color:var(--white); font-family:var(--font-display);">52<span style="color:var(--teal-400);">+</span></div>
+                <div style="font-size:.75rem; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.1em;">Communities</div>
+              </div>
+              <div>
+                <div style="font-size:1.75rem; font-weight:800; color:var(--white); font-family:var(--font-display);">24K</div>
+                <div style="font-size:.75rem; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.1em;">Lives Changed</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-img-wrap">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80"
+                   alt="Thriving green forest restored by GaiaForce volunteers"
+                   class="hero-img-main" />
+
+              <div class="hero-img-card hero-img-card-1">
+                <div class="hic-icon">🌳</div>
+                <div class="hic-num">120K</div>
+                <div class="hic-label">Trees Planted</div>
+              </div>
+              <div class="hero-img-card hero-img-card-2">
+                <div class="hic-icon">☀️</div>
+                <div class="hic-num">1.8K</div>
+                <div class="hic-label">Homes Solar-Powered</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         MARQUEE STRIP
+         ====================================================== -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item">🌿 Reforestation <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">☀️ Renewable Energy <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">💧 Clean Water <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">♻️ Zero Waste <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">🏫 Climate Education <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">🌾 Smart Farming <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">🌊 Ocean Health <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">🌿 Reforestation <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">☀️ Renewable Energy <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">💧 Clean Water <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">♻️ Zero Waste <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">🏫 Climate Education <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">🌾 Smart Farming <span class="marquee-sep">·</span></span>
+        <span class="marquee-item">🌊 Ocean Health <span class="marquee-sep">·</span></span>
+      </div>
+    </div>
+
+    <!-- ======================================================
+         INTRO SPLIT — image left, text right
+         ====================================================== -->
+    <div class="split-section" aria-label="About GaiaForce">
+      <div class="split-img">
+        <img src="https://images.unsplash.com/photo-1552799446-159ba9523315?w=900&q=80"
+             alt="GaiaForce volunteers planting trees with community members" loading="lazy" />
+        <div class="split-img-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="split-content">
+        <div class="eyebrow eyebrow-light">Who We Are</div>
+        <h2 style="color:var(--white); margin-bottom:1.25rem;">A Force of Nature. <br>A Force for Good.</h2>
+        <p style="color:rgba(255,255,255,.65);">Founded in 2012 by a team of scientists, engineers and community organisers, GaiaForce Foundation has grown into one of West Africa's most trusted environmental NGOs — delivering verifiable, community-owned climate solutions at scale.</p>
+        <p style="color:rgba(255,255,255,.65);">We don't do charity. We build capacity. Every programme we run transfers knowledge, skills, and ownership to the communities we serve — creating self-sustaining environmental stewardship that outlasts our involvement.</p>
+        <div style="display:flex; gap:1rem; margin-top:2rem; flex-wrap:wrap;">
+          <a href="about.html"    class="btn btn-teal">Our Story</a>
+          <a href="volunteer.html" class="btn btn-outline-white">Join the Movement</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================
+         NUMBERS
+         ====================================================== -->
+    <section class="numbers-section" aria-label="Impact statistics">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:3rem;">
+          <div class="eyebrow eyebrow-light" style="justify-content:center;">Impact Numbers</div>
+          <h2 style="color:var(--white);">Measured. Verified. Real.</h2>
+        </div>
+        <div class="numbers-grid">
+          <div class="number-item">
+            <div class="num-icon">🌳</div>
+            <div class="num-value">120<em>K</em></div>
+            <div class="num-label">Trees Planted</div>
+          </div>
+          <div class="number-item">
+            <div class="num-icon">☀️</div>
+            <div class="num-value">1.8<em>K</em></div>
+            <div class="num-label">Homes Solarised</div>
+          </div>
+          <div class="number-item">
+            <div class="num-icon">💧</div>
+            <div class="num-value">38</div>
+            <div class="num-label">Water Systems Built</div>
+          </div>
+          <div class="number-item">
+            <div class="num-icon">🏫</div>
+            <div class="num-value">160</div>
+            <div class="num-label">Partner Schools</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         FEATURED PROJECTS — 3-column cards
+         ====================================================== -->
+    <section class="section bg-soft" aria-labelledby="proj-title">
+      <div class="container">
+        <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:3rem; gap:1rem; flex-wrap:wrap;">
+          <div>
+            <div class="eyebrow">Featured Programs</div>
+            <h2 id="proj-title">Our Flagship Initiatives</h2>
+          </div>
+          <a href="projects.html" class="btn btn-outline-teal">View All Projects</a>
+        </div>
+
+        <div class="cards-grid-3">
+
+          <article class="proj-card">
+            <div class="proj-img">
+              <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=700&q=80"
+                   alt="Solar panels on rural rooftop" loading="lazy" />
+              <div class="proj-img-scrim" aria-hidden="true"></div>
+              <div class="proj-img-tag"><span class="tag tag-teal">Active</span></div>
+            </div>
+            <div class="proj-body">
+              <h3>SunForce Rural Solar</h3>
+              <p>Powering off-grid communities across northern Ghana with clean, affordable solar energy — replacing kerosene and slashing energy poverty.</p>
+              <div class="proj-impact-bar">⚡ 1,800 homes · 4 districts · 7,200 tonnes CO₂ saved/yr</div>
+              <div class="proj-meta">
+                <span class="proj-meta-item">📍 Northern Ghana</span>
+                <span class="proj-meta-item">🗓 Since 2014</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-img">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=700&q=80"
+                   alt="Aerial view of reforested hillside" loading="lazy" />
+              <div class="proj-img-scrim" aria-hidden="true"></div>
+              <div class="proj-img-tag"><span class="tag tag-teal">Active</span></div>
+            </div>
+            <div class="proj-body">
+              <h3>ForestBack Reforestation</h3>
+              <p>Restoring degraded forest zones with native biodiversity, employing communities as paid custodians of the trees they plant.</p>
+              <div class="proj-impact-bar">🌳 120,000 trees · 1,600 ha restored · 420 custodians paid</div>
+              <div class="proj-meta">
+                <span class="proj-meta-item">📍 Brong-Ahafo</span>
+                <span class="proj-meta-item">🗓 Since 2016</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-card">
+            <div class="proj-img">
+              <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=700&q=80"
+                   alt="Clean water borehole community celebration" loading="lazy" />
+              <div class="proj-img-scrim" aria-hidden="true"></div>
+              <div class="proj-img-tag"><span class="tag tag-amber">Ongoing</span></div>
+            </div>
+            <div class="proj-body">
+              <h3>AquaGaia Clean Water</h3>
+              <p>Solar-powered boreholes and rainwater harvesting systems delivering safe, year-round water to communities where none existed before.</p>
+              <div class="proj-impact-bar">💧 38 systems · 16,000 people · 3.5 hrs/day saved per family</div>
+              <div class="proj-meta">
+                <span class="proj-meta-item">📍 Northern &amp; Volta Regions</span>
+                <span class="proj-meta-item">🗓 Since 2018</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         IMPACT DARK — text left, glass cards right
+         ====================================================== -->
+    <section style="background:var(--navy); padding:96px 0;" aria-labelledby="impact-title">
+      <div class="container">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center;">
+          <div>
+            <div class="eyebrow eyebrow-light">Proven Impact</div>
+            <h2 id="impact-title" style="color:var(--white); margin-bottom:1.25rem;">Why Our Model Works</h2>
+            <p style="color:rgba(255,255,255,.65); margin-bottom:1.25rem;">
+              GaiaForce's secret is community ownership. We co-design every programme with the people it will serve, train locals as technicians and educators, and hand over full operational control once communities are ready.
+            </p>
+            <p style="color:rgba(255,255,255,.65); margin-bottom:2rem;">
+              The result? Projects that thrive long after our teams leave — because communities built them, own them, and profit from them.
+            </p>
+            <ul style="display:grid; gap:.7rem;">
+              <li style="display:flex; align-items:center; gap:.75rem; color:rgba(255,255,255,.7); font-size:.9rem;">
+                <span style="color:var(--teal-400); font-size:1.1rem;">✓</span> Evidence-based, independently evaluated programmes
+              </li>
+              <li style="display:flex; align-items:center; gap:.75rem; color:rgba(255,255,255,.7); font-size:.9rem;">
+                <span style="color:var(--teal-400); font-size:1.1rem;">✓</span> 87% of funds go directly to field operations
+              </li>
+              <li style="display:flex; align-items:center; gap:.75rem; color:rgba(255,255,255,.7); font-size:.9rem;">
+                <span style="color:var(--teal-400); font-size:1.1rem;">✓</span> Community-led governance at every project site
+              </li>
+              <li style="display:flex; align-items:center; gap:.75rem; color:rgba(255,255,255,.7); font-size:.9rem;">
+                <span style="color:var(--teal-400); font-size:1.1rem;">✓</span> Published annual impact reports since 2013
+              </li>
+            </ul>
+            <div style="margin-top:2rem;">
+              <a href="about.html" class="btn btn-teal">Our Approach</a>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+            <div class="glass-card" style="grid-row:span 2;">
+              <div style="font-size:2.2rem; margin-bottom:.75rem;">🌳</div>
+              <div style="font-size:2.8rem; font-weight:800; color:var(--teal-300); font-family:var(--font-display); line-height:1; margin-bottom:.3rem;">120K</div>
+              <div style="font-size:.78rem; color:rgba(255,255,255,.55); text-transform:uppercase; letter-spacing:.1em;">Trees Planted</div>
+              <p style="font-size:.82rem; color:rgba(255,255,255,.5); margin-top:.75rem;">Across 1,600 hectares of restored forest in three regions.</p>
+            </div>
+            <div class="glass-card">
+              <div style="font-size:1.6rem; margin-bottom:.4rem;">☀️</div>
+              <div style="font-size:2rem; font-weight:800; color:var(--amber-400); font-family:var(--font-display); line-height:1;">1.8K</div>
+              <div style="font-size:.72rem; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.08em; margin-top:.2rem;">Homes Solarised</div>
+            </div>
+            <div class="glass-card">
+              <div style="font-size:1.6rem; margin-bottom:.4rem;">🏫</div>
+              <div style="font-size:2rem; font-weight:800; color:var(--teal-300); font-family:var(--font-display); line-height:1;">160</div>
+              <div style="font-size:.72rem; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.08em; margin-top:.2rem;">Partner Schools</div>
+            </div>
+            <div class="glass-card">
+              <div style="font-size:1.6rem; margin-bottom:.4rem;">♻️</div>
+              <div style="font-size:2rem; font-weight:800; color:var(--amber-400); font-family:var(--font-display); line-height:1;">480T</div>
+              <div style="font-size:.72rem; color:rgba(255,255,255,.5); text-transform:uppercase; letter-spacing:.08em; margin-top:.2rem;">Plastic Recovered</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         TESTIMONIALS
+         ====================================================== -->
+    <section class="section bg-white" aria-labelledby="testi-title">
+      <div class="container">
+        <div class="text-center" style="margin-bottom:3rem;">
+          <div class="eyebrow" style="justify-content:center;">Community Voices</div>
+          <h2 id="testi-title">Stories of Transformation</h2>
+          <p style="color:var(--neutral-500); max-width:520px; margin-inline:auto;">Hear directly from the farmers, students, families, and volunteers whose lives GaiaForce has helped change.</p>
+        </div>
+        <div class="cards-grid-3">
+          <article class="testi-card">
+            <div class="testi-quote" aria-hidden="true">"</div>
+            <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+            <p class="testi-text">"The ForestBack team trained us to grow and plant our own seedlings. Now we manage the forest ourselves. It's ours — and it's thriving. My children will have clean air and water because of this work."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:linear-gradient(135deg,var(--teal-700),var(--teal-400));">KO</div>
+              <div>
+                <div class="testi-name">Kweku Owusu</div>
+                <div class="testi-role">Forest Custodian, Brong-Ahafo</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card">
+            <div class="testi-quote" aria-hidden="true">"</div>
+            <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+            <p class="testi-text">"I never imagined my students would lead climate assemblies and design school eco-gardens within two years. GaiaForce's curriculum didn't just teach facts — it awakened a generation of environmental citizens."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:linear-gradient(135deg,var(--amber-600),var(--amber-400));">SA</div>
+              <div>
+                <div class="testi-name">Sefah Acheampong</div>
+                <div class="testi-role">Secondary School Principal, Kumasi</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card">
+            <div class="testi-quote" aria-hidden="true">"</div>
+            <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+            <p class="testi-text">"Our village had no electricity until SunForce arrived. Now my daughters study until 10 PM, the health clinic runs a vaccine fridge, and three families have started small businesses. It changed everything."</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:linear-gradient(135deg,#005c5c,var(--teal-500));">AI</div>
+              <div>
+                <div class="testi-name">Adisa Ibrahim</div>
+                <div class="testi-role">Community Elder, Tamale District</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         PARTNERS
+         ====================================================== -->
+    <section class="section-sm bg-soft" aria-labelledby="partners-title">
+      <div class="container text-center">
+        <div class="eyebrow" style="justify-content:center; margin-bottom:.75rem;">Trusted Partnerships</div>
+        <h2 id="partners-title" style="margin-bottom:.5rem; font-size:1.8rem;">Backed by World-Class Organisations</h2>
+        <p style="color:var(--neutral-500); max-width:480px; margin:0 auto;">Collaborating with global institutions that share our vision for a sustainable, equitable planet.</p>
+        <div class="partner-row">
+          <div class="partner-pill">UNEP</div>
+          <div class="partner-pill">WWF Africa</div>
+          <div class="partner-pill">Green Climate Fund</div>
+          <div class="partner-pill">AfDB</div>
+          <div class="partner-pill">EU Environment</div>
+          <div class="partner-pill">USAID Ghana</div>
+          <div class="partner-pill">Global EcoFund</div>
+          <div class="partner-pill">ClimateWorks</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CTA
+         ====================================================== -->
+    <section class="cta-section" aria-label="Call to action">
+      <div class="container">
+        <div class="eyebrow eyebrow-light" style="justify-content:center; margin-bottom:1rem;">Take Action Today</div>
+        <h2>The Planet Can't Wait. <br>Neither Should You.</h2>
+        <p>Whether you donate $25 or give 25 hours — your contribution accelerates the environmental transformation Africa's communities urgently need.</p>
+        <div class="actions">
+          <a href="donate.html"    class="btn btn-amber btn-lg">Donate Now</a>
+          <a href="volunteer.html" class="btn btn-outline-white btn-lg">Volunteer</a>
+          <a href="contact.html"   class="btn btn-ghost-dark btn-lg">Partner With Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" style="margin-bottom:.75rem; display:inline-flex;">
+            <div class="brand-mark">⚡</div>
+            <div class="brand-text" style="margin-left:1rem;">
+              <span class="brand-name">GaiaForce</span>
+              <span class="brand-tagline">Foundation</span>
+            </div>
+          </a>
+          <p>Powering the planet's recovery through renewable energy, reforestation, clean water, and environmental education — community by community, across West Africa.</p>
+          <div class="social-row" aria-label="Social media">
+            <a href="#" class="social-btn" aria-label="Facebook">f</a>
+            <a href="#" class="social-btn" aria-label="X / Twitter">𝕏</a>
+            <a href="#" class="social-btn" aria-label="Instagram">ig</a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">in</a>
+            <a href="#" class="social-btn" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Navigate</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Our Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Programs</h3>
+          <ul class="footer-links">
+            <li><a href="projects.html">SunForce Solar</a></li>
+            <li><a href="projects.html">ForestBack</a></li>
+            <li><a href="projects.html">AquaGaia</a></li>
+            <li><a href="projects.html">EduClimate</a></li>
+            <li><a href="projects.html">ZeroWaste</a></li>
+            <li><a href="projects.html">AgriClimate</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Head Office</h3>
+          <p class="footer-contact-line"><span class="footer-contact-icon">📍</span> 7 Ridge Road, Airport Residential, Accra, Ghana</p>
+          <p class="footer-contact-line"><span class="footer-contact-icon">📞</span> +233 302 880 500</p>
+          <p class="footer-contact-line"><span class="footer-contact-icon">📧</span><a href="mailto:hello@gaiaforce.org" style="color:var(--teal-400);">hello@gaiaforce.org</a></p>
+          <p class="footer-contact-line"><span class="footer-contact-icon">🕐</span> Mon–Fri · 8 AM – 5 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 GaiaForce Foundation. All Rights Reserved.</p>
+        <p>Ghana NGO Reg. No. G-NGO-2012-0891 · Charity No. CH-24-0123</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
