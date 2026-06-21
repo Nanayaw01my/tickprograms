@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EcoVerde Foundation — Nurturing the Planet, Empowering Communities. An NGO dedicated to environmental sustainability, renewable energy, and climate action." />
+  <title>EcoVerde Foundation | Nurturing the Planet, Empowering Communities</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container navbar-inner">
+        <a href="index.html" class="navbar-brand" aria-label="EcoVerde Foundation Home">
+          <div class="navbar-logo" aria-hidden="true">🌿</div>
+          <div class="navbar-brand-text">
+            <span class="brand-name">EcoVerde</span>
+            <span class="brand-tag">Foundation</span>
+          </div>
+        </a>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true'); document.querySelector('.navbar-nav').classList.toggle('open')">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="navbar-nav" role="list">
+          <li><a href="index.html"       class="nav-link active">Home</a></li>
+          <li><a href="about.html"       class="nav-link">About Us</a></li>
+          <li><a href="projects.html"    class="nav-link">Projects</a></li>
+          <li><a href="gallery.html"     class="nav-link">Gallery</a></li>
+          <li><a href="volunteer.html"   class="nav-link">Volunteer</a></li>
+          <li><a href="contact.html"     class="nav-link">Contact</a></li>
+          <li><a href="donate.html"      class="nav-link nav-cta">Donate Now</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-label="Hero banner">
+      <div class="container">
+        <div class="hero-content fade-in">
+          <div class="hero-eyebrow">🌍 Est. 2010 &nbsp;·&nbsp; Making Earth Greener</div>
+          <h1>Nurturing the <span>Planet</span>,<br>Empowering Communities</h1>
+          <p class="hero-desc">
+            EcoVerde Foundation drives environmental sustainability, renewable energy adoption,
+            and climate resilience across Africa and beyond — one community at a time.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary btn-lg">Explore Our Work</a>
+            <a href="donate.html"   class="btn btn-outline btn-lg">Support Our Mission</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- ===================== STATS BAR ===================== -->
+    <section class="stats-bar" aria-label="Key statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">85<span>K+</span></div>
+            <div class="stat-label">Trees Planted</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">42<span>+</span></div>
+            <div class="stat-label">Communities Reached</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">18<span>K</span></div>
+            <div class="stat-label">Lives Impacted</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">6<span>+</span></div>
+            <div class="stat-label">Active Programs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MISSION STRIP ===================== -->
+    <section class="mission-strip" aria-label="Mission statement">
+      <div class="container mission-strip-inner">
+        <h2>"We believe a <span>healthy planet</span> and thriving communities are not opposites — they are inseparable."</h2>
+        <a href="about.html" class="btn btn-primary">Our Story</a>
+      </div>
+    </section>
+
+    <!-- ===================== BRIEF INTRO ===================== -->
+    <section class="section-pad bg-green-soft" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="about-intro">
+          <div>
+            <span class="section-label">Who We Are</span>
+            <h2 id="intro-title" class="section-title">A Decade of Environmental Leadership</h2>
+            <p>EcoVerde Foundation was established in 2010 with a single conviction: that sustainable environmental stewardship and human wellbeing are two sides of the same coin.</p>
+            <p>Over the past 14 years, we have grown from a grassroots movement in Accra, Ghana into a Pan-African force for environmental change — planting forests, building solar systems, cleaning waterways, educating youth, and mobilising communities to lead their own green futures.</p>
+            <p>Our multidisciplinary team of environmentalists, engineers, educators, and community organisers works hand-in-hand with local leaders, governments, and international partners to create lasting, scalable impact.</p>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+              <a href="about.html"    class="btn btn-primary">Learn More</a>
+              <a href="volunteer.html" class="btn btn-outline-green">Get Involved</a>
+            </div>
+          </div>
+          <div class="about-img-stack">
+            <img src="https://images.unsplash.com/photo-1552799446-159ba9523315?w=800&q=80"
+                 alt="Community members planting trees with EcoVerde volunteers"
+                 class="about-img-main" />
+            <div class="about-img-badge">
+              <div class="big">14</div>
+              <div class="sm">Years of Impact</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED PROJECTS ===================== -->
+    <section class="section-pad bg-white" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Featured Programs</span>
+          <h2 id="projects-title" class="section-title">Our Flagship Initiatives</h2>
+          <p class="section-sub">From renewable energy installations to school-based environmental education, our programs are designed for lasting community impact.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-card-img">
+              <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80"
+                   alt="Solar panels installed in rural community" loading="lazy" />
+              <span class="badge badge-active">Active</span>
+            </div>
+            <div class="project-card-body">
+              <h3>SolarVerde Rural Electrification</h3>
+              <p>Bringing clean, affordable solar power to off-grid communities across northern Ghana and the Upper East region.</p>
+              <div class="project-meta">
+                <span>📍 Northern Ghana</span>
+                <span>⚡ 1,200 Households</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-img">
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80"
+                   alt="Volunteers planting trees in a deforested area" loading="lazy" />
+              <span class="badge badge-active">Active</span>
+            </div>
+            <div class="project-card-body">
+              <h3>Green Canopy Reforestation Drive</h3>
+              <p>A large-scale reforestation program targeting degraded forest zones, with 85,000 trees planted and counting.</p>
+              <div class="project-meta">
+                <span>📍 Brong-Ahafo Region</span>
+                <span>🌳 85K Trees</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-img">
+              <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&q=80"
+                   alt="Students in a classroom learning about environmental issues" loading="lazy" />
+              <span class="badge badge-ongoing">Ongoing</span>
+            </div>
+            <div class="project-card-body">
+              <h3>Eco-Schools Climate Curriculum</h3>
+              <p>Integrating climate science and sustainability into school curricula across 120 partner schools in 6 regions.</p>
+              <div class="project-meta">
+                <span>📍 Nationwide</span>
+                <span>🎓 120 Schools</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center" style="margin-top:3rem;">
+          <a href="projects.html" class="btn btn-outline-green btn-lg">View All Programs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== IMPACT SECTION ===================== -->
+    <section class="impact-section" aria-labelledby="impact-title">
+      <div class="container">
+        <div class="impact-grid">
+          <div class="impact-text">
+            <span class="section-label" style="background:rgba(46,170,98,.2); color:var(--green-400);">Our Impact</span>
+            <h2 id="impact-title" class="section-title text-white">Transforming Lives Through Environmental Action</h2>
+            <p>Every tree we plant, every solar panel we install, and every classroom we educate ripples outward — creating cleaner air, safer water, and stronger communities for generations to come.</p>
+            <p>Our evidence-based approach combines community participation, technical expertise, and policy advocacy to ensure our work creates systemic change rather than one-off fixes.</p>
+            <div style="display:flex; gap:1rem; margin-top:1.5rem; flex-wrap:wrap;">
+              <a href="projects.html" class="btn btn-gold">See Our Programs</a>
+              <a href="donate.html"   class="btn btn-outline">Support Us</a>
+            </div>
+          </div>
+          <div class="impact-visual">
+            <div class="impact-card tall">
+              <div class="icon">🌳</div>
+              <div class="number">85,000</div>
+              <div class="label">Trees Planted</div>
+            </div>
+            <div class="impact-card">
+              <div class="icon">☀️</div>
+              <div class="number">1,200</div>
+              <div class="label">Homes Solarised</div>
+            </div>
+            <div class="impact-card">
+              <div class="icon">🏫</div>
+              <div class="number">120</div>
+              <div class="label">Partner Schools</div>
+            </div>
+            <div class="impact-card">
+              <div class="icon">💧</div>
+              <div class="number">28</div>
+              <div class="label">Water Systems</div>
+            </div>
+            <div class="impact-card">
+              <div class="icon">♻️</div>
+              <div class="number">340T</div>
+              <div class="label">Waste Recycled</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section-pad bg-white" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Success Stories</span>
+          <h2 id="testimonials-title" class="section-title">Voices from the Field</h2>
+          <p class="section-sub">Real impact, real people. Hear from the communities, partners, and volunteers who make our work meaningful.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Before EcoVerde installed our solar system, we spent GH₵ 200 monthly on kerosene. Now my children study at night, my small chop bar runs a fridge, and I save money every month. They changed our lives completely."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AF</div>
+              <div>
+                <div class="author-name">Abena Fosua</div>
+                <div class="author-role">Solar beneficiary, Tamale</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The Eco-Schools programme transformed how our students think about their environment. They are now the ones reminding adults not to litter and are growing school gardens. We are grateful for EcoVerde's dedication."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">KA</div>
+              <div>
+                <div class="author-name">Kofi Asante</div>
+                <div class="author-role">Headmaster, Kumasi</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Volunteering with EcoVerde's reforestation team was the most meaningful experience of my career. The community ownership model they use means these forests will survive long after we leave. Truly inspiring work."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">LM</div>
+              <div>
+                <div class="author-name">Lydia Mensah</div>
+                <div class="author-role">Environmental Engineer &amp; Volunteer</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PARTNERS ===================== -->
+    <section class="partners-section" aria-labelledby="partners-title">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Partners &amp; Sponsors</span>
+          <h2 id="partners-title" class="section-title">Supported By</h2>
+          <p class="section-sub">We collaborate with leading organisations committed to environmental and social change.</p>
+        </div>
+        <div class="partners-grid">
+          <div class="partner-logo">UNEP</div>
+          <div class="partner-logo">GEF Global</div>
+          <div class="partner-logo">WWF Africa</div>
+          <div class="partner-logo">Green Climate Fund</div>
+          <div class="partner-logo">AfDB</div>
+          <div class="partner-logo">EU Environment</div>
+          <div class="partner-logo">USAID Ghana</div>
+          <div class="partner-logo">Clean Energy Ghana</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA STRIP ===================== -->
+    <section style="background: linear-gradient(135deg, var(--green-900), var(--green-700)); padding: 72px 0; text-align:center;">
+      <div class="container">
+        <h2 style="color:var(--white); margin-bottom:.75rem;">Ready to Make a Difference?</h2>
+        <p style="color:rgba(255,255,255,.75); max-width:480px; margin:0 auto 2rem;">
+          Whether you donate, volunteer, or spread the word — every action counts toward a greener, fairer world.
+        </p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="donate.html"    class="btn btn-gold btn-lg">Donate Today</a>
+          <a href="volunteer.html" class="btn btn-outline btn-lg">Become a Volunteer</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand" style="margin-bottom:.5rem; display:inline-flex;">
+            <div class="navbar-logo">🌿</div>
+            <div class="navbar-brand-text" style="margin-left:.85rem;">
+              <span class="brand-name">EcoVerde</span>
+              <span class="brand-tag">Foundation</span>
+            </div>
+          </a>
+          <p>Nurturing the planet and empowering communities through environmental sustainability, renewable energy, and climate education since 2010.</p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">Li</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="index.html">› Home</a></li>
+            <li><a href="about.html">› About Us</a></li>
+            <li><a href="projects.html">› Our Projects</a></li>
+            <li><a href="gallery.html">› Gallery</a></li>
+            <li><a href="volunteer.html">› Volunteer</a></li>
+            <li><a href="donate.html">› Donate</a></li>
+            <li><a href="contact.html">› Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Our Programs</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="projects.html">› SolarVerde</a></li>
+            <li><a href="projects.html">› Green Canopy</a></li>
+            <li><a href="projects.html">› Eco-Schools</a></li>
+            <li><a href="projects.html">› Clean Water</a></li>
+            <li><a href="projects.html">› WasteZero</a></li>
+            <li><a href="projects.html">› Climate Farms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3 class="footer-title">Contact Us</h3>
+          <p><span class="icon">📍</span> 14 Cantonments Crescent, Accra, Ghana</p>
+          <p><span class="icon">📞</span> +233 302 700 400</p>
+          <p><span class="icon">📧</span> <a href="mailto:info@ecoverde.org" style="color:var(--green-400);">info@ecoverde.org</a></p>
+          <p><span class="icon">🕐</span> Mon–Fri: 8:00 AM – 5:00 PM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 EcoVerde Foundation. All rights reserved.</p>
+        <p>Registered NGO · Ghana NGO Reg. No. G-NGO-2010-0447</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

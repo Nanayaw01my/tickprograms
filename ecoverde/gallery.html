@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EcoVerde Foundation Photo Gallery — see our reforestation, solar installations, community training, clean water projects, and environmental education in action." />
+  <title>Gallery | EcoVerde Foundation</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container navbar-inner">
+        <a href="index.html" class="navbar-brand" aria-label="EcoVerde Foundation Home">
+          <div class="navbar-logo" aria-hidden="true">🌿</div>
+          <div class="navbar-brand-text">
+            <span class="brand-name">EcoVerde</span>
+            <span class="brand-tag">Foundation</span>
+          </div>
+        </a>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true'); document.querySelector('.navbar-nav').classList.toggle('open')">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="navbar-nav" role="list">
+          <li><a href="index.html"       class="nav-link">Home</a></li>
+          <li><a href="about.html"       class="nav-link">About Us</a></li>
+          <li><a href="projects.html"    class="nav-link">Projects</a></li>
+          <li><a href="gallery.html"     class="nav-link active">Gallery</a></li>
+          <li><a href="volunteer.html"   class="nav-link">Volunteer</a></li>
+          <li><a href="contact.html"     class="nav-link">Contact</a></li>
+          <li><a href="donate.html"      class="nav-link nav-cta">Donate Now</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero" aria-label="Gallery page header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep">›</span>
+          <span>Gallery</span>
+        </nav>
+        <h1>Our Activities in Pictures</h1>
+        <p>A visual story of communities, landscapes, and lives transformed through environmental action.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY FILTERS -->
+    <section class="section-pad bg-white" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-label">Photo Gallery</span>
+          <h2 id="gallery-title" class="section-title">Behind the Scenes</h2>
+          <p class="section-sub">From forest nurseries to school classrooms, from solar rooftops to clean water wells — every image tells a story of change.</p>
+        </div>
+
+        <div class="gallery-filters" role="group" aria-label="Gallery category filters">
+          <button class="filter-btn active" type="button">All Activities</button>
+          <button class="filter-btn" type="button">Reforestation</button>
+          <button class="filter-btn" type="button">Solar Energy</button>
+          <button class="filter-btn" type="button">Education</button>
+          <button class="filter-btn" type="button">Clean Water</button>
+          <button class="filter-btn" type="button">Waste Mgmt</button>
+          <button class="filter-btn" type="button">Community</button>
+        </div>
+
+        <!-- MASONRY-STYLE CSS GRID GALLERY -->
+        <div class="gallery-grid" role="list" aria-label="Gallery images">
+
+          <figure class="gallery-item large" role="listitem">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80"
+                 alt="Volunteers planting native saplings in a cleared hillside forest zone"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Reforestation</div>
+                <div class="gallery-caption">Green Canopy — Brong-Ahafo Mass Planting Day 2024</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80"
+                 alt="Solar panel array installed on school rooftop in Tamale"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Solar Energy</div>
+                <div class="gallery-caption">SolarVerde School Installation, Tamale</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600&q=80"
+                 alt="Primary school children raising hands during environmental awareness lesson"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Education</div>
+                <div class="gallery-caption">Eco-Schools Climate Lesson, Kumasi</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item wide" role="listitem">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=900&q=80"
+                 alt="Aerial view of reforested hillside with rows of young trees"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Reforestation</div>
+                <div class="gallery-caption">1,200 hectares restored — Green Canopy aerial view</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=80"
+                 alt="Woman collecting clean water from a newly installed solar borehole"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Clean Water</div>
+                <div class="gallery-caption">ClearWater borehole inauguration, Volta Region</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item tall" role="listitem">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+                 alt="Workers at the WasteZero sorting centre organising plastic waste by type"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Waste Management</div>
+                <div class="gallery-caption">WasteZero Sorting Centre, Tema</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item wide" role="listitem">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=900&q=80"
+                 alt="Farmer learning climate-smart irrigation techniques from EcoVerde agronomist"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Community</div>
+                <div class="gallery-caption">ClimateFarms training workshop, Northern Ghana</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&q=80"
+                 alt="Pristine river running through a restored forest zone in Ghana"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Reforestation</div>
+                <div class="gallery-caption">Restored watershed, Brong-Ahafo</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?w=600&q=80"
+                 alt="Dense green forest canopy restored through EcoVerde reforestation efforts"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Reforestation</div>
+                <div class="gallery-caption">Thriving restored forest, Western Region</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1552799446-159ba9523315?w=600&q=80"
+                 alt="Community members and EcoVerde staff at a tree-planting ceremony"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Community</div>
+                <div class="gallery-caption">Community tree-planting ceremony, Kumasi</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item wide" role="listitem">
+            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=900&q=80"
+                 alt="Wind turbines on green hills representing EcoVerde's renewable energy advocacy"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Solar Energy</div>
+                <div class="gallery-caption">EcoVerde renewable energy advocacy site visit</div>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure class="gallery-item" role="listitem">
+            <img src="https://images.unsplash.com/photo-1519461518688-6f4e58d90c08?w=600&q=80"
+                 alt="Children drawing posters about recycling at an Eco-Schools event"
+                 class="gallery-img" loading="lazy" />
+            <div class="gallery-overlay">
+              <figcaption>
+                <div class="gallery-cat">Education</div>
+                <div class="gallery-caption">Eco-Schools Art Competition, Takoradi</div>
+              </figcaption>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY ACTIVITY TABLE -->
+    <section class="gallery-table-section" aria-labelledby="activity-log-title">
+      <div class="container">
+        <span class="section-label">Activity Log</span>
+        <h2 id="activity-log-title" class="section-title">Recent Field Activities</h2>
+        <p style="margin-bottom:2rem; max-width:600px;">A record of our on-the-ground activities across our programme sites in 2024.</p>
+
+        <div class="table-wrap">
+          <table aria-label="Recent EcoVerde field activities 2024">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Activity</th>
+                <th>Program</th>
+                <th>Location</th>
+                <th>Participants</th>
+                <th>Outcome</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>15 Mar 2024</td>
+                <td>Mass Tree Planting Day</td>
+                <td>Green Canopy</td>
+                <td>Sunyani, B-A</td>
+                <td>340 volunteers</td>
+                <td>8,200 trees planted</td>
+              </tr>
+              <tr>
+                <td>28 Mar 2024</td>
+                <td>Solar Installation Handover</td>
+                <td>SolarVerde</td>
+                <td>Bawku, U-E</td>
+                <td>80 households</td>
+                <td>80 homes electrified</td>
+              </tr>
+              <tr>
+                <td>10 Apr 2024</td>
+                <td>Teacher Training Workshop</td>
+                <td>Eco-Schools</td>
+                <td>Kumasi, Ashanti</td>
+                <td>120 teachers</td>
+                <td>120 trained &amp; certified</td>
+              </tr>
+              <tr>
+                <td>22 Apr 2024</td>
+                <td>Earth Day Community Festival</td>
+                <td>All Programs</td>
+                <td>Accra, Greater Accra</td>
+                <td>2,400 attendees</td>
+                <td>Community awareness &amp; signups</td>
+              </tr>
+              <tr>
+                <td>5 May 2024</td>
+                <td>Borehole Inauguration</td>
+                <td>ClearWater</td>
+                <td>Nkoranza, B-A</td>
+                <td>580 beneficiaries</td>
+                <td>Community water system live</td>
+              </tr>
+              <tr>
+                <td>19 May 2024</td>
+                <td>Plastic Collection Drive</td>
+                <td>WasteZero</td>
+                <td>Tema Fishing Harbour</td>
+                <td>65 collectors</td>
+                <td>14 tonnes plastic recovered</td>
+              </tr>
+              <tr>
+                <td>8 Jun 2024</td>
+                <td>Climate Smart Farming Demo</td>
+                <td>ClimateFarms</td>
+                <td>Tamale, Northern</td>
+                <td>90 farmers</td>
+                <td>Pilot sites established</td>
+              </tr>
+              <tr>
+                <td>21 Jun 2024</td>
+                <td>World Environment Day March</td>
+                <td>Advocacy</td>
+                <td>Accra CBD</td>
+                <td>1,200 marchers</td>
+                <td>Media coverage &amp; petition signed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION (embedded media) -->
+    <section class="section-pad bg-white" aria-labelledby="media-title">
+      <div class="container text-center">
+        <span class="section-label">Featured Media</span>
+        <h2 id="media-title" class="section-title">Watch Our Story</h2>
+        <p class="section-sub" style="margin-inline:auto; margin-bottom:2rem;">A short documentary showing the human side of our environmental work across communities in Ghana.</p>
+
+        <div style="position:relative; padding-bottom:56.25%; height:0; max-width:800px; margin:0 auto; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-xl); background:var(--dark-900); display:flex; align-items:center; justify-content:center;">
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; background:linear-gradient(135deg,var(--dark-900),var(--dark-800)); color:var(--white);">
+            <div style="font-size:4rem; margin-bottom:1rem; background:rgba(46,170,98,.2); border:2px solid rgba(46,170,98,.4); border-radius:50%; width:80px; height:80px; display:flex; align-items:center; justify-content:center;">▶</div>
+            <h3 style="color:var(--white); font-size:1.2rem; margin-bottom:.5rem;">EcoVerde: A Story of Renewal</h3>
+            <p style="color:rgba(255,255,255,.6); font-size:.9rem;">12 minutes · Documentary · 2024</p>
+            <p style="color:rgba(255,255,255,.4); font-size:.8rem; margin-top:1rem;">[Video player placeholder — embed YouTube/Vimeo URL here]</p>
+          </div>
+        </div>
+
+        <aside style="background:var(--green-50); border-radius:var(--radius-md); padding:1.25rem 1.5rem; max-width:600px; margin:2rem auto 0; border-left:3px solid var(--green-600); text-align:left;">
+          <h4 style="margin-bottom:.4rem; font-size:.95rem;">🎬 About this Documentary</h4>
+          <p style="font-size:.85rem; margin:0;">Produced in partnership with GreenScreen Media, this short film follows three community members whose lives were changed by EcoVerde's SolarVerde, ClearWater, and Green Canopy programmes over a period of two years.</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="navbar-brand" style="margin-bottom:.5rem; display:inline-flex;">
+            <div class="navbar-logo">🌿</div>
+            <div class="navbar-brand-text" style="margin-left:.85rem;">
+              <span class="brand-name">EcoVerde</span>
+              <span class="brand-tag">Foundation</span>
+            </div>
+          </a>
+          <p>Nurturing the planet and empowering communities through environmental sustainability, renewable energy, and climate education since 2010.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">f</a>
+            <a href="#" class="social-link" aria-label="Twitter/X">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram">in</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">Li</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">› Home</a></li>
+            <li><a href="about.html">› About Us</a></li>
+            <li><a href="projects.html">› Our Projects</a></li>
+            <li><a href="gallery.html">› Gallery</a></li>
+            <li><a href="volunteer.html">› Volunteer</a></li>
+            <li><a href="donate.html">› Donate</a></li>
+            <li><a href="contact.html">› Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title">Our Programs</h3>
+          <ul class="footer-links">
+            <li><a href="projects.html">› SolarVerde</a></li>
+            <li><a href="projects.html">› Green Canopy</a></li>
+            <li><a href="projects.html">› Eco-Schools</a></li>
+            <li><a href="projects.html">› Clean Water</a></li>
+            <li><a href="projects.html">› WasteZero</a></li>
+            <li><a href="projects.html">› Climate Farms</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3 class="footer-title">Contact Us</h3>
+          <p><span class="icon">📍</span> 14 Cantonments Crescent, Accra, Ghana</p>
+          <p><span class="icon">📞</span> +233 302 700 400</p>
+          <p><span class="icon">📧</span> <a href="mailto:info@ecoverde.org" style="color:var(--green-400);">info@ecoverde.org</a></p>
+          <p><span class="icon">🕐</span> Mon–Fri: 8:00 AM – 5:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 EcoVerde Foundation. All rights reserved.</p>
+        <p>Registered NGO · Ghana NGO Reg. No. G-NGO-2010-0447</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
